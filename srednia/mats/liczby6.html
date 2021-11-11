@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pierwiastek sześcienny</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+
+			<h3>Szkoła średnia</h3><ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Pierwiastek sześcienny</p>
+						  <ol class="list-group powt">
+<li class="numer" id="liczby6_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5">a) \(\sqrt[3]{216}, \ \sqrt[3]{0,125}, \ \sqrt[3]{-125} \)</div><div class="col-xs-12 col-md-12 col-lg-5">b) \(\sqrt[3]{-2\frac{10}{27}}, \ \sqrt[3]{4\frac{17}{27}}, \ \sqrt[3]{-3,375} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt[3]{\sqrt{64}}, \ \frac{\sqrt{\sqrt[3]{64}}}{\sqrt[3]{27}}, \ \sqrt[3]{9\sqrt[3]{9\sqrt{9}}} \)</div><div class="col-xs-12 col-md-12 col-lg-7">d) \(\sqrt{\sqrt[3]{216}+\sqrt[3]{8}+1}, \ \sqrt[3]{\sqrt[3]{343}-\sqrt[3]{64}-3} \)</div></div><button class="butt" id="gliczby6_1" onclick="pokazliczby6_1()">Rozwiązanie</button>
+<script>
+function pokazliczby6_1(){
+var dliczby6_1=document.getElementById("r-liczby6_1");
+var rliczby6_1=document.createElement("img");
+rliczby6_1.setAttribute('src','roz/liczby6_1.png');
+dliczby6_1.appendChild(rliczby6_1);
+var uliczby6_1=document.getElementById("gliczby6_1");
+uliczby6_1.innerHTML="Ukryj rozwiązanie";
+uliczby6_1.setAttribute("onclick","usunliczby6_1()");}
+function usunliczby6_1(){
+var dliczby6_1=document.getElementById("r-liczby6_1");
+dliczby6_1.innerHTML=null;
+var uliczby6_1a=document.getElementById("gliczby6_1");
+uliczby6_1a.innerHTML="Rozwiązanie";
+uliczby6_1a.setAttribute("onclick","pokazliczby6_1()");}
+</script>
+<div id="r-liczby6_1"></div>
+</li>
+<li class="numer" id="liczby6_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz, korzystając z własności pierwiastków.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt[3]{64\cdot 0,027}, \ \sqrt[3]{3,375\cdot \frac{64}{125}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(\sqrt[3]{\frac{1}{8}}\cdot \sqrt[3]{\frac{8}{27}}\cdot \sqrt[3]{\frac{27}{64}}, \ \sqrt[3]{\frac{125}{729}}\cdot \sqrt[3]{\frac{729}{1000}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(\sqrt[3]{\frac{0,008}{125}}, \ \frac{\sqrt[3]{80}}{\sqrt[3]{10}}, \ \frac{\sqrt[3]{98}\cdot \sqrt[3]{112}}{\sqrt[3]{500}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) \((\sqrt[3]{625}-5\sqrt[3]{5}):\sqrt[3]{5}, \ (6\sqrt[3]{-56}+\sqrt[3]{448}-\sqrt[3]{875}):2\sqrt[3]{-7} \)</div></div><button class="butt" id="gliczby6_2" onclick="pokazliczby6_2()">Rozwiązanie</button>
+<script>
+function pokazliczby6_2(){
+var dliczby6_2=document.getElementById("r-liczby6_2");
+var rliczby6_2=document.createElement("img");
+rliczby6_2.setAttribute('src','roz/liczby6_2.png');
+dliczby6_2.appendChild(rliczby6_2);
+var uliczby6_2=document.getElementById("gliczby6_2");
+uliczby6_2.innerHTML="Ukryj rozwiązanie";
+uliczby6_2.setAttribute("onclick","usunliczby6_2()");}
+function usunliczby6_2(){
+var dliczby6_2=document.getElementById("r-liczby6_2");
+dliczby6_2.innerHTML=null;
+var uliczby6_2a=document.getElementById("gliczby6_2");
+uliczby6_2a.innerHTML="Rozwiązanie";
+uliczby6_2a.setAttribute("onclick","pokazliczby6_2()");}
+</script>
+<div id="r-liczby6_2"></div>
+</li>
+<li class="numer" id="liczby6_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przedstaw liczbę w postaci pierwiastka trzeciego stopnia z liczby wymiernej</p>
+<div class="row odp"><div class="col-xs-12 col-md-4 col-lg-2">a) \(5 \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(-4 \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(-1 \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(\frac{2}{3} \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(0,1 \)</div><div class="col-xs-12 col-md-4 col-lg-2">f) \(-1\frac{2}{5} \)</div></div><button class="butt" id="gliczby6_3" onclick="pokazliczby6_3()">Rozwiązanie</button>
+<script>
+function pokazliczby6_3(){
+var dliczby6_3=document.getElementById("r-liczby6_3");
+var rliczby6_3=document.createElement("img");
+rliczby6_3.setAttribute('src','roz/liczby6_3.png');
+dliczby6_3.appendChild(rliczby6_3);
+var uliczby6_3=document.getElementById("gliczby6_3");
+uliczby6_3.innerHTML="Ukryj rozwiązanie";
+uliczby6_3.setAttribute("onclick","usunliczby6_3()");}
+function usunliczby6_3(){
+var dliczby6_3=document.getElementById("r-liczby6_3");
+dliczby6_3.innerHTML=null;
+var uliczby6_3a=document.getElementById("gliczby6_3");
+uliczby6_3a.innerHTML="Rozwiązanie";
+uliczby6_3a.setAttribute("onclick","pokazliczby6_3()");}
+</script>
+<div id="r-liczby6_3"></div>
+</li>
+<li class="numer" id="liczby6_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt[4]{1} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt[4]{10000} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[4]{81} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt[4]{0,0016} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">e) \(\sqrt[5]{0} \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(\sqrt[5]{-0,00001} \)</div><div class="col-xs-12 col-md-6 col-lg-3">g) \(\sqrt[5]{\frac{1}{32}} \)</div><div class="col-xs-12 col-md-6 col-lg-3">h) \(\sqrt[5]{-32} \)</div></div><button class="butt" id="gliczby6_4" onclick="pokazliczby6_4()">Rozwiązanie</button>
+<script>
+function pokazliczby6_4(){
+var dliczby6_4=document.getElementById("r-liczby6_4");
+var rliczby6_4=document.createElement("img");
+rliczby6_4.setAttribute('src','roz/liczby6_4.png');
+dliczby6_4.appendChild(rliczby6_4);
+var uliczby6_4=document.getElementById("gliczby6_4");
+uliczby6_4.innerHTML="Ukryj rozwiązanie";
+uliczby6_4.setAttribute("onclick","usunliczby6_4()");}
+function usunliczby6_4(){
+var dliczby6_4=document.getElementById("r-liczby6_4");
+dliczby6_4.innerHTML=null;
+var uliczby6_4a=document.getElementById("gliczby6_4");
+uliczby6_4a.innerHTML="Rozwiązanie";
+uliczby6_4a.setAttribute("onclick","pokazliczby6_4()");}
+</script>
+<div id="r-liczby6_4"></div>
+</li>
+<li class="numer" id="liczby6_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Włącz czynnik pod pierwiastek.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(2\sqrt[3]{7} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(-5\sqrt[3]{2} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(8\sqrt[3]{0,125} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(5\sqrt[4]{8} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(0,5\sqrt[5]{64} \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(10\sqrt[7]{0,0001} \)</div></div><button class="butt" id="gliczby6_5" onclick="pokazliczby6_5()">Rozwiązanie</button>
+<script>
+function pokazliczby6_5(){
+var dliczby6_5=document.getElementById("r-liczby6_5");
+var rliczby6_5=document.createElement("img");
+rliczby6_5.setAttribute('src','roz/liczby6_5.png');
+dliczby6_5.appendChild(rliczby6_5);
+var uliczby6_5=document.getElementById("gliczby6_5");
+uliczby6_5.innerHTML="Ukryj rozwiązanie";
+uliczby6_5.setAttribute("onclick","usunliczby6_5()");}
+function usunliczby6_5(){
+var dliczby6_5=document.getElementById("r-liczby6_5");
+dliczby6_5.innerHTML=null;
+var uliczby6_5a=document.getElementById("gliczby6_5");
+uliczby6_5a.innerHTML="Rozwiązanie";
+uliczby6_5a.setAttribute("onclick","pokazliczby6_5()");}
+</script>
+<div id="r-liczby6_5"></div>
+</li>
+<li class="numer" id="liczby6_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyłącz czynnik przed pierwiastek.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\sqrt[3]{54} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\sqrt[3]{-5000} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\sqrt[3]{250} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(\sqrt[4]{81\cdot 82} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\sqrt[5]{32\cdot \frac{1}{33}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\sqrt[6]{6000000} \)</div></div><button class="butt" id="gliczby6_6" onclick="pokazliczby6_6()">Rozwiązanie</button>
+<script>
+function pokazliczby6_6(){
+var dliczby6_6=document.getElementById("r-liczby6_6");
+var rliczby6_6=document.createElement("img");
+rliczby6_6.setAttribute('src','roz/liczby6_6.png');
+dliczby6_6.appendChild(rliczby6_6);
+var uliczby6_6=document.getElementById("gliczby6_6");
+uliczby6_6.innerHTML="Ukryj rozwiązanie";
+uliczby6_6.setAttribute("onclick","usunliczby6_6()");}
+function usunliczby6_6(){
+var dliczby6_6=document.getElementById("r-liczby6_6");
+dliczby6_6.innerHTML=null;
+var uliczby6_6a=document.getElementById("gliczby6_6");
+uliczby6_6a.innerHTML="Rozwiązanie";
+uliczby6_6a.setAttribute("onclick","pokazliczby6_6()");}
+</script>
+<div id="r-liczby6_6"></div>
+</li>
+<li class="numer" id="liczby6_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uporządkuj liczby malejąco. Nie korzystaj z kalkulatora.</p>
+<div class="row odp"><div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\(\sqrt[3]{27} \), \(\frac{7}{2}\sqrt[3]{\frac{2}{7}} \), \(7\sqrt[3]{2} \), \(\sqrt[3]{0,027} \), \(\sqrt[3]{\frac{27}{100}} \), \(2\sqrt[3]{7} \)</div></div>
+<button class="butt" id="gliczby6_7" onclick="pokazliczby6_7()">Rozwiązanie</button>
+<script>
+function pokazliczby6_7(){
+var dliczby6_7=document.getElementById("r-liczby6_7");
+var rliczby6_7=document.createElement("img");
+rliczby6_7.setAttribute('src','roz/liczby6_7.png');
+dliczby6_7.appendChild(rliczby6_7);
+var uliczby6_7=document.getElementById("gliczby6_7");
+uliczby6_7.innerHTML="Ukryj rozwiązanie";
+uliczby6_7.setAttribute("onclick","usunliczby6_7()");}
+function usunliczby6_7(){
+var dliczby6_7=document.getElementById("r-liczby6_7");
+dliczby6_7.innerHTML=null;
+var uliczby6_7a=document.getElementById("gliczby6_7");
+uliczby6_7a.innerHTML="Rozwiązanie";
+uliczby6_7a.setAttribute("onclick","pokazliczby6_7()");}
+</script>
+<div id="r-liczby6_7"></div>
+</li>
+<li class="numer" id="liczby6_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz, korzystając z własności pierwiastków.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt[3]{19^3} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt[3]{(-8)^3} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \((\sqrt[3]{21})^3 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \((\sqrt[3]{\frac{3}{4}})^3 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-2">e) \((\sqrt[3]{5^3})^3 \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(\left ( \sqrt[3]{(-\frac{1}{3})^3} \right )^3 \)</div><div class="col-xs-12 col-md-6 col-lg-3">g) \(\sqrt[3]{(\sqrt[3]{(-3)^3})^3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">h) \(\left (\sqrt[3]{(\sqrt[3]{3^3})^3}\right )^3 \)</div></div><button class="butt" id="gliczby6_8" onclick="pokazliczby6_8()">Rozwiązanie</button>
+<script>
+function pokazliczby6_8(){
+var dliczby6_8=document.getElementById("r-liczby6_8");
+var rliczby6_8=document.createElement("img");
+rliczby6_8.setAttribute('src','roz/liczby6_8.png');
+dliczby6_8.appendChild(rliczby6_8);
+var uliczby6_8=document.getElementById("gliczby6_8");
+uliczby6_8.innerHTML="Ukryj rozwiązanie";
+uliczby6_8.setAttribute("onclick","usunliczby6_8()");}
+function usunliczby6_8(){
+var dliczby6_8=document.getElementById("r-liczby6_8");
+dliczby6_8.innerHTML=null;
+var uliczby6_8a=document.getElementById("gliczby6_8");
+uliczby6_8a.innerHTML="Rozwiązanie";
+uliczby6_8a.setAttribute("onclick","pokazliczby6_8()");}
+</script>
+<div id="r-liczby6_8"></div>
+</li>
+<li class="numer" id="liczby6_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Objętość kuli o promieniu \(R \) wyraża się wzorem \(V=\frac{4}{3}\pi R^3 \). Oblicz promień kuli o podanej objętości.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(V=36\pi \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(V=\frac{\pi}{6} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(V=\frac{9}{16}\pi \)</div></div><button class="butt" id="gliczby6_9" onclick="pokazliczby6_9()">Rozwiązanie</button>
+<script>
+function pokazliczby6_9(){
+var dliczby6_9=document.getElementById("r-liczby6_9");
+var rliczby6_9=document.createElement("img");
+rliczby6_9.setAttribute('src','roz/liczby6_9.png');
+dliczby6_9.appendChild(rliczby6_9);
+var uliczby6_9=document.getElementById("gliczby6_9");
+uliczby6_9.innerHTML="Ukryj rozwiązanie";
+uliczby6_9.setAttribute("onclick","usunliczby6_9()");}
+function usunliczby6_9(){
+var dliczby6_9=document.getElementById("r-liczby6_9");
+dliczby6_9.innerHTML=null;
+var uliczby6_9a=document.getElementById("gliczby6_9");
+uliczby6_9a.innerHTML="Rozwiązanie";
+uliczby6_9a.setAttribute("onclick","pokazliczby6_9()");}
+</script>
+<div id="r-liczby6_9"></div>
+</li>
+<li class="numer" id="liczby6_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Które iloczyny są większe od \(10 \)?</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{225}\cdot \sqrt[3]{\frac{64}{125}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt[4]{625}\cdot \frac{1}{\sqrt[3]{0,125}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt[6]{64}\cdot \sqrt[3]{64} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\sqrt[5]{32}\cdot \sqrt[3]{216} \)</div></div><button class="butt" id="gliczby6_10" onclick="pokazliczby6_10()">Rozwiązanie</button>
+<script>
+function pokazliczby6_10(){
+var dliczby6_10=document.getElementById("r-liczby6_10");
+var rliczby6_10=document.createElement("img");
+rliczby6_10.setAttribute('src','roz/liczby6_10.png');
+dliczby6_10.appendChild(rliczby6_10);
+var uliczby6_10=document.getElementById("gliczby6_10");
+uliczby6_10.innerHTML="Ukryj rozwiązanie";
+uliczby6_10.setAttribute("onclick","usunliczby6_10()");}
+function usunliczby6_10(){
+var dliczby6_10=document.getElementById("r-liczby6_10");
+dliczby6_10.innerHTML=null;
+var uliczby6_10a=document.getElementById("gliczby6_10");
+uliczby6_10a.innerHTML="Rozwiązanie";
+uliczby6_10a.setAttribute("onclick","pokazliczby6_10()");}
+</script>
+<div id="r-liczby6_10"></div>
+</li>
+<li class="numer" id="liczby6_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a></p><div class="col-xs-12 col-md-12 col-lg-12">a) Ile razy liczba \(\sqrt{256} \) jest większa od liczby \(\sqrt[4]{256} \)?</div><div class="col-xs-12 col-md-12 col-lg-12">b) O ile liczba \(\sqrt[5]{\frac{1}{32}} \) jest większa od liczby \(\sqrt[5]{-32} \)?</div><div class="col-xs-12 col-md-12 col-lg-12">c) Który iloraz jest większy: \(\sqrt{729}:\sqrt[3]{729} \) czy \(\sqrt[3]{729}:\sqrt[6]{729} \)?</div>
+<div class="row odp"></div><button class="butt" id="gliczby6_11" onclick="pokazliczby6_11()">Rozwiązanie</button>
+<script>
+function pokazliczby6_11(){
+var dliczby6_11=document.getElementById("r-liczby6_11");
+var rliczby6_11=document.createElement("img");
+rliczby6_11.setAttribute('src','roz/liczby6_11.png');
+dliczby6_11.appendChild(rliczby6_11);
+var uliczby6_11=document.getElementById("gliczby6_11");
+uliczby6_11.innerHTML="Ukryj rozwiązanie";
+uliczby6_11.setAttribute("onclick","usunliczby6_11()");}
+function usunliczby6_11(){
+var dliczby6_11=document.getElementById("r-liczby6_11");
+dliczby6_11.innerHTML=null;
+var uliczby6_11a=document.getElementById("gliczby6_11");
+uliczby6_11a.innerHTML="Rozwiązanie";
+uliczby6_11a.setAttribute("onclick","pokazliczby6_11()");}
+</script>
+<div id="r-liczby6_11"></div>
+</li>
+<li class="numer" id="liczby6_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wykonaj działania. Wynik zapisz w postaci pierwiastka sześciennego z liczby całkowitej.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt[3]{2}+2\sqrt[3]{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(2\sqrt[3]{3}+3\sqrt[3]{3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt[3]{4}+\sqrt[3]{32} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\sqrt[3]{800}+\sqrt[3]{4}\cdot \sqrt[3]{25} \)</div></div><button class="butt" id="gliczby6_12" onclick="pokazliczby6_12()">Rozwiązanie</button>
+<script>
+function pokazliczby6_12(){
+var dliczby6_12=document.getElementById("r-liczby6_12");
+var rliczby6_12=document.createElement("img");
+rliczby6_12.setAttribute('src','roz/liczby6_12.png');
+dliczby6_12.appendChild(rliczby6_12);
+var uliczby6_12=document.getElementById("gliczby6_12");
+uliczby6_12.innerHTML="Ukryj rozwiązanie";
+uliczby6_12.setAttribute("onclick","usunliczby6_12()");}
+function usunliczby6_12(){
+var dliczby6_12=document.getElementById("r-liczby6_12");
+dliczby6_12.innerHTML=null;
+var uliczby6_12a=document.getElementById("gliczby6_12");
+uliczby6_12a.innerHTML="Rozwiązanie";
+uliczby6_12a.setAttribute("onclick","pokazliczby6_12()");}
+</script>
+<div id="r-liczby6_12"></div>
+</li>
+<li class="numer" id="liczby6_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik przedstaw w postaci ułamka zwykłego nieskracalnego.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\frac{\sqrt[3]{108}+\sqrt[3]{32}}{\sqrt[3]{4000}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\frac{\sqrt[3]{54}}{\sqrt[3]{16}+\sqrt[3]{54}+\sqrt[3]{128}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\frac{\sqrt[3]{16}+\sqrt[3]{54}}{\sqrt[3]{128}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\frac{\sqrt[3]{192}-\sqrt[3]{24}+\sqrt[3]{3}}{\sqrt[3]{81}} \)</div></div><button class="butt" id="gliczby6_13" onclick="pokazliczby6_13()">Rozwiązanie</button>
+<script>
+function pokazliczby6_13(){
+var dliczby6_13=document.getElementById("r-liczby6_13");
+var rliczby6_13=document.createElement("img");
+rliczby6_13.setAttribute('src','roz/liczby6_13.png');
+dliczby6_13.appendChild(rliczby6_13);
+var uliczby6_13=document.getElementById("gliczby6_13");
+uliczby6_13.innerHTML="Ukryj rozwiązanie";
+uliczby6_13.setAttribute("onclick","usunliczby6_13()");}
+function usunliczby6_13(){
+var dliczby6_13=document.getElementById("r-liczby6_13");
+dliczby6_13.innerHTML=null;
+var uliczby6_13a=document.getElementById("gliczby6_13");
+uliczby6_13a.innerHTML="Rozwiązanie";
+uliczby6_13a.setAttribute("onclick","pokazliczby6_13()");}
+</script>
+<div id="r-liczby6_13"></div>
+</li>
+<li class="numer" id="liczby6_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt[7]{32\cdot \sqrt[3]{-64}}+\sqrt[5]{81\cdot \sqrt[3]{-27}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\left (2\sqrt[3]{1\frac{4}{5}}+\sqrt[3]{-8\frac{1}{3}}\right )\cdot \sqrt[3]{-0,12} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\frac{\sqrt[5]{54}\cdot \sqrt[5]{-9}}{\sqrt[5]{-2}}+\frac{\sqrt[5]{6}\cdot \sqrt[5]{-16}}{\sqrt[5]{3}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\left ( 2\sqrt[4]{1250}-3\sqrt[4]{162} \right ):3\sqrt[4]{32} \)</div></div><button class="butt" id="gliczby6_14" onclick="pokazliczby6_14()">Rozwiązanie</button>
+<script>
+function pokazliczby6_14(){
+var dliczby6_14=document.getElementById("r-liczby6_14");
+var rliczby6_14=document.createElement("img");
+rliczby6_14.setAttribute('src','roz/liczby6_14.png');
+dliczby6_14.appendChild(rliczby6_14);
+var uliczby6_14=document.getElementById("gliczby6_14");
+uliczby6_14.innerHTML="Ukryj rozwiązanie";
+uliczby6_14.setAttribute("onclick","usunliczby6_14()");}
+function usunliczby6_14(){
+var dliczby6_14=document.getElementById("r-liczby6_14");
+dliczby6_14.innerHTML=null;
+var uliczby6_14a=document.getElementById("gliczby6_14");
+uliczby6_14a.innerHTML="Rozwiązanie";
+uliczby6_14a.setAttribute("onclick","pokazliczby6_14()");}
+</script>
+<div id="r-liczby6_14"></div>
+</li>
+<li class="numer" id="liczby6_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Kostkę sześcienną wykonano z materiału o gęstości \(750\  kg/m^3 \). Kostka waży \(3,072\  kg \). Ile centymetrów na jej krawędź?</p>
+<div class="row odp"></div><button class="butt" id="gliczby6_15" onclick="pokazliczby6_15()">Rozwiązanie</button>
+<script>
+function pokazliczby6_15(){
+var dliczby6_15=document.getElementById("r-liczby6_15");
+var rliczby6_15=document.createElement("img");
+rliczby6_15.setAttribute('src','roz/liczby6_15.png');
+dliczby6_15.appendChild(rliczby6_15);
+var uliczby6_15=document.getElementById("gliczby6_15");
+uliczby6_15.innerHTML="Ukryj rozwiązanie";
+uliczby6_15.setAttribute("onclick","usunliczby6_15()");}
+function usunliczby6_15(){
+var dliczby6_15=document.getElementById("r-liczby6_15");
+dliczby6_15.innerHTML=null;
+var uliczby6_15a=document.getElementById("gliczby6_15");
+uliczby6_15a.innerHTML="Rozwiązanie";
+uliczby6_15a.setAttribute("onclick","pokazliczby6_15()");}
+</script>
+<div id="r-liczby6_15"></div>
+</li>
+<li class="numer" id="liczby6_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz długość odcinków \(x,\ y,\ z \).</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4" id="l6r1a">
+<script>
+var dliczby6_16a=document.getElementById("l6r1a");
+var rliczby6_16a=document.createElement("img");
+rliczby6_16a.setAttribute('src','l6r1a.png');
+dliczby6_16a.appendChild(rliczby6_16a);
+</script></div>
+<div class="col-xs-12 col-md-6 col-lg-4" id="l6r1b">
+<script>
+var dliczby6_16b=document.getElementById("l6r1b");
+var rliczby6_16b=document.createElement("img");
+rliczby6_16b.setAttribute('src','l6r1b.png');
+dliczby6_16b.appendChild(rliczby6_16b);
+</script></div>
+<div class="col-xs-12 col-md-6 col-lg-4" id="l6r1c">
+<script>
+var dliczby6_16c=document.getElementById("l6r1c");
+var rliczby6_16c=document.createElement("img");
+rliczby6_16c.setAttribute('src','l6r1c.png');
+dliczby6_16c.appendChild(rliczby6_16c);
+</script></div></div><button class="butt" id="gliczby6_16" onclick="pokazliczby6_16()">Rozwiązanie</button>
+<script>
+function pokazliczby6_16(){
+var dliczby6_16=document.getElementById("r-liczby6_16");
+var rliczby6_16=document.createElement("img");
+rliczby6_16.setAttribute('src','roz/liczby6_16.png');
+dliczby6_16.appendChild(rliczby6_16);
+var uliczby6_16=document.getElementById("gliczby6_16");
+uliczby6_16.innerHTML="Ukryj rozwiązanie";
+uliczby6_16.setAttribute("onclick","usunliczby6_16()");}
+function usunliczby6_16(){
+var dliczby6_16=document.getElementById("r-liczby6_16");
+dliczby6_16.innerHTML=null;
+var uliczby6_16a=document.getElementById("gliczby6_16");
+uliczby6_16a.innerHTML="Rozwiązanie";
+uliczby6_16a.setAttribute("onclick","pokazliczby6_16()");}
+</script>
+<div id="r-liczby6_16"></div>
+</li>
+<li class="numer" id="liczby6_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zanjdź liczbę odwrotną do podanej. Zapisz ją w postaci ułamka o mianowniku całkowitym.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt{2} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt[3]{2} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[4]{2} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt[5]{2} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">e) \(2\sqrt{3} \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(2\sqrt[3]{3} \)</div><div class="col-xs-12 col-md-6 col-lg-3">g) \(2\sqrt[4]{3} \)</div><div class="col-xs-12 col-md-6 col-lg-3">h) \(2\sqrt[5]{3} \)</div></div><button class="butt" id="gliczby6_17" onclick="pokazliczby6_17()">Rozwiązanie</button>
+<script>
+function pokazliczby6_17(){
+var dliczby6_17=document.getElementById("r-liczby6_17");
+var rliczby6_17=document.createElement("img");
+rliczby6_17.setAttribute('src','roz/liczby6_17.png');
+dliczby6_17.appendChild(rliczby6_17);
+var uliczby6_17=document.getElementById("gliczby6_17");
+uliczby6_17.innerHTML="Ukryj rozwiązanie";
+uliczby6_17.setAttribute("onclick","usunliczby6_17()");}
+function usunliczby6_17(){
+var dliczby6_17=document.getElementById("r-liczby6_17");
+dliczby6_17.innerHTML=null;
+var uliczby6_17a=document.getElementById("gliczby6_17");
+uliczby6_17a.innerHTML="Rozwiązanie";
+uliczby6_17a.setAttribute("onclick","pokazliczby6_17()");}
+</script>
+<div id="r-liczby6_17"></div>
+</li>
+<li class="numer" id="liczby6_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz ułamek w postaci \(a\sqrt[n]{b} \), gdzie \(a \), \(b \) i \(n \) są liczbami naturalnymi.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{12}{\sqrt[3]{4}} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{3\sqrt[3]{2}}{\sqrt[3]{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{9}{\sqrt[4]{27}} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{2}{\sqrt[5]{8}} \)</div></div><button class="butt" id="gliczby6_18" onclick="pokazliczby6_18()">Rozwiązanie</button>
+<script>
+function pokazliczby6_18(){
+var dliczby6_18=document.getElementById("r-liczby6_18");
+var rliczby6_18=document.createElement("img");
+rliczby6_18.setAttribute('src','roz/liczby6_18.png');
+dliczby6_18.appendChild(rliczby6_18);
+var uliczby6_18=document.getElementById("gliczby6_18");
+uliczby6_18.innerHTML="Ukryj rozwiązanie";
+uliczby6_18.setAttribute("onclick","usunliczby6_18()");}
+function usunliczby6_18(){
+var dliczby6_18=document.getElementById("r-liczby6_18");
+dliczby6_18.innerHTML=null;
+var uliczby6_18a=document.getElementById("gliczby6_18");
+uliczby6_18a.innerHTML="Rozwiązanie";
+uliczby6_18a.setAttribute("onclick","pokazliczby6_18()");}
+</script>
+<div id="r-liczby6_18"></div>
+</li>
+<li class="numer" id="liczby6_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że podana liczba jest wymierna.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt[3]{\sqrt{25}}\cdot \sqrt[3]{25} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{\sqrt[4]{10000}-\sqrt[4]{1}} \)</div></div><button class="butt" id="gliczby6_19" onclick="pokazliczby6_19()">Rozwiązanie</button>
+<script>
+function pokazliczby6_19(){
+var dliczby6_19=document.getElementById("r-liczby6_19");
+var rliczby6_19=document.createElement("img");
+rliczby6_19.setAttribute('src','roz/liczby6_19.png');
+dliczby6_19.appendChild(rliczby6_19);
+var uliczby6_19=document.getElementById("gliczby6_19");
+uliczby6_19.innerHTML="Ukryj rozwiązanie";
+uliczby6_19.setAttribute("onclick","usunliczby6_19()");}
+function usunliczby6_19(){
+var dliczby6_19=document.getElementById("r-liczby6_19");
+dliczby6_19.innerHTML=null;
+var uliczby6_19a=document.getElementById("gliczby6_19");
+uliczby6_19a.innerHTML="Rozwiązanie";
+uliczby6_19a.setAttribute("onclick","pokazliczby6_19()");}
+</script>
+<div id="r-liczby6_19"></div>
+</li>
+<li class="numer" id="liczby6_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz bez pomocu kalkulatora dwie kolejne liczby całkowite, między którymi znajduje się podana liczba.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt[3]{23} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt[3]{-19} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[4]{53} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt[5]{-34} \)</div></div><button class="butt" id="gliczby6_20" onclick="pokazliczby6_20()">Rozwiązanie</button>
+<script>
+function pokazliczby6_20(){
+var dliczby6_20=document.getElementById("r-liczby6_20");
+var rliczby6_20=document.createElement("img");
+rliczby6_20.setAttribute('src','roz/liczby6_20.png');
+dliczby6_20.appendChild(rliczby6_20);
+var uliczby6_20=document.getElementById("gliczby6_20");
+uliczby6_20.innerHTML="Ukryj rozwiązanie";
+uliczby6_20.setAttribute("onclick","usunliczby6_20()");}
+function usunliczby6_20(){
+var dliczby6_20=document.getElementById("r-liczby6_20");
+dliczby6_20.innerHTML=null;
+var uliczby6_20a=document.getElementById("gliczby6_20");
+uliczby6_20a.innerHTML="Rozwiązanie";
+uliczby6_20a.setAttribute("onclick","pokazliczby6_20()");}
+</script>
+<div id="r-liczby6_20"></div>
+</li>
+<li class="numer" id="liczby6_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ile liczb naturalnych \(n \) spełnia warunek \(101 &lt; \sqrt[3]{n} &lt; 102 \)?</p>
+<div class="row odp"></div><button class="butt" id="gliczby6_21" onclick="pokazliczby6_21()">Rozwiązanie</button>
+<script>
+function pokazliczby6_21(){
+var dliczby6_21=document.getElementById("r-liczby6_21");
+var rliczby6_21=document.createElement("img");
+rliczby6_21.setAttribute('src','roz/liczby6_21.png');
+dliczby6_21.appendChild(rliczby6_21);
+var uliczby6_21=document.getElementById("gliczby6_21");
+uliczby6_21.innerHTML="Ukryj rozwiązanie";
+uliczby6_21.setAttribute("onclick","usunliczby6_21()");}
+function usunliczby6_21(){
+var dliczby6_21=document.getElementById("r-liczby6_21");
+dliczby6_21.innerHTML=null;
+var uliczby6_21a=document.getElementById("gliczby6_21");
+uliczby6_21a.innerHTML="Rozwiązanie";
+uliczby6_21a.setAttribute("onclick","pokazliczby6_21()");}
+</script>
+<div id="r-liczby6_21"></div>
+</li>
+<li class="numer" id="liczby6_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\(\frac{(\sqrt[4]{5,0625}+\sqrt[5]{5,0625})-(\sqrt[5]{5,0625}+\sqrt[6]{5,0625})+(\sqrt[6]{5,0625}+\sqrt[4]{5,0625})}{2} \)</div></div><button class="butt" id="gliczby6_22" onclick="pokazliczby6_22()">Rozwiązanie</button>
+<script>
+function pokazliczby6_22(){
+var dliczby6_22=document.getElementById("r-liczby6_22");
+var rliczby6_22=document.createElement("img");
+rliczby6_22.setAttribute('src','roz/liczby6_22.png');
+dliczby6_22.appendChild(rliczby6_22);
+var uliczby6_22=document.getElementById("gliczby6_22");
+uliczby6_22.innerHTML="Ukryj rozwiązanie";
+uliczby6_22.setAttribute("onclick","usunliczby6_22()");}
+function usunliczby6_22(){
+var dliczby6_22=document.getElementById("r-liczby6_22");
+dliczby6_22.innerHTML=null;
+var uliczby6_22a=document.getElementById("gliczby6_22");
+uliczby6_22a.innerHTML="Rozwiązanie";
+uliczby6_22a.setAttribute("onclick","pokazliczby6_22()");}
+</script>
+<div id="r-liczby6_22"></div>
+</li>
+<li class="numer" id="liczby6_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt{0,(4)} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt[3]{0,(296)} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[4]{3\cdot 5,(3)} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt[5]{15\cdot 2,1(3)} \)</div></div><button class="butt" id="gliczby6_23" onclick="pokazliczby6_23()">Rozwiązanie</button>
+<script>
+function pokazliczby6_23(){
+var dliczby6_23=document.getElementById("r-liczby6_23");
+var rliczby6_23=document.createElement("img");
+rliczby6_23.setAttribute('src','roz/liczby6_23.png');
+dliczby6_23.appendChild(rliczby6_23);
+var uliczby6_23=document.getElementById("gliczby6_23");
+uliczby6_23.innerHTML="Ukryj rozwiązanie";
+uliczby6_23.setAttribute("onclick","usunliczby6_23()");}
+function usunliczby6_23(){
+var dliczby6_23=document.getElementById("r-liczby6_23");
+dliczby6_23.innerHTML=null;
+var uliczby6_23a=document.getElementById("gliczby6_23");
+uliczby6_23a.innerHTML="Rozwiązanie";
+uliczby6_23a.setAttribute("onclick","pokazliczby6_23()");}
+</script>
+<div id="r-liczby6_23"></div>
+</li>
+<li class="numer" id="liczby6_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uprość wyrażenie.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5">a) \(\sqrt[3]{-2a^2}(\sqrt[3]{-4a^4}-\sqrt[3]{32a}) \)</div><div class="col-xs-12 col-md-12 col-lg-7">b) \(\sqrt[3]{(-a)^3b}\cdot \sqrt[3]{-b^2} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5">c) \(\sqrt[5]{(-a)^4(-b)}\cdot \sqrt[5]{-ab^4} \)</div><div class="col-xs-12 col-md-12 col-lg-7">d) \(\left (\sqrt[3]{(-a)b^4}+\sqrt[3]{(-a)^4b}\right ):\sqrt[3]{a(-b)} \)</div></div><button class="butt" id="gliczby6_24" onclick="pokazliczby6_24()">Rozwiązanie</button>
+<script>
+function pokazliczby6_24(){
+var dliczby6_24=document.getElementById("r-liczby6_24");
+var rliczby6_24=document.createElement("img");
+rliczby6_24.setAttribute('src','roz/liczby6_24.png');
+dliczby6_24.appendChild(rliczby6_24);
+var uliczby6_24=document.getElementById("gliczby6_24");
+uliczby6_24.innerHTML="Ukryj rozwiązanie";
+uliczby6_24.setAttribute("onclick","usunliczby6_24()");}
+function usunliczby6_24(){
+var dliczby6_24=document.getElementById("r-liczby6_24");
+dliczby6_24.innerHTML=null;
+var uliczby6_24a=document.getElementById("gliczby6_24");
+uliczby6_24a.innerHTML="Rozwiązanie";
+uliczby6_24a.setAttribute("onclick","pokazliczby6_24()");}
+</script>
+<div id="r-liczby6_24"></div>
+</li>
+<li class="numer" id="liczby6_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Średnia geometryczna trzech liczb dodatnich \(a \), \(b \), \(c \) jest równa \(\sqrt[3]{abc} \), a średnia geometryczna dwóch liczb dodatnich \(a \) i \(b \) wyraża się wzorem \(\sqrt{ab} \).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) Sprawdź, czy średnia geometryczna liczb \(\sqrt[3]{2} \), \(4\sqrt[3]{2} \), \(8\sqrt[3]{2} \) jest liczbą wymierną.</div><div class="col-xs-12 col-md-12 col-lg-12">b) Podaj przykład dwóch różnych liczb niewymiernych, których średnia geometryczna jest liczbą wymierną.</div></div><button class="butt" id="gliczby6_25" onclick="pokazliczby6_25()">Rozwiązanie</button>
+<script>
+function pokazliczby6_25(){
+var dliczby6_25=document.getElementById("r-liczby6_25");
+var rliczby6_25=document.createElement("img");
+rliczby6_25.setAttribute('src','roz/liczby6_25.png');
+dliczby6_25.appendChild(rliczby6_25);
+var uliczby6_25=document.getElementById("gliczby6_25");
+uliczby6_25.innerHTML="Ukryj rozwiązanie";
+uliczby6_25.setAttribute("onclick","usunliczby6_25()");}
+function usunliczby6_25(){
+var dliczby6_25=document.getElementById("r-liczby6_25");
+dliczby6_25.innerHTML=null;
+var uliczby6_25a=document.getElementById("gliczby6_25");
+uliczby6_25a.innerHTML="Rozwiązanie";
+uliczby6_25a.setAttribute("onclick","pokazliczby6_25()");}
+</script>
+<div id="r-liczby6_25"></div>
+</li>
+<li class="numer" id="liczby6_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczbę \(a \) spełniającą podany warunek.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\sqrt[3]{a}=-2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\sqrt[3]{-a}=3 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\sqrt[3]{a}=2\sqrt[3]{4} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(\sqrt[4]{a-1}=2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\sqrt[4]{a}=-2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\sqrt[4]{-a}=3 \)</div></div><button class="butt" id="gliczby6_26" onclick="pokazliczby6_26()">Rozwiązanie</button>
+<script>
+function pokazliczby6_26(){
+var dliczby6_26=document.getElementById("r-liczby6_26");
+var rliczby6_26=document.createElement("img");
+rliczby6_26.setAttribute('src','roz/liczby6_26.png');
+dliczby6_26.appendChild(rliczby6_26);
+var uliczby6_26=document.getElementById("gliczby6_26");
+uliczby6_26.innerHTML="Ukryj rozwiązanie";
+uliczby6_26.setAttribute("onclick","usunliczby6_26()");}
+function usunliczby6_26(){
+var dliczby6_26=document.getElementById("r-liczby6_26");
+dliczby6_26.innerHTML=null;
+var uliczby6_26a=document.getElementById("gliczby6_26");
+uliczby6_26a.innerHTML="Rozwiązanie";
+uliczby6_26a.setAttribute("onclick","pokazliczby6_26()");}
+</script>
+<div id="r-liczby6_26"></div>
+</li>
+<li class="numer" id="liczby6_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozwiąż równanie</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt[3]{x-2}=4 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt[3]{x+6}=-3 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt[5]{x}=2 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\sqrt[4]{x+8}=2 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">e) \(\sqrt[4]{3-x}=-2 \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \(\sqrt[6]{250x}=10 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">g) \(\sqrt[7]{1-x^2}=-1 \)</div><div class="col-xs-12 col-md-12 col-lg-6">h) \(\sqrt[8]{x^2-80}=1 \)</div></div><button class="butt" id="gliczby6_27" onclick="pokazliczby6_27()">Rozwiązanie</button>
+<script>
+function pokazliczby6_27(){
+var dliczby6_27=document.getElementById("r-liczby6_27");
+var rliczby6_27=document.createElement("img");
+rliczby6_27.setAttribute('src','roz/liczby6_27.png');
+dliczby6_27.appendChild(rliczby6_27);
+var uliczby6_27=document.getElementById("gliczby6_27");
+uliczby6_27.innerHTML="Ukryj rozwiązanie";
+uliczby6_27.setAttribute("onclick","usunliczby6_27()");}
+function usunliczby6_27(){
+var dliczby6_27=document.getElementById("r-liczby6_27");
+dliczby6_27.innerHTML=null;
+var uliczby6_27a=document.getElementById("gliczby6_27");
+uliczby6_27a.innerHTML="Rozwiązanie";
+uliczby6_27a.setAttribute("onclick","pokazliczby6_27()");}
+</script>
+<div id="r-liczby6_27"></div></li>
+<li class="numer" id="liczby6_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj liczbę \(n \), dla której:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt[n]{125}=5 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt[n]{-\frac{1}{8}}=-\frac{1}{2} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt[n]{256}=4 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\sqrt[n]{256}=16 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">e) \(\sqrt[n]{256}=2 \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \(\sqrt[n]{0,000001}=0,1 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">g) \(\sqrt[n]{0,0016}=0,2 \)</div><div class="col-xs-12 col-md-12 col-lg-6">h) \(\sqrt[n]{-\frac{1}{32}}=-\frac{1}{2} \)</div></div><button class="butt" id="gliczby6_28" onclick="pokazliczby6_28()">Rozwiązanie</button>
+<script>
+function pokazliczby6_28(){
+var dliczby6_28=document.getElementById("r-liczby6_28");
+var rliczby6_28=document.createElement("img");
+rliczby6_28.setAttribute('src','roz/liczby6_28.png');
+dliczby6_28.appendChild(rliczby6_28);
+var uliczby6_28=document.getElementById("gliczby6_28");
+uliczby6_28.innerHTML="Ukryj rozwiązanie";
+uliczby6_28.setAttribute("onclick","usunliczby6_28()");}
+function usunliczby6_28(){
+var dliczby6_28=document.getElementById("r-liczby6_28");
+dliczby6_28.innerHTML=null;
+var uliczby6_28a=document.getElementById("gliczby6_28");
+uliczby6_28a.innerHTML="Rozwiązanie";
+uliczby6_28a.setAttribute("onclick","pokazliczby6_28()");}
+</script>
+<div id="r-liczby6_28"></div>
+</li>
+<li class="numer" id="liczby6_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik przedstaw w postaci ułamka, którego mianownik jest liczbą naturalną.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\frac{3}{2\sqrt[3]{4}}+\frac{6}{5\sqrt[3]{4}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\frac{7}{\sqrt[3]{2}}+\frac{3}{\sqrt[3]{4}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\frac{0,5\sqrt[3]{2}}{\sqrt[3]{4}}+\frac{2,5}{\sqrt[3]{2}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(6\sqrt[3]{2}+\frac{3}{\sqrt[3]{4}} \)</div></div><button class="butt" id="gliczby6_29" onclick="pokazliczby6_29()">Rozwiązanie</button>
+<script>
+function pokazliczby6_29(){
+var dliczby6_29=document.getElementById("r-liczby6_29");
+var rliczby6_29=document.createElement("img");
+rliczby6_29.setAttribute('src','roz/liczby6_29.png');
+dliczby6_29.appendChild(rliczby6_29);
+var uliczby6_29=document.getElementById("gliczby6_29");
+uliczby6_29.innerHTML="Ukryj rozwiązanie";
+uliczby6_29.setAttribute("onclick","usunliczby6_29()");}
+function usunliczby6_29(){
+var dliczby6_29=document.getElementById("r-liczby6_29");
+dliczby6_29.innerHTML=null;
+var uliczby6_29a=document.getElementById("gliczby6_29");
+uliczby6_29a.innerHTML="Rozwiązanie";
+uliczby6_29a.setAttribute("onclick","pokazliczby6_29()");}
+</script>
+<div id="r-liczby6_29"></div>
+</li>
+<li class="numer" id="liczby6_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt[19]{-1}-\sqrt[17]{-1}+\sqrt[15]{-1}-\sqrt[13]{-1}+_{\cdots} +\sqrt[5]{-1}-(-1) \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) \(99\sqrt[99]{-1}-97\sqrt[97]{-1}+95\sqrt[95]{-1}-93\sqrt[93]{-1}+_{\cdots} -5\sqrt[5]{-1}+3\sqrt[3]{-1}-(-1) \)</div></div><button class="butt" id="gliczby6_30" onclick="pokazliczby6_30()">Rozwiązanie</button>
+<script>
+function pokazliczby6_30(){
+var dliczby6_30=document.getElementById("r-liczby6_30");
+var rliczby6_30=document.createElement("img");
+rliczby6_30.setAttribute('src','roz/liczby6_30.png');
+dliczby6_30.appendChild(rliczby6_30);
+var uliczby6_30=document.getElementById("gliczby6_30");
+uliczby6_30.innerHTML="Ukryj rozwiązanie";
+uliczby6_30.setAttribute("onclick","usunliczby6_30()");}
+function usunliczby6_30(){
+var dliczby6_30=document.getElementById("r-liczby6_30");
+dliczby6_30.innerHTML=null;
+var uliczby6_30a=document.getElementById("gliczby6_30");
+uliczby6_30a.innerHTML="Rozwiązanie";
+uliczby6_30a.setAttribute("onclick","pokazliczby6_30()");}
+</script>
+<div id="r-liczby6_30"></div>
+</li>
+<li class="numer" id="liczby6_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">\(\sqrt{100}+\sqrt[3]{100}+\sqrt[4]{100}+\sqrt[5]{100}+\sqrt[6]{100}+\sqrt[7]{100}+\sqrt[8]{100}+\sqrt[9]{100}+\sqrt[10]{100}&lt;33 \)</div></div><button class="butt" id="gliczby6_31" onclick="pokazliczby6_31()">Rozwiązanie</button>
+<script>
+function pokazliczby6_31(){
+var dliczby6_31=document.getElementById("r-liczby6_31");
+var rliczby6_31=document.createElement("img");
+rliczby6_31.setAttribute('src','roz/liczby6_31.png');
+dliczby6_31.appendChild(rliczby6_31);
+var uliczby6_31=document.getElementById("gliczby6_31");
+uliczby6_31.innerHTML="Ukryj rozwiązanie";
+uliczby6_31.setAttribute("onclick","usunliczby6_31()");}
+function usunliczby6_31(){
+var dliczby6_31=document.getElementById("r-liczby6_31");
+dliczby6_31.innerHTML=null;
+var uliczby6_31a=document.getElementById("gliczby6_31");
+uliczby6_31a.innerHTML="Rozwiązanie";
+uliczby6_31a.setAttribute("onclick","pokazliczby6_31()");}
+</script>
+<div id="r-liczby6_31"></div>
+</li>
+
+
+
+
+
+
+
+
+						  
+						  
+</ol>
+</div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

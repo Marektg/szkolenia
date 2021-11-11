@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Notacja wykładnicza</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+					<h3>Przydatne linki</h3>
+						<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+
+					<h3><a href="../srednia.html">Szkoła średnia</a></h3>
+						<ul class="nav nav-pills nav-stacked">
+						  <li class="fiz nw"><h4>Fizyka</h4>
+							<ul class="list-group fiz">
+							  <li class="list-group-item">Mechanika</li>
+							  <li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+							  <li class="list-group-item">Grawitacja i elementy astronomii</li>
+							  <li class="list-group-item">Drgania</li>
+							  <li class="list-group-item">Termodynamika</li>
+							  <li class="list-group-item">Elektrostatyka</li>
+							  <li class="list-group-item">Prąd elektryczny</li>
+							  <li class="list-group-item">Magnetyzm</li>
+							  <li class="list-group-item">Fale i optyka</li>
+							  <li class="list-group-item">Fizyka atomowa</li>
+							  <li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+							  <li class="list-group-item">Fizyka jądrowa</li>
+							</ul>
+						  </li>
+						  <li><h4><a href="matematyka.html">Matematyka</a></h4>
+						    <ul class="list-group mat">
+							  <li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+							  <li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+							  <li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+							  <li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+							  <li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+							  <li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+							  <li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+							  <li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+							  <li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+							  <li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li>
+							  <li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+							  <li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+							  <li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+							  <li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+							  <li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+							  <li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+							  <li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+							  <li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+							</ul>
+						  </li>
+						  <li class="chem"><h4>Chemia</h4>
+						    <ul class="list-group chem">
+							  <li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+							  <li class="list-group-item">Budowa atomu</li>
+							  <li class="list-group-item">Wiązania chemiczne</li>
+							  <li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+							  <li class="list-group-item">Kinetyka i statyka chemiczna</li>
+							  <li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+							  <li class="list-group-item">Roztwory</li>
+							  <li class="list-group-item">Reakcje w roztworach wodnych</li>
+							  <li class="list-group-item">Systematyka związków nieorganicznych</li>
+							  <li class="list-group-item">Reakcje utleniania i redukcji</li>
+							  <li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+							  <li class="list-group-item">Metale, niemetale i ich związki</li>
+							  <li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+							  <li class="list-group-item">Wstęp do chemii organicznej</li>
+							  <li class="list-group-item">Węglowodory</li>
+							  <li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+							  <li class="list-group-item">Związki karbonylowe</li>
+							  <li class="list-group-item">Kwasy karboksylowe</li>
+							  <li class="list-group-item">Estry i tłuszcze</li>
+							  <li class="list-group-item">Związki organiczne zawierające azot</li>
+							  <li class="list-group-item">Białka</li>
+							  <li class="list-group-item">Cukry</li>
+							</ul>
+						  </li>
+						</ul>
+				</div>
+				<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+				  <div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174; \)</div>
+				  <div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div>
+				  <div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517; \)</div>
+				    <a href="liczby.html" class="tytul-link"> <p class="podmenu1 tytul"><b>Liczby rzeczywiste</b> </p></a>
+				  <ul class="podmenu1">
+				    <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+					<li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+					<li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+					<li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+					<li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+					<li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+					<li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+					<li class="podmenu" id="aktualne"><a href="liczby8.html">Notacja wykładnicza</a></li>
+					<li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+					<li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+					<li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+					<li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+					<li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+					<li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+				  </ul>
+	
+	<p class="rodzajzad">Notacja wykładnicza</p>
+	
+	<ol class="list-group powt">
+	  <li class="numer" id="liczby8_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz podaną liczbę w postaci potęgi o podstawie \(10\).</p>
+	    
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-6">a) jedna milionowa</div>
+		  <div class="col-xs-12 col-md-6 col-lg-6">b) jeden miliard</div>
+		</div>
+		
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-6">c) jedna dziesięciotysięczna</div>
+		  <div class="col-xs-12 col-md-6 col-lg-6">d) jeden kwadrylion</div>
+		</div>
+		
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-6">e) jedna biliardowa</div>
+		  <div class="col-xs-12 col-md-6 col-lg-6">f) sto tysięcy</div>
+		</div>
+		
+		<button class="butt" id="gliczby8_1" onclick="pokazliczby8_1()">Rozwiązanie</button>
+
+			<script>
+			  function pokazliczby8_1(){
+				var dliczby8_1=document.getElementById("r-liczby8_1");
+				var rliczby8_1=document.createElement("img");
+				  rliczby8_1.setAttribute('src','roz/liczby8_1.png');
+				  rliczby8_1.setAttribute("width","95%");
+				  rliczby8_1.setAttribute("height","auto");
+				  dliczby8_1.appendChild(rliczby8_1);
+				var uliczby8_1=document.getElementById("gliczby8_1");
+				  uliczby8_1.innerHTML="Ukryj rozwiązanie";
+				  uliczby8_1.setAttribute("onclick","usunliczby8_1()");}
+				  
+			  function usunliczby8_1(){
+				var dliczby8_1=document.getElementById("r-liczby8_1");
+				  dliczby8_1.innerHTML=null;
+				var uliczby8_1a=document.getElementById("gliczby8_1");
+				  uliczby8_1a.innerHTML="Rozwiązanie";
+				  uliczby8_1a.setAttribute("onclick","pokazliczby8_1()");}
+				  
+			</script>
+
+        <div id="r-liczby8_1"></div>
+      </li>
+	  <li class="numer" id="liczby8_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz podaną liczbę w notacji wykładniczej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) \(12\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) \(123\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) \(72000\)</div>
+		</div>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">d) \(25534000\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">e) \(0,92\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">f) \(0,0006\)</div>
+		</div>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">g) \(31,253\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">h) \(56,25\cdot 10^5\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">i) \(0,73\cdot 10^7\)</div>
+		</div>
+		<button class="butt" id="gliczby8_2" onclick="pokazliczby8_2()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_2(){
+			var dliczby8_2=document.getElementById("r-liczby8_2");
+			var rliczby8_2=document.createElement("img");
+			rliczby8_2.setAttribute('src','roz/liczby8_2.png');
+			rliczby8_2.setAttribute("width","95%");
+			rliczby8_2.setAttribute("height","auto");
+			dliczby8_2.appendChild(rliczby8_2);
+			var uliczby8_2=document.getElementById("gliczby8_2");
+			uliczby8_2.innerHTML="Ukryj rozwiązanie";
+			uliczby8_2.setAttribute("onclick","usunliczby8_2()");}
+			function usunliczby8_2(){
+			var dliczby8_2=document.getElementById("r-liczby8_2");
+			dliczby8_2.innerHTML=null;
+			var uliczby8_2a=document.getElementById("gliczby8_2");
+			uliczby8_2a.innerHTML="Rozwiązanie";
+			uliczby8_2a.setAttribute("onclick","pokazliczby8_2()");}
+			</script>
+	    <div id="r-liczby8_2"></div>
+	  </li>
+	  <li class="numer" id="liczby8_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz w notacji wykładniczej, ile sekund ma:</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) doba</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) tydzień</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) rok</div>
+		</div>
+		<button class="butt" id="gliczby8_3" onclick="pokazliczby8_3()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_3(){
+			var dliczby8_3=document.getElementById("r-liczby8_3");
+			var rliczby8_3=document.createElement("img");
+			rliczby8_3.setAttribute('src','roz/liczby8_3.png');
+			rliczby8_3.setAttribute("width","95%");
+			rliczby8_3.setAttribute("height","auto");
+			dliczby8_3.appendChild(rliczby8_3);
+			var uliczby8_3=document.getElementById("gliczby8_3");
+			uliczby8_3.innerHTML="Ukryj rozwiązanie";
+			uliczby8_3.setAttribute("onclick","usunliczby8_3()");}
+			function usunliczby8_3(){
+			var dliczby8_3=document.getElementById("r-liczby8_3");
+			dliczby8_3.innerHTML=null;
+			var uliczby8_3a=document.getElementById("gliczby8_3");
+			uliczby8_3a.innerHTML="Rozwiązanie";
+			uliczby8_3a.setAttribute("onclick","pokazliczby8_3()");}
+			</script>
+		<div id="r-liczby8_3"></div>
+	  </li>
+	  <li class="numer" id="liczby8_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz podaną liczbę w notacji wykładniczej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) \(210\cdot 10^2\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) \(4300\cdot 10^4\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) \(56,25\cdot 10^5\)</div>
+		</div>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">d) \(0,73\cdot 10^7\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">e) \(0,081\cdot 10^{-4}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">f) \(0,0145\cdot 10^{-8}\)</div>
+		</div>
+		<button class="butt" id="gliczby8_4" onclick="pokazliczby8_4()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_4(){
+			var dliczby8_4=document.getElementById("r-liczby8_4");
+			var rliczby8_4=document.createElement("img");
+			rliczby8_4.setAttribute('src','roz/liczby8_4.png');
+			rliczby8_4.setAttribute("width","95%");
+			rliczby8_4.setAttribute("height","auto");
+			dliczby8_4.appendChild(rliczby8_4);
+			var uliczby8_4=document.getElementById("gliczby8_4");
+			uliczby8_4.innerHTML="Ukryj rozwiązanie";
+			uliczby8_4.setAttribute("onclick","usunliczby8_4()");}
+			function usunliczby8_4(){
+			var dliczby8_4=document.getElementById("r-liczby8_4");
+			dliczby8_4.innerHTML=null;
+			var uliczby8_4a=document.getElementById("gliczby8_4");
+			uliczby8_4a.innerHTML="Rozwiązanie";
+			uliczby8_4a.setAttribute("onclick","pokazliczby8_4()");}
+			</script>
+		<div id="r-liczby8_4"></div>
+	  </li>
+	  <li class="numer" id="liczby8_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę w postaci dziesiętnej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) \(5\cdot 10^{-3}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) \(3,02\cdot 10^5\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) \(7,31\cdot 10^{-4}\)</div>
+		</div>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">d) \(1,01\cdot 10^{-2}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">e) \(1,256\cdot 10^{-5}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">f) \(9,011\cdot 10^6\)</div>
+		</div>
+		<button class="butt" id="gliczby8_5" onclick="pokazliczby8_5()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_5(){
+			var dliczby8_5=document.getElementById("r-liczby8_5");
+			var rliczby8_5=document.createElement("img");
+			rliczby8_5.setAttribute('src','roz/liczby8_5.png');
+			rliczby8_5.setAttribute("width","95%");
+			rliczby8_5.setAttribute("height","auto");
+			dliczby8_5.appendChild(rliczby8_5);
+			var uliczby8_5=document.getElementById("gliczby8_5");
+			uliczby8_5.innerHTML="Ukryj rozwiązanie";
+			uliczby8_5.setAttribute("onclick","usunliczby8_5()");}
+			function usunliczby8_5(){
+			var dliczby8_5=document.getElementById("r-liczby8_5");
+			dliczby8_5.innerHTML=null;
+			var uliczby8_5a=document.getElementById("gliczby8_5");
+			uliczby8_5a.innerHTML="Rozwiązanie";
+			uliczby8_5a.setAttribute("onclick","pokazliczby8_5()");}
+			</script>
+		<div id="r-liczby8_5"></div>
+	  </li>
+	  <li class="numer" id="liczby8_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik zapisz w notacji wykładniczej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{6,3\cdot (2,1\cdot 10^7)}{4,5\cdot 10^3}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{(3,5\cdot 10^{-3})\cdot (1,3\cdot 10^6)}{5\cdot 10^{-1}}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{(1,8\cdot 10^{12})\cdot (6\cdot 10^5)}{(1,2\cdot 10^4)\cdot (4\cdot 10^7)}\)</div>
+		</div>
+		<button class="butt" id="gliczby8_6" onclick="pokazliczby8_6()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_6(){
+			var dliczby8_6=document.getElementById("r-liczby8_6");
+			var rliczby8_6=document.createElement("img");
+			rliczby8_6.setAttribute('src','roz/liczby8_6.png');
+			rliczby8_6.setAttribute("width","95%");
+			rliczby8_6.setAttribute("height","auto");
+			dliczby8_6.appendChild(rliczby8_6);
+			var uliczby8_6=document.getElementById("gliczby8_6");
+			uliczby8_6.innerHTML="Ukryj rozwiązanie";
+			uliczby8_6.setAttribute("onclick","usunliczby8_6()");}
+			function usunliczby8_6(){
+			var dliczby8_6=document.getElementById("r-liczby8_6");
+			dliczby8_6.innerHTML=null;
+			var uliczby8_6a=document.getElementById("gliczby8_6");
+			uliczby8_6a.innerHTML="Rozwiązanie";
+			uliczby8_6a.setAttribute("onclick","pokazliczby8_6()");}
+			</script>
+		<div id="r-liczby8_6"></div>
+	  </li>
+	  <li class="numer" id="liczby8_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik zapisz w notacji wykładniczej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-6">a) \(7\cdot 10^{10}+11\cdot 10^8\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-6">b) \(0,3\cdot 10^4+1,4\cdot 10^5\)</div>
+		</div>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-6">c) \(6,2\cdot 10^{-3}-9\cdot 10^{-4}\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-6">d) \(2,5\cdot 10^{-3}-45\cdot 10^{-5}\)</div>
+		</div>
+		<button class="butt" id="gliczby8_7" onclick="pokazliczby8_7()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_7(){
+			var dliczby8_7=document.getElementById("r-liczby8_7");
+			var rliczby8_7=document.createElement("img");
+			rliczby8_7.setAttribute('src','roz/liczby8_7.png');
+			rliczby8_7.setAttribute("width","95%");
+			rliczby8_7.setAttribute("height","auto");
+			dliczby8_7.appendChild(rliczby8_7);
+			var uliczby8_7=document.getElementById("gliczby8_7");
+			uliczby8_7.innerHTML="Ukryj rozwiązanie";
+			uliczby8_7.setAttribute("onclick","usunliczby8_7()");}
+			function usunliczby8_7(){
+			var dliczby8_7=document.getElementById("r-liczby8_7");
+			dliczby8_7.innerHTML=null;
+			var uliczby8_7a=document.getElementById("gliczby8_7");
+			uliczby8_7a.innerHTML="Rozwiązanie";
+			uliczby8_7a.setAttribute("onclick","pokazliczby8_7()");}
+			</script>
+		<div id="r-liczby8_7"></div>
+	  </li>
+	  <li class="numer" id="liczby8_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik podaj w notacji wykładniczej.</p>
+	    <div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-4">a) \(7000000^3\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">b) \(0,0003^5\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-4">c) \(4000^{-2}\)</div>
+		</div>
+		<button class="butt" id="gliczby8_8" onclick="pokazliczby8_8()">Rozwiązanie</button>
+			<script>
+			function pokazliczby8_8(){
+			var dliczby8_8=document.getElementById("r-liczby8_8");
+			var rliczby8_8=document.createElement("img");
+			rliczby8_8.setAttribute('src','roz/liczby8_8.png');
+			rliczby8_8.setAttribute("width","95%");
+			rliczby8_8.setAttribute("height","auto");
+			dliczby8_8.appendChild(rliczby8_8);
+			var uliczby8_8=document.getElementById("gliczby8_8");
+			uliczby8_8.innerHTML="Ukryj rozwiązanie";
+			uliczby8_8.setAttribute("onclick","usunliczby8_8()");}
+			function usunliczby8_8(){
+			var dliczby8_8=document.getElementById("r-liczby8_8");
+			dliczby8_8.innerHTML=null;
+			var uliczby8_8a=document.getElementById("gliczby8_8");
+			uliczby8_8a.innerHTML="Rozwiązanie";
+			uliczby8_8a.setAttribute("onclick","pokazliczby8_8()");}
+			</script>
+		<div id="r-liczby8_8"></div>
+	  </li>
+	  <li class="numer" id="liczby8_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyraź podaną powierzchnię w metrach kwadratowych. Zastosuj notację wykładniczą.</p>
+		<div class="row odp">
+		  <div class="col-xs-12 col-md-6 col-lg-3">a) \(19\ km^2\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-3">b) \(30\ cm^2\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-3">c) \(42\ mm^2\)</div>
+		  <div class="col-xs-12 col-md-6 col-lg-3">d) \(0,25\ ha\)</div>
+		</div>
+		<button class="butt" id="gliczby8_9" onclick="pokazliczby8_9()">Rozwiązanie</button>
+			<script>
+			pokaz(liczby8_9)(){
+			var dliczby8_9=document.getElementById("r-liczby8_9");
+			var rliczby8_9=document.createElement("img");
+			rliczby8_9.setAttribute('src','roz/liczby8_9.png');
+			rliczby8_9.setAttribute("width","95%");
+			rliczby8_9.setAttribute("height","auto");
+			dliczby8_9.appendChild(rliczby8_9);
+			var uliczby8_9=document.getElementById("gliczby8_9");
+			uliczby8_9.innerHTML="Ukryj rozwiązanie";
+			uliczby8_9.setAttribute("onclick","usunliczby8_9()");}
+			function usunliczby8_9(){
+			var dliczby8_9=document.getElementById("r-liczby8_9");
+			dliczby8_9.innerHTML=null;
+			var uliczby8_9a=document.getElementById("gliczby8_9");
+			uliczby8_9a.innerHTML="Rozwiązanie";
+			uliczby8_9a.setAttribute("onclick","pokazliczby8_9()");}
+			</script>
+		<div id="r-liczby8_9"></div>
+</li>
+<li class="numer" id="liczby8_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Określ, która z liczb jest większa, a która mniejsza.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(a=8,0312\cdot 10^7\), \(b=1,094\cdot 10^{20}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) \(a=2,513\cdot 10^{33}\), \(b=8,1\cdot 10^{32}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">c) \(a=2,03\cdot 10^{-52}\), \(b=1,21\cdot 10^{-51}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">d) \(a=1,23\cdot 10^{13}\), \(b=2,54\cdot 10^{13}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">e) \(a=-1,0371\cdot 10^3\), \(b=-3,38\cdot 10^4\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">f) \(a=-1,0013\cdot 10^{-8}\), \(b=-1,0014\cdot 10^{-8}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">g) \(a=(2,8\cdot 10^{-3})(5\cdot 10^{-2})\), \(b=0,1^{11}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">h) \(a=\frac{0,54\cdot 10^9}{6\cdot 10^{-2}}\), \(b=10^{10}\)</div></div><button class="butt" id="gliczby8_10" onclick="pokazliczby8_10()">Rozwiązanie</button>
+<script>
+function pokazliczby8_10(){
+var dliczby8_10=document.getElementById("r-liczby8_10");
+var rliczby8_10=document.createElement("img");
+rliczby8_10.setAttribute('src','roz/liczby8_10.png');
+rliczby8_10.setAttribute("width","95%");
+rliczby8_10.setAttribute("height","auto");
+dliczby8_10.appendChild(rliczby8_10);
+var uliczby8_10=document.getElementById("gliczby8_10");
+uliczby8_10.innerHTML="Ukryj rozwiązanie";
+uliczby8_10.setAttribute("onclick","usunliczby8_10()");}
+function usunliczby8_10(){
+var dliczby8_10=document.getElementById("r-liczby8_10");
+dliczby8_10.innerHTML=null;
+var uliczby8_10a=document.getElementById("gliczby8_10");
+uliczby8_10a.innerHTML="Rozwiązanie";
+uliczby8_10a.setAttribute("onclick","pokazliczby8_10()");}
+</script>
+<div id="r-liczby8_10"></div>
+</li>
+<li class="numer" id="liczby8_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dane są liczby \(a=3000000\) i \(b=0,000002\). Zapisz je w notacji wykładniczej. Oblicz wartość podanego wyrażenia. Wynik przedstaw w notacji wykładniczej.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(a\cdot b\)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(a\cdot b^2\)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{a}{b}\)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{a^2}{b^3}\)</div></div><button class="butt" id="gliczby8_11" onclick="pokazliczby8_11()">Rozwiązanie</button>
+<script>
+function pokazliczby8_11(){
+var dliczby8_11=document.getElementById("r-liczby8_11");
+var rliczby8_11=document.createElement("img");
+rliczby8_11.setAttribute('src','roz/liczby8_11.png');
+rliczby8_11.setAttribute("width","95%");
+rliczby8_11.setAttribute("height","auto");
+dliczby8_11.appendChild(rliczby8_11);
+var uliczby8_11=document.getElementById("gliczby8_11");
+uliczby8_11.innerHTML="Ukryj rozwiązanie";
+uliczby8_11.setAttribute("onclick","usunliczby8_11()");}
+function usunliczby8_11(){
+var dliczby8_11=document.getElementById("r-liczby8_11");
+dliczby8_11.innerHTML=null;
+var uliczby8_11a=document.getElementById("gliczby8_11");
+uliczby8_11a.innerHTML="Rozwiązanie";
+uliczby8_11a.setAttribute("onclick","pokazliczby8_11()");}
+</script>
+<div id="r-liczby8_11"></div>
+</li>
+<li class="numer" id="liczby8_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyraź podaną wartość w jednostce zapisanej w nawiasie. Zastosuj notację wykładniczą.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(6,7\cdot 10^8\) m, \([km]\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(7,82\cdot 10^{-8}\) kg, \([g]\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(2,35\cdot 10^6\) \(m^2\), \([ha]\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(22,1\cdot 10^{-3}\) \(cm^3\), \([l]\)</div></div><button class="butt" id="gliczby8_12" onclick="pokazliczby8_12()">Rozwiązanie</button>
+<script>
+function pokazliczby8_12(){
+var dliczby8_12=document.getElementById("r-liczby8_12");
+var rliczby8_12=document.createElement("img");
+rliczby8_12.setAttribute('src','roz/liczby8_12.png');
+rliczby8_12.setAttribute("width","95%");
+rliczby8_12.setAttribute("height","auto");
+dliczby8_12.appendChild(rliczby8_12);
+var uliczby8_12=document.getElementById("gliczby8_12");
+uliczby8_12.innerHTML="Ukryj rozwiązanie";
+uliczby8_12.setAttribute("onclick","usunliczby8_12()");}
+function usunliczby8_12(){
+var dliczby8_12=document.getElementById("r-liczby8_12");
+dliczby8_12.innerHTML=null;
+var uliczby8_12a=document.getElementById("gliczby8_12");
+uliczby8_12a.innerHTML="Rozwiązanie";
+uliczby8_12a.setAttribute("onclick","pokazliczby8_12()");}
+</script>
+<div id="r-liczby8_12"></div>
+</li>
+<li class="numer" id="liczby8_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyraź prędkość \(360\ \frac{km}{h}\) w podanej jednostce. Zastosuj notację wykładniczą.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{m}{h}\)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{m}{min}\)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{cm}{s}\)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{m}{s}\)</div></div><button class="butt" id="gliczby8_13" onclick="pokazliczby8_13()">Rozwiązanie</button>
+<script>
+function pokazliczby8_13(){
+var dliczby8_13=document.getElementById("r-liczby8_13");
+var rliczby8_13=document.createElement("img");
+rliczby8_13.setAttribute('src','roz/liczby8_13.png');
+rliczby8_13.setAttribute("width","95%");
+rliczby8_13.setAttribute("height","auto");
+dliczby8_13.appendChild(rliczby8_13);
+var uliczby8_13=document.getElementById("gliczby8_13");
+uliczby8_13.innerHTML="Ukryj rozwiązanie";
+uliczby8_13.setAttribute("onclick","usunliczby8_13()");}
+function usunliczby8_13(){
+var dliczby8_13=document.getElementById("r-liczby8_13");
+dliczby8_13.innerHTML=null;
+var uliczby8_13a=document.getElementById("gliczby8_13");
+uliczby8_13a.innerHTML="Rozwiązanie";
+uliczby8_13a.setAttribute("onclick","pokazliczby8_13()");}
+</script>
+<div id="r-liczby8_13"></div>
+</li>
+<li class="numer" id="liczby8_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj liczbę:</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(2\) razy większą od \(4,3\cdot 10^6\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(3\) razy większą od \(2,5\cdot 10^{-4}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(4\) razy mniejszą od \(8,5\cdot 10^{10}\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(5\) razy mniejszą od \(4,8\cdot 10^{-8}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">e) \(6\) razy większą od \(2,1\cdot 10^5\)</div><div class="col-xs-12 col-md-6 col-lg-6">f) \(7\) razy mniejszą od \(1,4\cdot 10^{-14}\)</div></div><button class="butt" id="gliczby8_14" onclick="pokazliczby8_14()">Rozwiązanie</button>
+<script>
+function pokazliczby8_14(){
+var dliczby8_14=document.getElementById("r-liczby8_14");
+var rliczby8_14=document.createElement("img");
+rliczby8_14.setAttribute('src','roz/liczby8_14.png');
+rliczby8_14.setAttribute("width","95%");
+rliczby8_14.setAttribute("height","auto");
+dliczby8_14.appendChild(rliczby8_14);
+var uliczby8_14=document.getElementById("gliczby8_14");
+uliczby8_14.innerHTML="Ukryj rozwiązanie";
+uliczby8_14.setAttribute("onclick","usunliczby8_14()");}
+function usunliczby8_14(){
+var dliczby8_14=document.getElementById("r-liczby8_14");
+dliczby8_14.innerHTML=null;
+var uliczby8_14a=document.getElementById("gliczby8_14");
+uliczby8_14a.innerHTML="Rozwiązanie";
+uliczby8_14a.setAttribute("onclick","pokazliczby8_14()");}
+</script>
+<div id="r-liczby8_14"></div>
+</li>
+<li class="numer" id="liczby8_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj, ile cyfr ma zapis dziesiętny wartości wyrażenia.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(5,6\cdot 10^{15}+2,1\cdot 10^{15}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(6,4\cdot 10^9+5,7\cdot 10^7\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(8,26\cdot 10^{14}-2,95\cdot 10^{14}\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(5,67\cdot 10^8-8,22\cdot 10^7\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">e) \(7,28\cdot 10^{11}-7,25\cdot 10^{11}\)</div><div class="col-xs-12 col-md-6 col-lg-6">f) \(1,01\cdot 10^{12}-9,99\cdot 10^{11}\)</div></div><button class="butt" id="gliczby8_15" onclick="pokazliczby8_15()">Rozwiązanie</button>
+<script>
+function pokazliczby8_15(){
+var dliczby8_15=document.getElementById("r-liczby8_15");
+var rliczby8_15=document.createElement("img");
+rliczby8_15.setAttribute('src','roz/liczby8_15.png');
+rliczby8_15.setAttribute("width","95%");
+rliczby8_15.setAttribute("height","auto");
+dliczby8_15.appendChild(rliczby8_15);
+var uliczby8_15=document.getElementById("gliczby8_15");
+uliczby8_15.innerHTML="Ukryj rozwiązanie";
+uliczby8_15.setAttribute("onclick","usunliczby8_15()");}
+function usunliczby8_15(){
+var dliczby8_15=document.getElementById("r-liczby8_15");
+dliczby8_15.innerHTML=null;
+var uliczby8_15a=document.getElementById("gliczby8_15");
+uliczby8_15a.innerHTML="Rozwiązanie";
+uliczby8_15a.setAttribute("onclick","pokazliczby8_15()");}
+</script>
+<div id="r-liczby8_15"></div>
+</li>
+<li class="numer" id="liczby8_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczbę \(x\), dla której wyrażenia \(A\) i \(B\) przyjmują tę samą wartość.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">\(A=(8,1\cdot 10^{11})x+7,84\cdot 10^{10}\)</div><div class="col-xs-12 col-md-6 col-lg-6">\(B=8\cdot 10^{10}-(5,44\cdot 10^{12})x\)</div></div><button class="butt" id="gliczby8_16" onclick="pokazliczby8_16()">Rozwiązanie</button>
+<script>
+function pokazliczby8_16(){
+var dliczby8_16=document.getElementById("r-liczby8_16");
+var rliczby8_16=document.createElement("img");
+rliczby8_16.setAttribute('src','roz/liczby8_16.png');
+rliczby8_16.setAttribute("width","95%");
+rliczby8_16.setAttribute("height","auto");
+dliczby8_16.appendChild(rliczby8_16);
+var uliczby8_16=document.getElementById("gliczby8_16");
+uliczby8_16.innerHTML="Ukryj rozwiązanie";
+uliczby8_16.setAttribute("onclick","usunliczby8_16()");}
+function usunliczby8_16(){
+var dliczby8_16=document.getElementById("r-liczby8_16");
+dliczby8_16.innerHTML=null;
+var uliczby8_16a=document.getElementById("gliczby8_16");
+uliczby8_16a.innerHTML="Rozwiązanie";
+uliczby8_16a.setAttribute("onclick","pokazliczby8_16()");}
+</script>
+<div id="r-liczby8_16"></div>
+</li>
+<li class="numer" id="liczby8_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przyjmijmy za Archimedesem, że w \(1\ mm^3\) mieści się \(80000\) ziarenek drobnego piasku. Ile ziarenek takiego pisaku zmieści się w sześciennym pudełku o krawędzi \(10\ cm\)? Odpowiedź podaj w notacji wykładniczej.</p>
+<div class="row odp"></div><button class="butt" id="gliczby8_17" onclick="pokazliczby8_17()">Rozwiązanie</button>
+<script>
+function pokazliczby8_17(){
+var dliczby8_17=document.getElementById("r-liczby8_17");
+var rliczby8_17=document.createElement("img");
+rliczby8_17.setAttribute('src','roz/liczby8_17.png');
+rliczby8_17.setAttribute("width","95%");
+rliczby8_17.setAttribute("height","auto");
+dliczby8_17.appendChild(rliczby8_17);
+var uliczby8_17=document.getElementById("gliczby8_17");
+uliczby8_17.innerHTML="Ukryj rozwiązanie";
+uliczby8_17.setAttribute("onclick","usunliczby8_17()");}
+function usunliczby8_17(){
+var dliczby8_17=document.getElementById("r-liczby8_17");
+dliczby8_17.innerHTML=null;
+var uliczby8_17a=document.getElementById("gliczby8_17");
+uliczby8_17a.innerHTML="Rozwiązanie";
+uliczby8_17a.setAttribute("onclick","pokazliczby8_17()");}
+</script>
+<div id="r-liczby8_17"></div>
+</li>
+<li class="numer" id="liczby8_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Tekturowe prostopadłościenne pudełko o wymiarach \(10\ cm\ \times\ 8\ cm\ \times\ 25\ cm\) ma masę \(2,5\ dag\). Oblicz i zapisz w notacji wykładniczej, ile kilogramów będzie ono ważyć po wypełnieniu:</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) powietrzem</div><div class="col-xs-12 col-md-6 col-lg-6">b) piaskiem</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">Przyjmij, że \(1\ dm^3\) suchego powietrza w temperaturze \(20^{\circ} C\) i przy ciśnieniu \(1013\) hPa ma masę około \(1,2\ g\), a \(1\ dm^3\) suchego piasku - około \(1,6\ kg\).</div></div><button class="butt" id="gliczby8_18" onclick="pokazliczby8_18()">Rozwiązanie</button>
+<script>
+function pokazliczby8_18(){
+var dliczby8_18=document.getElementById("r-liczby8_18");
+var rliczby8_18=document.createElement("img");
+rliczby8_18.setAttribute('src','roz/liczby8_18.png');
+rliczby8_18.setAttribute("width","95%");
+rliczby8_18.setAttribute("height","auto");
+dliczby8_18.appendChild(rliczby8_18);
+var uliczby8_18=document.getElementById("gliczby8_18");
+uliczby8_18.innerHTML="Ukryj rozwiązanie";
+uliczby8_18.setAttribute("onclick","usunliczby8_18()");}
+function usunliczby8_18(){
+var dliczby8_18=document.getElementById("r-liczby8_18");
+dliczby8_18.innerHTML=null;
+var uliczby8_18a=document.getElementById("gliczby8_18");
+uliczby8_18a.innerHTML="Rozwiązanie";
+uliczby8_18a.setAttribute("onclick","pokazliczby8_18()");}
+</script>
+<div id="r-liczby8_18"></div>
+</li>
+<li class="numer" id="liczby8_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz i zapisz w notacji wykładniczej, ile razy masa twojego ciała jest:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) mniejsza od masy Ziemi, równej \(5,9736\cdot 10^{24}\ kg\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) większa od masy atomu wodoru, która wynosi \(1,673\cdot 10^{-24}\ g\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">c) większa od masy kolibra, równej \(5\cdot 10^{-3}\ kg\)</div></div><button class="butt" id="gliczby8_19" onclick="pokazliczby8_19()">Rozwiązanie</button>
+<script>
+function pokazliczby8_19(){
+var dliczby8_19=document.getElementById("r-liczby8_19");
+var rliczby8_19=document.createElement("img");
+rliczby8_19.setAttribute('src','roz/liczby8_19.png');
+rliczby8_19.setAttribute("width","95%");
+rliczby8_19.setAttribute("height","auto");
+dliczby8_19.appendChild(rliczby8_19);
+var uliczby8_19=document.getElementById("gliczby8_19");
+uliczby8_19.innerHTML="Ukryj rozwiązanie";
+uliczby8_19.setAttribute("onclick","usunliczby8_19()");}
+function usunliczby8_19(){
+var dliczby8_19=document.getElementById("r-liczby8_19");
+dliczby8_19.innerHTML=null;
+var uliczby8_19a=document.getElementById("gliczby8_19");
+uliczby8_19a.innerHTML="Rozwiązanie";
+uliczby8_19a.setAttribute("onclick","pokazliczby8_19()");}
+</script>
+<div id="r-liczby8_19"></div>
+</li>
+<li class="numer" id="liczby8_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przyjmijmy, że atom jest kulą o średnicy \(2\cdot 10^{-10}\ m\). Oblicz i zapisz w notacji wykładniczej, ile atomów:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) można ustawić wzdłuż odcinka długości \(1] cm\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) zmieści się na powierzchni \(1\ cm^2\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">c) zmieści się w \(1\ cm^3\)</div></div><button class="butt" id="gliczby8_20" onclick="pokazliczby8_20()">Rozwiązanie</button>
+<script>
+function pokazliczby8_20(){
+var dliczby8_20=document.getElementById("r-liczby8_20");
+var rliczby8_20=document.createElement("img");
+rliczby8_20.setAttribute('src','roz/liczby8_20.png');
+rliczby8_20.setAttribute("width","95%");
+rliczby8_20.setAttribute("height","auto");
+dliczby8_20.appendChild(rliczby8_20);
+var uliczby8_20=document.getElementById("gliczby8_20");
+uliczby8_20.innerHTML="Ukryj rozwiązanie";
+uliczby8_20.setAttribute("onclick","usunliczby8_20()");}
+function usunliczby8_20(){
+var dliczby8_20=document.getElementById("r-liczby8_20");
+dliczby8_20.innerHTML=null;
+var uliczby8_20a=document.getElementById("gliczby8_20");
+uliczby8_20a.innerHTML="Rozwiązanie";
+uliczby8_20a.setAttribute("onclick","pokazliczby8_20()");}
+</script>
+<div id="r-liczby8_20"></div>
+</li>
+<li class="numer" id="liczby8_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczba pierwsza \(31\ 415\ 926\ 535\ 897\ 932\ 384\ 626\ 433\ 832\ 795\ 028\ 841\) jest utworzona z początkowych \(38\) cyfr rozwinięcia dziesiętnego liczby \(\pi\). Zapisz w notacji wykładniczej przybliżenie tej liczby:</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) z dokładnościa do \(10^{30}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) z dokładnością do \(10^{34}\)</div></div><button class="butt" id="gliczby8_21" onclick="pokazliczby8_21()">Rozwiązanie</button>
+<script>
+function pokazliczby8_21(){
+var dliczby8_21=document.getElementById("r-liczby8_21");
+var rliczby8_21=document.createElement("img");
+rliczby8_21.setAttribute('src','roz/liczby8_21.png');
+rliczby8_21.setAttribute("width","95%");
+rliczby8_21.setAttribute("height","auto");
+dliczby8_21.appendChild(rliczby8_21);
+var uliczby8_21=document.getElementById("gliczby8_21");
+uliczby8_21.innerHTML="Ukryj rozwiązanie";
+uliczby8_21.setAttribute("onclick","usunliczby8_21()");}
+function usunliczby8_21(){
+var dliczby8_21=document.getElementById("r-liczby8_21");
+dliczby8_21.innerHTML=null;
+var uliczby8_21a=document.getElementById("gliczby8_21");
+uliczby8_21a.innerHTML="Rozwiązanie";
+uliczby8_21a.setAttribute("onclick","pokazliczby8_21()");}
+</script>
+<div id="r-liczby8_21"></div>
+</li>
+<li class="numer" id="liczby8_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczba \(a\), która jest zapisana w notacji wykładniczej, ma postać \(x\cdot 10^4\). Określ, jaki wykładnik ma potęga \(10^n\) w notacji wykładniczej podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(0,01a\)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(a^2\)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(a^5\)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt{a}\)</div></div><button class="butt" id="gliczby8_22" onclick="pokazliczby8_22()">Rozwiązanie</button>
+<script>
+function pokazliczby8_22(){
+var dliczby8_22=document.getElementById("r-liczby8_22");
+var rliczby8_22=document.createElement("img");
+rliczby8_22.setAttribute('src','roz/liczby8_22.png');
+rliczby8_22.setAttribute("width","95%");
+rliczby8_22.setAttribute("height","auto");
+dliczby8_22.appendChild(rliczby8_22);
+var uliczby8_22=document.getElementById("gliczby8_22");
+uliczby8_22.innerHTML="Ukryj rozwiązanie";
+uliczby8_22.setAttribute("onclick","usunliczby8_22()");}
+function usunliczby8_22(){
+var dliczby8_22=document.getElementById("r-liczby8_22");
+dliczby8_22.innerHTML=null;
+var uliczby8_22a=document.getElementById("gliczby8_22");
+uliczby8_22a.innerHTML="Rozwiązanie";
+uliczby8_22a.setAttribute("onclick","pokazliczby8_22()");}
+</script>
+<div id="r-liczby8_22"></div>
+</li>
+<li class="numer" id="liczby8_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczby \(a\) i \(b\) są zapisane w notacji wykładniczej i mają postać: \(a=x\cdot 10^{-4}\), \(b=y\cdot 10^3\). Określ, jaki wykładnik ma potęga \(10^n\) w notacji wykładniczej podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(a+b\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(ab\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(10a+b\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(0,1a+10b\)</div></div><button class="butt" id="gliczby8_23" onclick="pokazliczby8_23()">Rozwiązanie</button>
+<script>
+function pokazliczby8_23(){
+var dliczby8_23=document.getElementById("r-liczby8_23");
+var rliczby8_23=document.createElement("img");
+rliczby8_23.setAttribute('src','roz/liczby8_23.png');
+rliczby8_23.setAttribute("width","95%");
+rliczby8_23.setAttribute("height","auto");
+dliczby8_23.appendChild(rliczby8_23);
+var uliczby8_23=document.getElementById("gliczby8_23");
+uliczby8_23.innerHTML="Ukryj rozwiązanie";
+uliczby8_23.setAttribute("onclick","usunliczby8_23()");}
+function usunliczby8_23(){
+var dliczby8_23=document.getElementById("r-liczby8_23");
+dliczby8_23.innerHTML=null;
+var uliczby8_23a=document.getElementById("gliczby8_23");
+uliczby8_23a.innerHTML="Rozwiązanie";
+uliczby8_23a.setAttribute("onclick","pokazliczby8_23()");}
+</script>
+<div id="r-liczby8_23"></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<script src="../../js/jquery.js"></script>
+      <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

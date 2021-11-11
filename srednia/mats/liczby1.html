@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liczby naturalne.</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+<h3>Szkoła średnia</h3>
+			<ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu" id="aktualne"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  
+						  <p class="rodzajzad">Liczby naturalne.</p>
+							<ol class="list-group powt">
+							
+<li class="numer" id="liczby1_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wypisz wszystkie liczby:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) naturalne, których kwadrat jest mniejszy od \(10 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) naturalne, których kwadrat jest nie większy od \(30 \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) pierwsze mniejsze od \(15 \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) jednocyfrowe złożone</div></div>
+<button class="butt" id="gliczby1_1" onclick="pokazliczby1_1()">Rozwiązanie</button>
+<script>
+function pokazliczby1_1(){
+var dliczby1_1=document.getElementById("r-liczby1_1");
+var rliczby1_1=document.createElement("img");
+rliczby1_1.setAttribute('src','roz/liczby1_1.png');
+dliczby1_1.appendChild(rliczby1_1);
+var uliczby1_1=document.getElementById("gliczby1_1");
+uliczby1_1.innerHTML="Ukryj rozwiązanie";
+uliczby1_1.setAttribute("onclick","usunliczby1_1()");}
+function usunliczby1_1(){
+var dliczby1_1=document.getElementById("r-liczby1_1");
+dliczby1_1.innerHTML=null;
+var uliczby1_1a=document.getElementById("gliczby1_1");
+uliczby1_1a.innerHTML="Rozwiązanie";
+uliczby1_1a.setAttribute("onclick","pokazliczby1_1()");}
+</script>
+<div id="r-liczby1_1"></div>
+</li>
+<li class="numer" id="liczby1_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj ogólną postać liczby naturalnej:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) podzielnej przez \(3 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) podzielnej przez \(k \), gdzie \(k \) jest liczbą naturalną dodatnią</div><div class="col-xs-12 col-md-12 col-lg-12">c) podzielnej przez \(3 \) i \(7 \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) której reszta z dzielenia przez \(3 \) wynosi \(2 \)</div></div>
+<button class="butt" id="gliczby1_2" onclick="pokazliczby1_2()">Rozwiązanie</button>
+<script>
+function pokazliczby1_2(){
+var dliczby1_2=document.getElementById("r-liczby1_2");
+var rliczby1_2=document.createElement("img");
+rliczby1_2.setAttribute('src','roz/liczby1_2.png');
+dliczby1_2.appendChild(rliczby1_2);
+var uliczby1_2=document.getElementById("gliczby1_2");
+uliczby1_2.innerHTML="Ukryj rozwiązanie";
+uliczby1_2.setAttribute("onclick","usunliczby1_2()");}
+function usunliczby1_2(){
+var dliczby1_2=document.getElementById("r-liczby1_2");
+dliczby1_2.innerHTML=null;
+var uliczby1_2a=document.getElementById("gliczby1_2");
+uliczby1_2a.innerHTML="Rozwiązanie";
+uliczby1_2a.setAttribute("onclick","pokazliczby1_2()");}
+</script>
+<div id="r-liczby1_2"></div>
+</li>
+<li class="numer" id="liczby1_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj ogólną postać liczby naturalnej, która jest:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) iloczynem trzech kolejnych liczb naturalnych</div><div class="col-xs-12 col-md-12 col-lg-12">b) iloczynem dwóch kolejnych liczb naturalnych nieparzystych</div><div class="col-xs-12 col-md-12 col-lg-12">c) kwadratem liczby naturalnej</div><div class="col-xs-12 col-md-12 col-lg-12">d) sumą kwadratów dwóch kolejnych liczb naturalnych</div></div><button class="butt" id="gliczby1_3" onclick="pokazliczby1_3()">Rozwiązanie</button>
+<script>
+function pokazliczby1_3(){
+var dliczby1_3=document.getElementById("r-liczby1_3");
+var rliczby1_3=document.createElement("img");
+rliczby1_3.setAttribute('src','roz/liczby1_3.png');
+dliczby1_3.appendChild(rliczby1_3);
+var uliczby1_3=document.getElementById("gliczby1_3");
+uliczby1_3.innerHTML="Ukryj rozwiązanie";
+uliczby1_3.setAttribute("onclick","usunliczby1_3()");}
+function usunliczby1_3(){
+var dliczby1_3=document.getElementById("r-liczby1_3");
+dliczby1_3.innerHTML=null;
+var uliczby1_3a=document.getElementById("gliczby1_3");
+uliczby1_3a.innerHTML="Rozwiązanie";
+uliczby1_3a.setAttribute("onclick","pokazliczby1_3()");}
+</script>
+<div id="r-liczby1_3"></div>
+</li>
+<li class="numer" id="liczby1_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz trzy kolejne liczby naturalne nieparzyste, z których:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) pierwsza ma postać \(2n-3 \), gdzie \(n \) jest liczbą naturalną większą od \(1 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) druga ma postać \(2n+5 \), gdzie \(n \) jest liczbą naturalną</div><div class="col-xs-12 col-md-12 col-lg-12">c) ostatnia ma postać \(2n+7 \), gdzie \(n \) jest liczbą naturalną</div></div><button class="butt" id="gliczby1_4" onclick="pokazliczby1_4()">Rozwiązanie</button>
+<script>
+function pokazliczby1_4(){
+var dliczby1_4=document.getElementById("r-liczby1_4");
+var rliczby1_4=document.createElement("img");
+rliczby1_4.setAttribute('src','roz/liczby1_4.png');
+dliczby1_4.appendChild(rliczby1_4);
+var uliczby1_4=document.getElementById("gliczby1_4");
+uliczby1_4.innerHTML="Ukryj rozwiązanie";
+uliczby1_4.setAttribute("onclick","usunliczby1_4()");}
+function usunliczby1_4(){
+var dliczby1_4=document.getElementById("r-liczby1_4");
+dliczby1_4.innerHTML=null;
+var uliczby1_4a=document.getElementById("gliczby1_4");
+uliczby1_4a.innerHTML="Rozwiązanie";
+uliczby1_4a.setAttribute("onclick","pokazliczby1_4()");}
+</script>
+<div id="r-liczby1_4"></div>
+</li>
+<li class="numer" id="liczby1_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ustal, ile jest liczb naturalnych:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) dwucyfrowych</div><div class="col-xs-12 col-md-12 col-lg-6">b) trzycyfrowych</div><div class="col-xs-12 col-md-12 col-lg-6">c) pięciocyfrowych</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(n \)-cyfrowych</div></div><button class="butt" id="gliczby1_5" onclick="pokazliczby1_5()">Rozwiązanie</button>
+<script>
+function pokazliczby1_5(){
+var dliczby1_5=document.getElementById("r-liczby1_5");
+var rliczby1_5=document.createElement("img");
+rliczby1_5.setAttribute('src','roz/liczby1_5.png');
+dliczby1_5.appendChild(rliczby1_5);
+var uliczby1_5=document.getElementById("gliczby1_5");
+uliczby1_5.innerHTML="Ukryj rozwiązanie";
+uliczby1_5.setAttribute("onclick","usunliczby1_5()");}
+function usunliczby1_5(){
+var dliczby1_5=document.getElementById("r-liczby1_5");
+dliczby1_5.innerHTML=null;
+var uliczby1_5a=document.getElementById("gliczby1_5");
+uliczby1_5a.innerHTML="Rozwiązanie";
+uliczby1_5a.setAttribute("onclick","pokazliczby1_5()");}
+</script>
+<div id="r-liczby1_5"></div>
+</li>
+<li class="numer" id="liczby1_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ustal, ile jest liczb naturalnych dwucyfrowych:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) podzielnych przez \(7 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) podzielnych przez \(7 \) i \(5 \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) podzielnych przez \(7 \) lub \(5 \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) podzielnych przez \(7 \) i niepodzielnych przez \(5 \)</div></div><button class="butt" id="gliczby1_6" onclick="pokazliczby1_6()">Rozwiązanie</button>
+<script>
+function pokazliczby1_6(){
+var dliczby1_6=document.getElementById("r-liczby1_6");
+var rliczby1_6=document.createElement("img");
+rliczby1_6.setAttribute('src','roz/liczby1_6.png');
+dliczby1_6.appendChild(rliczby1_6);
+var uliczby1_6=document.getElementById("gliczby1_6");
+uliczby1_6.innerHTML="Ukryj rozwiązanie";
+uliczby1_6.setAttribute("onclick","usunliczby1_6()");}
+function usunliczby1_6(){
+var dliczby1_6=document.getElementById("r-liczby1_6");
+dliczby1_6.innerHTML=null;
+var uliczby1_6a=document.getElementById("gliczby1_6");
+uliczby1_6a.innerHTML="Rozwiązanie";
+uliczby1_6a.setAttribute("onclick","pokazliczby1_6()");}
+</script>
+<div id="r-liczby1_6"></div>
+</li>
+<li class="numer" id="liczby1_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>\(&#8517;\) Udowodnij, że jeśli liczba \(7 \) jest dzielnikiem liczb naturalnych \(x \) i \(y \) oraz \(x>y \), to jest również dzielnikiem liczb \(x+y \) i \(x-y \).</p><div class="row odp"></div><button class="butt" id="gliczby1_7" onclick="pokazliczby1_7()">Rozwiązanie</button>
+<script>
+function pokazliczby1_7(){
+var dliczby1_7=document.getElementById("r-liczby1_7");
+var rliczby1_7=document.createElement("img");
+rliczby1_7.setAttribute('src','roz/liczby1_7.png');
+dliczby1_7.appendChild(rliczby1_7);
+var uliczby1_7=document.getElementById("gliczby1_7");
+uliczby1_7.innerHTML="Ukryj rozwiązanie";
+uliczby1_7.setAttribute("onclick","usunliczby1_7()");}
+function usunliczby1_7(){
+var dliczby1_7=document.getElementById("r-liczby1_7");
+dliczby1_7.innerHTML=null;
+var uliczby1_7a=document.getElementById("gliczby1_7");
+uliczby1_7a.innerHTML="Rozwiązanie";
+uliczby1_7a.setAttribute("onclick","pokazliczby1_7()");}
+</script>
+<div id="r-liczby1_7"></div>
+		
+</li>
+<li class="numer" id="liczby1_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozłóż podaną liczbę na czynniki pierwsze.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-4 col-lg-2">a) \(69 \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(120 \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(18900 \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(24642 \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(216000 \)</div>
+</div><button class="butt" id="gliczby1_8" onclick="pokazliczby1_8()">Rozwiązanie</button>
+<script>
+function pokazliczby1_8(){
+var dliczby1_8=document.getElementById("r-liczby1_8");
+var rliczby1_8=document.createElement("img");
+rliczby1_8.setAttribute('src','roz/liczby1_8.png');
+dliczby1_8.appendChild(rliczby1_8);
+var uliczby1_8=document.getElementById("gliczby1_8");
+uliczby1_8.innerHTML="Ukryj rozwiązanie";
+uliczby1_8.setAttribute("onclick","usunliczby1_8()");}
+function usunliczby1_8(){
+var dliczby1_8=document.getElementById("r-liczby1_8");
+dliczby1_8.innerHTML=null;
+var uliczby1_8a=document.getElementById("gliczby1_8");
+uliczby1_8a.innerHTML="Rozwiązanie";
+uliczby1_8a.setAttribute("onclick","pokazliczby1_8()");}
+</script>
+<div id="r-liczby1_8"></div>
+</li>
+<li class="numer" id="liczby1_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz \(NWD(a,b) \) i \(NWW(a,b) \).</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(a=12,\ b=144 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(a=126,\ b=36 \)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \(a=155,\ b=410 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(a=840,\ b=10780 \)</div></div><button class="butt" id="gliczby1_9" onclick="pokazliczby1_9()">Rozwiązanie</button>
+<script>
+function pokazliczby1_9(){
+var dliczby1_9=document.getElementById("r-liczby1_9");
+var rliczby1_9=document.createElement("img");
+rliczby1_9.setAttribute('src','roz/liczby1_9.png');
+dliczby1_9.appendChild(rliczby1_9);
+var uliczby1_9=document.getElementById("gliczby1_9");
+uliczby1_9.innerHTML="Ukryj rozwiązanie";
+uliczby1_9.setAttribute("onclick","usunliczby1_9()");}
+function usunliczby1_9(){
+var dliczby1_9=document.getElementById("r-liczby1_9");
+dliczby1_9.innerHTML=null;
+var uliczby1_9a=document.getElementById("gliczby1_9");
+uliczby1_9a.innerHTML="Rozwiązanie";
+uliczby1_9a.setAttribute("onclick","pokazliczby1_9()");}
+</script>
+<div id="r-liczby1_9"></div>
+</li>
+<li class="numer" id="liczby1_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz \(NWD(60,x) \), gdzie \(x=NWW(21,35) \).</p>
+<div class="row odp">
+</div><button class="butt" id="gliczby1_10" onclick="pokazliczby1_10()">Rozwiązanie</button>
+<script>
+function pokazliczby1_10(){
+var dliczby1_10=document.getElementById("r-liczby1_10");
+var rliczby1_10=document.createElement("img");
+rliczby1_10.setAttribute('src','roz/liczby1_10.png');
+dliczby1_10.appendChild(rliczby1_10);
+var uliczby1_10=document.getElementById("gliczby1_10");
+uliczby1_10.innerHTML="Ukryj rozwiązanie";
+uliczby1_10.setAttribute("onclick","usunliczby1_10()");}
+function usunliczby1_10(){
+var dliczby1_10=document.getElementById("r-liczby1_10");
+dliczby1_10.innerHTML=null;
+var uliczby1_10a=document.getElementById("gliczby1_10");
+uliczby1_10a.innerHTML="Rozwiązanie";
+uliczby1_10a.setAttribute("onclick","pokazliczby1_10()");}
+</script>
+<div id="r-liczby1_10"></div>
+</li>
+<li class="numer" id="liczby1_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz \(NWW=(15,y) \), gdzie \(y=NWD(54,72) \).</p>
+<div class="row odp">
+</div><button class="butt" id="gliczby1_11" onclick="pokazliczby1_11()">Rozwiązanie</button>
+<script>
+function pokazliczby1_11(){
+var dliczby1_11=document.getElementById("r-liczby1_11");
+var rliczby1_11=document.createElement("img");
+rliczby1_11.setAttribute('src','roz/liczby1_11.png');
+dliczby1_11.appendChild(rliczby1_11);
+var uliczby1_11=document.getElementById("gliczby1_11");
+uliczby1_11.innerHTML="Ukryj rozwiązanie";
+uliczby1_11.setAttribute("onclick","usunliczby1_11()");}
+function usunliczby1_11(){
+var dliczby1_11=document.getElementById("r-liczby1_11");
+dliczby1_11.innerHTML=null;
+var uliczby1_11a=document.getElementById("gliczby1_11");
+uliczby1_11a.innerHTML="Rozwiązanie";
+uliczby1_11a.setAttribute("onclick","pokazliczby1_11()");}
+</script>
+<div id="r-liczby1_11"></div>
+</li>
+<li class="numer" id="liczby1_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ile razy liczba \(x=1\cdot2\cdot3\cdot4\cdot5\cdot6 \) jest większa od liczby \(y=NWW(1,2,3,4,5,6) \)?</p><div class="row odp"></div><button class="butt" id="gliczby1_12" onclick="pokazliczby1_12()">Rozwiązanie</button>
+<script>
+function pokazliczby1_12(){
+var dliczby1_12=document.getElementById("r-liczby1_12");
+var rliczby1_12=document.createElement("img");
+rliczby1_12.setAttribute('src','roz/liczby1_12.png');
+dliczby1_12.appendChild(rliczby1_12);
+var uliczby1_12=document.getElementById("gliczby1_12");
+uliczby1_12.innerHTML="Ukryj rozwiązanie";
+uliczby1_12.setAttribute("onclick","usunliczby1_12()");}
+function usunliczby1_12(){
+var dliczby1_12=document.getElementById("r-liczby1_12");
+dliczby1_12.innerHTML=null;
+var uliczby1_12a=document.getElementById("gliczby1_12");
+uliczby1_12a.innerHTML="Rozwiązanie";
+uliczby1_12a.setAttribute("onclick","pokazliczby1_12()");}
+</script>
+<div id="r-liczby1_12"></div>
+</li>
+<li class="numer" id="liczby1_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Jaką cyfrą można zastąpić \(x \), aby liczba siedmiocyfrowa \(x63097x \) (zapis dziesiętny) była podzielna przez podaną liczbę?</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \(3 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(4 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(5 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(9 \)</div></div><button class="butt" id="gliczby1_13" onclick="pokazliczby1_13()">Rozwiązanie</button>
+<script>
+function pokazliczby1_13(){
+var dliczby1_13=document.getElementById("r-liczby1_13");
+var rliczby1_13=document.createElement("img");
+rliczby1_13.setAttribute('src','roz/liczby1_13.png');
+dliczby1_13.appendChild(rliczby1_13);
+var uliczby1_13=document.getElementById("gliczby1_13");
+uliczby1_13.innerHTML="Ukryj rozwiązanie";
+uliczby1_13.setAttribute("onclick","usunliczby1_13()");}
+function usunliczby1_13(){
+var dliczby1_13=document.getElementById("r-liczby1_13");
+dliczby1_13.innerHTML=null;
+var uliczby1_13a=document.getElementById("gliczby1_13");
+uliczby1_13a.innerHTML="Rozwiązanie";
+uliczby1_13a.setAttribute("onclick","pokazliczby1_13()");}
+</script>
+<div id="r-liczby1_13"></div>
+</li>
+<li class="numer" id="liczby1_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dana jest pięciocyfrowa liczba \(4375x \) (zapis dziesiętny). Jaką cyfrą można zastąpić \(x \), aby reszta z dzielenia przez:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(9 \) była równa \(2 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(25 \) była równa \(7 \)</div></div><button class="butt" id="gliczby1_14" onclick="pokazliczby1_14()">Rozwiązanie</button>
+<script>
+function pokazliczby1_14(){
+var dliczby1_14=document.getElementById("r-liczby1_14");
+var rliczby1_14=document.createElement("img");
+rliczby1_14.setAttribute('src','roz/liczby1_14.png');
+dliczby1_14.appendChild(rliczby1_14);
+var uliczby1_14=document.getElementById("gliczby1_14");
+uliczby1_14.innerHTML="Ukryj rozwiązanie";
+uliczby1_14.setAttribute("onclick","usunliczby1_14()");}
+function usunliczby1_14(){
+var dliczby1_14=document.getElementById("r-liczby1_14");
+dliczby1_14.innerHTML=null;
+var uliczby1_14a=document.getElementById("gliczby1_14");
+uliczby1_14a.innerHTML="Rozwiązanie";
+uliczby1_14a.setAttribute("onclick","pokazliczby1_14()");}
+</script>
+<div id="r-liczby1_14"></div>
+</li>
+<li class="numer" id="liczby1_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz \(NWD(a,b) \) i \(NWW(a,b) \).</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(a=10^7, b=10^5 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(a=2^3\cdot3^2\cdot5^4, b=2^3\cdot3^3\cdot5\cdot7 \)</div></div><button class="butt" id="gliczby1_15" onclick="pokazliczby1_15()">Rozwiązanie</button>
+<script>
+function pokazliczby1_15(){
+var dliczby1_15=document.getElementById("r-liczby1_15");
+var rliczby1_15=document.createElement("img");
+rliczby1_15.setAttribute('src','roz/liczby1_15.png');
+dliczby1_15.appendChild(rliczby1_15);
+var uliczby1_15=document.getElementById("gliczby1_15");
+uliczby1_15.innerHTML="Ukryj rozwiązanie";
+uliczby1_15.setAttribute("onclick","usunliczby1_15()");}
+function usunliczby1_15(){
+var dliczby1_15=document.getElementById("r-liczby1_15");
+dliczby1_15.innerHTML=null;
+var uliczby1_15a=document.getElementById("gliczby1_15");
+uliczby1_15a.innerHTML="Rozwiązanie";
+uliczby1_15a.setAttribute("onclick","pokazliczby1_15()");}
+</script>
+<div id="r-liczby1_15"></div>
+</li>
+<li class="numer" id="liczby1_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sformułuj algorytm wyznaczania największego wspólnego dzielnika trzech liczb naturalnych. Oblicz \(NWD(x,y,z) \).</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) \(x=2^2\cdot3\cdot5, y=2\cdot3^2\cdot5^2, z=2^3\cdot3^4 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(x=2^3\cdot3^2\cdot5\cdot7^4, y=2^2\cdot3^3\cdot5^4\cdot7^2, z=2\cdot3^5\cdot5^2\cdot7 \)</div></div><button class="butt" id="gliczby1_16" onclick="pokazliczby1_16()">Rozwiązanie</button>
+<script>
+function pokazliczby1_16(){
+var dliczby1_16=document.getElementById("r-liczby1_16");
+var rliczby1_16=document.createElement("img");
+rliczby1_16.setAttribute('src','roz/liczby1_16.png');
+dliczby1_16.appendChild(rliczby1_16);
+var uliczby1_16=document.getElementById("gliczby1_16");
+uliczby1_16.innerHTML="Ukryj rozwiązanie";
+uliczby1_16.setAttribute("onclick","usunliczby1_16()");}
+function usunliczby1_16(){
+var dliczby1_16=document.getElementById("r-liczby1_16");
+dliczby1_16.innerHTML=null;
+var uliczby1_16a=document.getElementById("gliczby1_16");
+uliczby1_16a.innerHTML="Rozwiązanie";
+uliczby1_16a.setAttribute("onclick","pokazliczby1_16()");}
+</script>
+<div id="r-liczby1_16"></div>
+</li>
+<li class="numer" id="liczby1_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź wszystkie pary liczb \(a \) i \(b \), które spełniają warunki: \(NWD(a,b)=14 \) i \(NWW(a,b)=462 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_17" onclick="pokazliczby1_17()">Rozwiązanie</button>
+<script>
+function pokazliczby1_17(){
+var dliczby1_17=document.getElementById("r-liczby1_17");
+var rliczby1_17=document.createElement("img");
+rliczby1_17.setAttribute('src','roz/liczby1_17.png');
+dliczby1_17.appendChild(rliczby1_17);
+var uliczby1_17=document.getElementById("gliczby1_17");
+uliczby1_17.innerHTML="Ukryj rozwiązanie";
+uliczby1_17.setAttribute("onclick","usunliczby1_17()");}
+function usunliczby1_17(){
+var dliczby1_17=document.getElementById("r-liczby1_17");
+dliczby1_17.innerHTML=null;
+var uliczby1_17a=document.getElementById("gliczby1_17");
+uliczby1_17a.innerHTML="Rozwiązanie";
+uliczby1_17a.setAttribute("onclick","pokazliczby1_17()");}
+</script>
+<div id="r-liczby1_17"></div>
+</li>
+<li class="numer" id="liczby1_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Oblicz \(NWD(x,y) \) i \(NWW(x,y) \). Udowodnij, że \(NWD(x,y)|NWW(x,y) \). Sprawdź, czy \(xy=NWD(x,y)\cdot NWW(x,y) \).</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(x=24, y=66 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(x=140, y=150 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(x=132, y=198 \)</div></div><button class="butt" id="gliczby1_18" onclick="pokazliczby1_18()">Rozwiązanie</button>
+<script>
+function pokazliczby1_18(){
+var dliczby1_18=document.getElementById("r-liczby1_18");
+var rliczby1_18=document.createElement("img");
+rliczby1_18.setAttribute('src','roz/liczby1_18.png');
+dliczby1_18.appendChild(rliczby1_18);
+var uliczby1_18=document.getElementById("gliczby1_18");
+uliczby1_18.innerHTML="Ukryj rozwiązanie";
+uliczby1_18.setAttribute("onclick","usunliczby1_18()");}
+function usunliczby1_18(){
+var dliczby1_18=document.getElementById("r-liczby1_18");
+dliczby1_18.innerHTML=null;
+var uliczby1_18a=document.getElementById("gliczby1_18");
+uliczby1_18a.innerHTML="Rozwiązanie";
+uliczby1_18a.setAttribute("onclick","pokazliczby1_18()");}
+</script>
+<div id="r-liczby1_18"></div>
+</li>
+<li class="numer" id="liczby1_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) suma dwóch kolejnych nieparzystych liczb naturalnych jest podzielna przez \(4 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) suma trzech kolejnych parzystych liczb naturalnych jest podzielna przaz \(6 \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) suma trzech kolejnych liczb naturalnych podzielnych przez \(3 \) jest podzielna przez \(9 \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) iloczyn dwóch liczb naturalnych, spośród których co najmniej jedna jest parzysta, jest parzysty</div></div><button class="butt" id="gliczby1_19" onclick="pokazliczby1_19()">Rozwiązanie</button>
+<script>
+function pokazliczby1_19(){
+var dliczby1_19=document.getElementById("r-liczby1_19");
+var rliczby1_19=document.createElement("img");
+rliczby1_19.setAttribute('src','roz/liczby1_19.png');
+dliczby1_19.appendChild(rliczby1_19);
+var uliczby1_19=document.getElementById("gliczby1_19");
+uliczby1_19.innerHTML="Ukryj rozwiązanie";
+uliczby1_19.setAttribute("onclick","usunliczby1_19()");}
+function usunliczby1_19(){
+var dliczby1_19=document.getElementById("r-liczby1_19");
+dliczby1_19.innerHTML=null;
+var uliczby1_19a=document.getElementById("gliczby1_19");
+uliczby1_19a.innerHTML="Rozwiązanie";
+uliczby1_19a.setAttribute("onclick","pokazliczby1_19()");}
+</script>
+<div id="r-liczby1_19"></div>
+</li>
+<li class="numer" id="liczby1_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczbą doskonałą nazywamy liczbę naturalną \(n \) równą sumie wszystkich swoich dzielników naturalnych mniejszych od \(n \). Ustal, czy podana liczba jest liczbą doskonałą.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \(28 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(30 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(120 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(496 \)</div></div><button class="butt" id="gliczby1_20" onclick="pokazliczby1_20()">Rozwiązanie</button>
+<script>
+function pokazliczby1_20(){
+var dliczby1_20=document.getElementById("r-liczby1_20");
+var rliczby1_20=document.createElement("img");
+rliczby1_20.setAttribute('src','roz/liczby1_20.png');
+dliczby1_20.appendChild(rliczby1_20);
+var uliczby1_20=document.getElementById("gliczby1_20");
+uliczby1_20.innerHTML="Ukryj rozwiązanie";
+uliczby1_20.setAttribute("onclick","usunliczby1_20()");}
+function usunliczby1_20(){
+var dliczby1_20=document.getElementById("r-liczby1_20");
+dliczby1_20.innerHTML=null;
+var uliczby1_20a=document.getElementById("gliczby1_20");
+uliczby1_20a.innerHTML="Rozwiązanie";
+uliczby1_20a.setAttribute("onclick","pokazliczby1_20()");}
+</script>
+<div id="r-liczby1_20"></div>
+</li>
+<li class="numer" id="liczby1_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz cyfry \(x \) i \(y \), jeżeli wiadomo, że liczba \(235x14y \):</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) jest podzielna przez \(15 \) i nie jest podzielna przez \(9 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) jest podzielna przez \(18 \) i nie jest podzielna przez \(4 \)</div></div><button class="butt" id="gliczby1_21" onclick="pokazliczby1_21()">Rozwiązanie</button>
+<script>
+function pokazliczby1_21(){
+var dliczby1_21=document.getElementById("r-liczby1_21");
+var rliczby1_21=document.createElement("img");
+rliczby1_21.setAttribute('src','roz/liczby1_21.png');
+dliczby1_21.appendChild(rliczby1_21);
+var uliczby1_21=document.getElementById("gliczby1_21");
+uliczby1_21.innerHTML="Ukryj rozwiązanie";
+uliczby1_21.setAttribute("onclick","usunliczby1_21()");}
+function usunliczby1_21(){
+var dliczby1_21=document.getElementById("r-liczby1_21");
+dliczby1_21.innerHTML=null;
+var uliczby1_21a=document.getElementById("gliczby1_21");
+uliczby1_21a.innerHTML="Rozwiązanie";
+uliczby1_21a.setAttribute("onclick","pokazliczby1_21()");}
+</script>
+<div id="r-liczby1_21"></div>
+</li>
+<li class="numer" id="liczby1_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>W trzech wieżowcach na parterze są lokale użytkowe, a na piętrach mieszkania. Na każdym piętrze każdego z budynków mieszka tyle samo osób, a mieszkańców w tych budynkach jest odpowiednio \(420, 462 \) i \(504 \). Ile pięter ma każdy z wieżowców, jeżeli żaden nie ma więcej niż \(15 \) pięter?</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_22" onclick="pokazliczby1_22()">Rozwiązanie</button>
+<script>
+function pokazliczby1_22(){
+var dliczby1_22=document.getElementById("r-liczby1_22");
+var rliczby1_22=document.createElement("img");
+rliczby1_22.setAttribute('src','roz/liczby1_22.png');
+dliczby1_22.appendChild(rliczby1_22);
+var uliczby1_22=document.getElementById("gliczby1_22");
+uliczby1_22.innerHTML="Ukryj rozwiązanie";
+uliczby1_22.setAttribute("onclick","usunliczby1_22()");}
+function usunliczby1_22(){
+var dliczby1_22=document.getElementById("r-liczby1_22");
+dliczby1_22.innerHTML=null;
+var uliczby1_22a=document.getElementById("gliczby1_22");
+uliczby1_22a.innerHTML="Rozwiązanie";
+uliczby1_22a.setAttribute("onclick","pokazliczby1_22()");}
+</script>
+<div id="r-liczby1_22"></div>
+</li>
+<li class="numer" id="liczby1_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź największą liczbę trzycyfrową, której iloraz i reszta otrzymane w wyniku dzielenia przez \(41 \) są równe.</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_23" onclick="pokazliczby1_23()">Rozwiązanie</button>
+<script>
+function pokazliczby1_23(){
+var dliczby1_23=document.getElementById("r-liczby1_23");
+var rliczby1_23=document.createElement("img");
+rliczby1_23.setAttribute('src','roz/liczby1_23.png');
+dliczby1_23.appendChild(rliczby1_23);
+var uliczby1_23=document.getElementById("gliczby1_23");
+uliczby1_23.innerHTML="Ukryj rozwiązanie";
+uliczby1_23.setAttribute("onclick","usunliczby1_23()");}
+function usunliczby1_23(){
+var dliczby1_23=document.getElementById("r-liczby1_23");
+dliczby1_23.innerHTML=null;
+var uliczby1_23a=document.getElementById("gliczby1_23");
+uliczby1_23a.innerHTML="Rozwiązanie";
+uliczby1_23a.setAttribute("onclick","pokazliczby1_23()");}
+</script>
+<div id="r-liczby1_23"></div>
+</li>
+<li class="numer" id="liczby1_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że jeżeli liczba naturalna \(m \) jest podzielna przez \(2 \), a liczba naturalna \(n \) jest podzielna przez \(3 \), to liczba \(3m+2n \) jest podzielna przez \(6 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_24" onclick="pokazliczby1_24()">Rozwiązanie</button>
+<script>
+function pokazliczby1_24(){
+var dliczby1_24=document.getElementById("r-liczby1_24");
+var rliczby1_24=document.createElement("img");
+rliczby1_24.setAttribute('src','roz/liczby1_24.png');
+dliczby1_24.appendChild(rliczby1_24);
+var uliczby1_24=document.getElementById("gliczby1_24");
+uliczby1_24.innerHTML="Ukryj rozwiązanie";
+uliczby1_24.setAttribute("onclick","usunliczby1_24()");}
+function usunliczby1_24(){
+var dliczby1_24=document.getElementById("r-liczby1_24");
+dliczby1_24.innerHTML=null;
+var uliczby1_24a=document.getElementById("gliczby1_24");
+uliczby1_24a.innerHTML="Rozwiązanie";
+uliczby1_24a.setAttribute("onclick","pokazliczby1_24()");}
+</script>
+<div id="r-liczby1_24"></div>
+</li>
+<li class="numer" id="liczby1_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz resztę z dzielenia liczby \(2^{2019} \) przez 3.</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_25" onclick="pokazliczby1_25()">Rozwiązanie</button>
+<script>
+function pokazliczby1_25(){
+var dliczby1_25=document.getElementById("r-liczby1_25");
+var rliczby1_25=document.createElement("img");
+rliczby1_25.setAttribute('src','roz/liczby1_25.png');
+dliczby1_25.appendChild(rliczby1_25);
+var uliczby1_25=document.getElementById("gliczby1_25");
+uliczby1_25.innerHTML="Ukryj rozwiązanie";
+uliczby1_25.setAttribute("onclick","usunliczby1_25()");}
+function usunliczby1_25(){
+var dliczby1_25=document.getElementById("r-liczby1_25");
+dliczby1_25.innerHTML=null;
+var uliczby1_25a=document.getElementById("gliczby1_25");
+uliczby1_25a.innerHTML="Rozwiązanie";
+uliczby1_25a.setAttribute("onclick","pokazliczby1_25()");}
+</script>
+<div id="r-liczby1_25"></div>
+</li>
+<li class="numer" id="liczby1_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dane są liczby naturalne \(n \) i \(m \) takie, że \(n &lt; m \). Ile liczb parzystych i ile liczb nieparzystych jest między \(n \) i \(m \), jeśli:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(n \) i \(m \) są parzyste</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(n \) i \(m \) są nieparzyste</div><div class="col-xs-12 col-md-12 col-lg-12">c) jedna z liczb \(n \) i \(m \) jest parzysta, a druga nieparzysta</div></div><button class="butt" id="gliczby1_26" onclick="pokazliczby1_26()">Rozwiązanie</button>
+<script>
+function pokazliczby1_26(){
+var dliczby1_26=document.getElementById("r-liczby1_26");
+var rliczby1_26=document.createElement("img");
+rliczby1_26.setAttribute('src','roz/liczby1_26.png');
+dliczby1_26.appendChild(rliczby1_26);
+var uliczby1_26=document.getElementById("gliczby1_26");
+uliczby1_26.innerHTML="Ukryj rozwiązanie";
+uliczby1_26.setAttribute("onclick","usunliczby1_26()");}
+function usunliczby1_26(){
+var dliczby1_26=document.getElementById("r-liczby1_26");
+dliczby1_26.innerHTML=null;
+var uliczby1_26a=document.getElementById("gliczby1_26");
+uliczby1_26a.innerHTML="Rozwiązanie";
+uliczby1_26a.setAttribute("onclick","pokazliczby1_26()");}
+</script>
+<div id="r-liczby1_26"></div>
+</li>
+<li class="numer" id="liczby1_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że wśród pięciu dowolnych liczb naturalnych znajdują się trzy, których suma jest podzielna przez \(3 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_27" onclick="pokazliczby1_27()">Rozwiązanie</button>
+<script>
+function pokazliczby1_27(){
+var dliczby1_27=document.getElementById("r-liczby1_27");
+var rliczby1_27=document.createElement("img");
+rliczby1_27.setAttribute('src','roz/liczby1_27.png');
+dliczby1_27.appendChild(rliczby1_27);
+var uliczby1_27=document.getElementById("gliczby1_27");
+uliczby1_27.innerHTML="Ukryj rozwiązanie";
+uliczby1_27.setAttribute("onclick","usunliczby1_27()");}
+function usunliczby1_27(){
+var dliczby1_27=document.getElementById("r-liczby1_27");
+dliczby1_27.innerHTML=null;
+var uliczby1_27a=document.getElementById("gliczby1_27");
+uliczby1_27a.innerHTML="Rozwiązanie";
+uliczby1_27a.setAttribute("onclick","pokazliczby1_27()");}
+</script>
+<div id="r-liczby1_27"></div>
+</li>
+<li class="numer" id="liczby1_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie możliwe reszty z dzielenia kwadratu liczby naturalnej przez \(3 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_28" onclick="pokazliczby1_28()">Rozwiązanie</button>
+<script>
+function pokazliczby1_28(){
+var dliczby1_28=document.getElementById("r-liczby1_28");
+var rliczby1_28=document.createElement("img");
+rliczby1_28.setAttribute('src','roz/liczby1_28.png');
+dliczby1_28.appendChild(rliczby1_28);
+var uliczby1_28=document.getElementById("gliczby1_28");
+uliczby1_28.innerHTML="Ukryj rozwiązanie";
+uliczby1_28.setAttribute("onclick","usunliczby1_28()");}
+function usunliczby1_28(){
+var dliczby1_28=document.getElementById("r-liczby1_28");
+dliczby1_28.innerHTML=null;
+var uliczby1_28a=document.getElementById("gliczby1_28");
+uliczby1_28a.innerHTML="Rozwiązanie";
+uliczby1_28a.setAttribute("onclick","pokazliczby1_28()");}
+</script>
+<div id="r-liczby1_28"></div>
+</li>
+<li class="numer" id="liczby1_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>W wyniku dzielenia liczb naturalnych \(n, k, l \) przez \(4 \) otrzymujemy odpowiednio reszty \(1, 2 \) i \(3 \). Znajdź resztę z dzielenia przez \(4 \) liczby:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-4 col-lg-2">a) \(2n \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(4k \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(7l \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(n+k+l \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(nkl \)</div>
+</div><button class="butt" id="gliczby1_29" onclick="pokazliczby1_29()">Rozwiązanie</button>
+<script>
+function pokazliczby1_29(){
+var dliczby1_29=document.getElementById("r-liczby1_29");
+var rliczby1_29=document.createElement("img");
+rliczby1_29.setAttribute('src','roz/liczby1_29.png');
+dliczby1_29.appendChild(rliczby1_29);
+var uliczby1_29=document.getElementById("gliczby1_29");
+uliczby1_29.innerHTML="Ukryj rozwiązanie";
+uliczby1_29.setAttribute("onclick","usunliczby1_29()");}
+function usunliczby1_29(){
+var dliczby1_29=document.getElementById("r-liczby1_29");
+dliczby1_29.innerHTML=null;
+var uliczby1_29a=document.getElementById("gliczby1_29");
+uliczby1_29a.innerHTML="Rozwiązanie";
+uliczby1_29a.setAttribute("onclick","pokazliczby1_29()");}
+</script>
+<div id="r-liczby1_29"></div>
+</li>
+<li class="numer" id="liczby1_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź liczbę naturalną, która przy dzieleniu odpowiednio przez \(5 \) i \(7 \) daje resztę \(4 \) i resztę \(3 \), a iloraz z dzielenia przez \(5 \) jest o \(1 \) większy od ilorazu z dzielenia przez \(7 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_30" onclick="pokazliczby1_30()">Rozwiązanie</button>
+<script>
+function pokazliczby1_30(){
+var dliczby1_30=document.getElementById("r-liczby1_30");
+var rliczby1_30=document.createElement("img");
+rliczby1_30.setAttribute('src','roz/liczby1_30.png');
+dliczby1_30.appendChild(rliczby1_30);
+var uliczby1_30=document.getElementById("gliczby1_30");
+uliczby1_30.innerHTML="Ukryj rozwiązanie";
+uliczby1_30.setAttribute("onclick","usunliczby1_30()");}
+function usunliczby1_30(){
+var dliczby1_30=document.getElementById("r-liczby1_30");
+dliczby1_30.innerHTML=null;
+var uliczby1_30a=document.getElementById("gliczby1_30");
+uliczby1_30a.innerHTML="Rozwiązanie";
+uliczby1_30a.setAttribute("onclick","pokazliczby1_30()");}
+</script>
+<div id="r-liczby1_30"></div>
+</li>
+<li class="numer" id="liczby1_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>W wyniku dzielenia pewnej liczby naturalnej przez \(2 \) otrzymujemy resztę \(1 \), a w wyniku dzielenia tej liczby przez \(3 \) - resztę \(2 \). Ile wynosi reszta z dzielenia tej liczby przez \(6 \)?</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_31" onclick="pokazliczby1_31()">Rozwiązanie</button>
+<script>
+function pokazliczby1_31(){
+var dliczby1_31=document.getElementById("r-liczby1_31");
+var rliczby1_31=document.createElement("img");
+rliczby1_31.setAttribute('src','roz/liczby1_31.png');
+dliczby1_31.appendChild(rliczby1_31);
+var uliczby1_31=document.getElementById("gliczby1_31");
+uliczby1_31.innerHTML="Ukryj rozwiązanie";
+uliczby1_31.setAttribute("onclick","usunliczby1_31()");}
+function usunliczby1_31(){
+var dliczby1_31=document.getElementById("r-liczby1_31");
+dliczby1_31.innerHTML=null;
+var uliczby1_31a=document.getElementById("gliczby1_31");
+uliczby1_31a.innerHTML="Rozwiązanie";
+uliczby1_31a.setAttribute("onclick","pokazliczby1_31()");}
+</script>
+<div id="r-liczby1_31"></div>
+</li>
+<li class="numer" id="liczby1_32"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Reszta z dzielenia pewnej liczby naturalnej przez \(9 \) wynosi \(6 \). Ile jest równa reszta z dzielenia kwadratu tej liczby przez \(6 \)?</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_32" onclick="pokazliczby1_32()">Rozwiązanie</button>
+<script>
+function pokazliczby1_32(){
+var dliczby1_32=document.getElementById("r-liczby1_32");
+var rliczby1_32=document.createElement("img");
+rliczby1_32.setAttribute('src','roz/liczby1_32.png');
+dliczby1_32.appendChild(rliczby1_32);
+var uliczby1_32=document.getElementById("gliczby1_32");
+uliczby1_32.innerHTML="Ukryj rozwiązanie";
+uliczby1_32.setAttribute("onclick","usunliczby1_32()");}
+function usunliczby1_32(){
+var dliczby1_32=document.getElementById("r-liczby1_32");
+dliczby1_32.innerHTML=null;
+var uliczby1_32a=document.getElementById("gliczby1_32");
+uliczby1_32a.innerHTML="Rozwiązanie";
+uliczby1_32a.setAttribute("onclick","pokazliczby1_32()");}
+</script>
+<div id="r-liczby1_32"></div>
+</li>
+<li class="numer" id="liczby1_33"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz resztę z dzielenia liczby naturalnej \(n \) przez \(12 \), wiedząc że:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) reszta z dzielenia \(n \) przez \(3 \) jest równa \(1 \), a reszta z dzielenia \(n \) przez \(4 \) jest równa \(2 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) reszta z dzielenia \(n \) przez \(3 \) jest równa \(2 \), a reszta z dzielenia \(n \) przez \(4 \) jest równa \(1 \)</div></div><button class="butt" id="gliczby1_33" onclick="pokazliczby1_33()">Rozwiązanie</button>
+<script>
+function pokazliczby1_33(){
+var dliczby1_33=document.getElementById("r-liczby1_33");
+var rliczby1_33=document.createElement("img");
+rliczby1_33.setAttribute('src','roz/liczby1_33.png');
+dliczby1_33.appendChild(rliczby1_33);
+var uliczby1_33=document.getElementById("gliczby1_33");
+uliczby1_33.innerHTML="Ukryj rozwiązanie";
+uliczby1_33.setAttribute("onclick","usunliczby1_33()");}
+function usunliczby1_33(){
+var dliczby1_33=document.getElementById("r-liczby1_33");
+dliczby1_33.innerHTML=null;
+var uliczby1_33a=document.getElementById("gliczby1_33");
+uliczby1_33a.innerHTML="Rozwiązanie";
+uliczby1_33a.setAttribute("onclick","pokazliczby1_33()");}
+</script>
+<div id="r-liczby1_33"></div>
+</li>
+<li class="numer" id="liczby1_34"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz ogólną postać liczby naturalnej, której:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) reszta z dzielenia przez \(2 \) wynosi \(1 \), a reszta z dzielenia przez \(3 \) jest równa \(2 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) reszta z dzielenia przez \(3 \) wynosi \(2 \), a reszta z dzielenia przez \(5 \) jest równa \(4 \)</div></div><button class="butt" id="gliczby1_34" onclick="pokazliczby1_34()">Rozwiązanie</button>
+<script>
+function pokazliczby1_34(){
+var dliczby1_34=document.getElementById("r-liczby1_34");
+var rliczby1_34=document.createElement("img");
+rliczby1_34.setAttribute('src','roz/liczby1_34.png');
+dliczby1_34.appendChild(rliczby1_34);
+var uliczby1_34=document.getElementById("gliczby1_34");
+uliczby1_34.innerHTML="Ukryj rozwiązanie";
+uliczby1_34.setAttribute("onclick","usunliczby1_34()");}
+function usunliczby1_34(){
+var dliczby1_34=document.getElementById("r-liczby1_34");
+dliczby1_34.innerHTML=null;
+var uliczby1_34a=document.getElementById("gliczby1_34");
+uliczby1_34a.innerHTML="Rozwiązanie";
+uliczby1_34a.setAttribute("onclick","pokazliczby1_34()");}
+</script>
+<div id="r-liczby1_34"></div>
+</li>
+<li class="numer" id="liczby1_35"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zbiór \(D \) tworzą wszystkie liczby naturalne \(9 \)-cyfrowe o każdej cyfrze innej i różnej od zera. Podaj największy wspólny dzielnik wszystkich liczb ze zbioru \(D \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_35" onclick="pokazliczby1_35()">Rozwiązanie</button>
+<script>
+function pokazliczby1_35(){
+var dliczby1_35=document.getElementById("r-liczby1_35");
+var rliczby1_35=document.createElement("img");
+rliczby1_35.setAttribute('src','roz/liczby1_35.png');
+dliczby1_35.appendChild(rliczby1_35);
+var uliczby1_35=document.getElementById("gliczby1_35");
+uliczby1_35.innerHTML="Ukryj rozwiązanie";
+uliczby1_35.setAttribute("onclick","usunliczby1_35()");}
+function usunliczby1_35(){
+var dliczby1_35=document.getElementById("r-liczby1_35");
+dliczby1_35.innerHTML=null;
+var uliczby1_35a=document.getElementById("gliczby1_35");
+uliczby1_35a.innerHTML="Rozwiązanie";
+uliczby1_35a.setAttribute("onclick","pokazliczby1_35()");}
+</script>
+<div id="r-liczby1_35"></div>
+</li>
+<li class="numer" id="liczby1_36"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że suma różnych liczb naturalnych \(m \) i \(n \), które spełniają warunek \(13m=12n \), jest liczbą złożoną.</p>
+<div class="row odp"></div><button class="butt" id="gliczby1_36" onclick="pokazliczby1_36()">Rozwiązanie</button>
+<script>
+function pokazliczby1_36(){
+var dliczby1_36=document.getElementById("r-liczby1_36");
+var rliczby1_36=document.createElement("img");
+rliczby1_36.setAttribute('src','roz/liczby1_36.png');
+dliczby1_36.appendChild(rliczby1_36);
+var uliczby1_36=document.getElementById("gliczby1_36");
+uliczby1_36.innerHTML="Ukryj rozwiązanie";
+uliczby1_36.setAttribute("onclick","usunliczby1_36()");}
+function usunliczby1_36(){
+var dliczby1_36=document.getElementById("r-liczby1_36");
+dliczby1_36.innerHTML=null;
+var uliczby1_36a=document.getElementById("gliczby1_36");
+uliczby1_36a.innerHTML="Rozwiązanie";
+uliczby1_36a.setAttribute("onclick","pokazliczby1_36()");}
+</script>
+<div id="r-liczby1_36"></div>
+</li>
+<li class="numer" id="liczby1_37"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Niech \(p \) oznacza liczbę pierwszą. Wyznacz wszystkie liczby pierwsze, które mają postać:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(5p+1 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(p^2+2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(3p^2+1 \)</div></div><button class="butt" id="gliczby1_37" onclick="pokazliczby1_37()">Rozwiązanie</button>
+<script>
+function pokazliczby1_37(){
+var dliczby1_37=document.getElementById("r-liczby1_37");
+var rliczby1_37=document.createElement("img");
+rliczby1_37.setAttribute('src','roz/liczby1_37.png');
+dliczby1_37.appendChild(rliczby1_37);
+var uliczby1_37=document.getElementById("gliczby1_37");
+uliczby1_37.innerHTML="Ukryj rozwiązanie";
+uliczby1_37.setAttribute("onclick","usunliczby1_37()");}
+function usunliczby1_37(){
+var dliczby1_37=document.getElementById("r-liczby1_37");
+dliczby1_37.innerHTML=null;
+var uliczby1_37a=document.getElementById("gliczby1_37");
+uliczby1_37a.innerHTML="Rozwiązanie";
+uliczby1_37a.setAttribute("onclick","pokazliczby1_37()");}
+</script>
+<div id="r-liczby1_37"></div>
+</li>
+</ol>								
+</div>
+</div>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>

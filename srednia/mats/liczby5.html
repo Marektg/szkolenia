@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pierwiastek kwadratowy</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+
+			<h3>Szkoła średnia</h3><ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Pierwiastek kwadratowy</p>
+						  <ol class="list-group powt">
+						  <li class="numer" id="liczby5_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt{16}, \sqrt{0,16}, \sqrt{11\frac{1}{9}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(\sqrt{16+9}, \sqrt{16}+\sqrt{9}, \sqrt{16}\cdot \sqrt{9} \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(\sqrt{\sqrt{81}}, \sqrt{16\sqrt{8\sqrt{4}}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) \(\sqrt{2+\sqrt{2+\sqrt{4}}}, \sqrt{2-\sqrt{9-\sqrt{25}}} \)</div></div><button class="butt" id="gliczby5_1" onclick="pokazliczby5_1()">Rozwiązanie</button>
+<script>
+function pokazliczby5_1(){
+var dliczby5_1=document.getElementById("r-liczby5_1");
+var rliczby5_1=document.createElement("img");
+rliczby5_1.setAttribute('src','roz/liczby5_1.png');
+dliczby5_1.appendChild(rliczby5_1);
+var uliczby5_1=document.getElementById("gliczby5_1");
+uliczby5_1.innerHTML="Ukryj rozwiązanie";
+uliczby5_1.setAttribute("onclick","usunliczby5_1()");}
+function usunliczby5_1(){
+var dliczby5_1=document.getElementById("r-liczby5_1");
+dliczby5_1.innerHTML=null;
+var uliczby5_1a=document.getElementById("gliczby5_1");
+uliczby5_1a.innerHTML="Rozwiązanie";
+uliczby5_1a.setAttribute("onclick","pokazliczby5_1()");}
+</script>
+<div id="r-liczby5_1"></div>
+</li>
+<li class="numer" id="liczby5_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Włącz czynnik pod pierwiastek</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(4\sqrt{1,5} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(0,2\sqrt{20} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{1}{3}\sqrt{18} \)</div><div class="col-xs-12 col-md-6 col-lg-4">d) \(0,75\sqrt{8} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(1,2\sqrt{10} \)</div></div><button class="butt" id="gliczby5_2" onclick="pokazliczby5_2()">Rozwiązanie</button>
+<script>
+function pokazliczby5_2(){
+var dliczby5_2=document.getElementById("r-liczby5_2");
+var rliczby5_2=document.createElement("img");
+rliczby5_2.setAttribute('src','roz/liczby5_2.png');
+dliczby5_2.appendChild(rliczby5_2);
+var uliczby5_2=document.getElementById("gliczby5_2");
+uliczby5_2.innerHTML="Ukryj rozwiązanie";
+uliczby5_2.setAttribute("onclick","usunliczby5_2()");}
+function usunliczby5_2(){
+var dliczby5_2=document.getElementById("r-liczby5_2");
+dliczby5_2.innerHTML=null;
+var uliczby5_2a=document.getElementById("gliczby5_2");
+uliczby5_2a.innerHTML="Rozwiązanie";
+uliczby5_2a.setAttribute("onclick","pokazliczby5_2()");}
+</script>
+<div id="r-liczby5_2"></div>
+</li>
+<li class="numer" id="liczby5_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyłącz czynnik przed pierwiastek</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt{63} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt{80} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt{132} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt{98} \)</div><div class="col-xs-12 col-md-6 col-lg-3">e) \(\sqrt{279} \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(\sqrt{605} \)</div><div class="col-xs-12 col-md-6 col-lg-3">g) \(\sqrt{405} \)</div><div class="col-xs-12 col-md-6 col-lg-3">h) \(\sqrt{847} \)</div><div class="col-xs-12 col-md-6 col-lg-3">i) \(\sqrt{1014} \)</div><div class="col-xs-12 col-md-6 col-lg-3">j) \(\sqrt{1152} \)</div></div><button class="butt" id="gliczby5_3" onclick="pokazliczby5_3()">Rozwiązanie</button>
+<script>
+function pokazliczby5_3(){
+var dliczby5_3=document.getElementById("r-liczby5_3");
+var rliczby5_3=document.createElement("img");
+rliczby5_3.setAttribute('src','roz/liczby5_3.png');
+dliczby5_3.appendChild(rliczby5_3);
+var uliczby5_3=document.getElementById("gliczby5_3");
+uliczby5_3.innerHTML="Ukryj rozwiązanie";
+uliczby5_3.setAttribute("onclick","usunliczby5_3()");}
+function usunliczby5_3(){
+var dliczby5_3=document.getElementById("r-liczby5_3");
+dliczby5_3.innerHTML=null;
+var uliczby5_3a=document.getElementById("gliczby5_3");
+uliczby5_3a.innerHTML="Rozwiązanie";
+uliczby5_3a.setAttribute("onclick","pokazliczby5_3()");}
+</script>
+<div id="r-liczby5_3"></div>
+</li>
+<li class="numer" id="liczby5_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz, korzystając z własności pierwiastków.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt{36\cdot 121}, \sqrt{0,36\cdot 196}, \sqrt{4\cdot \frac{4}{9}\cdot 0,0016} \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(\sqrt{27\cdot 12}, \sqrt{45\cdot 20}, \sqrt{21\cdot 33\cdot 77} \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(\sqrt{2}\cdot \sqrt{5}\cdot \sqrt{10}, \frac{\sqrt{162}}{\sqrt{6}\cdot \sqrt{27}}, \frac{\sqrt{20} \cdot \sqrt{6}}{\sqrt{40}\cdot \sqrt{27}} \)</div></div><button class="butt" id="gliczby5_4" onclick="pokazliczby5_4()">Rozwiązanie</button>
+<script>
+function pokazliczby5_4(){
+var dliczby5_4=document.getElementById("r-liczby5_4");
+var rliczby5_4=document.createElement("img");
+rliczby5_4.setAttribute('src','roz/liczby5_4.png');
+dliczby5_4.appendChild(rliczby5_4);
+var uliczby5_4=document.getElementById("gliczby5_4");
+uliczby5_4.innerHTML="Ukryj rozwiązanie";
+uliczby5_4.setAttribute("onclick","usunliczby5_4()");}
+function usunliczby5_4(){
+var dliczby5_4=document.getElementById("r-liczby5_4");
+dliczby5_4.innerHTML=null;
+var uliczby5_4a=document.getElementById("gliczby5_4");
+uliczby5_4a.innerHTML="Rozwiązanie";
+uliczby5_4a.setAttribute("onclick","pokazliczby5_4()");}
+</script>
+<div id="r-liczby5_4"></div>
+</li>
+<li class="numer" id="liczby5_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a></p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) Ile trzeba dodać do \(\sqrt{25} \), aby otrzymać \(\sqrt{225} \)?</div><div class="col-xs-12 col-md-12 col-lg-12">b) Ile trzeba odjąć od \(\sqrt{196} \), aby otrzymać \(\sqrt{169} \)?</div><div class="col-xs-12 col-md-12 col-lg-12">c) Przez ile trzeba pomnożyć \(\sqrt{12} \), aby otrzymać \(\sqrt{48} \)?</div><div class="col-xs-12 col-md-12 col-lg-12">d) Przez ile trzeba podzielić \(\sqrt{200} \), aby otrzymać \(\sqrt{20} \)?</div></div><button class="butt" id="gliczby5_5" onclick="pokazliczby5_5()">Rozwiązanie</button>
+<script>
+function pokazliczby5_5(){
+var dliczby5_5=document.getElementById("r-liczby5_5");
+var rliczby5_5=document.createElement("img");
+rliczby5_5.setAttribute('src','roz/liczby5_5.png');
+dliczby5_5.appendChild(rliczby5_5);
+var uliczby5_5=document.getElementById("gliczby5_5");
+uliczby5_5.innerHTML="Ukryj rozwiązanie";
+uliczby5_5.setAttribute("onclick","usunliczby5_5()");}
+function usunliczby5_5(){
+var dliczby5_5=document.getElementById("r-liczby5_5");
+dliczby5_5.innerHTML=null;
+var uliczby5_5a=document.getElementById("gliczby5_5");
+uliczby5_5a.innerHTML="Rozwiązanie";
+uliczby5_5a.setAttribute("onclick","pokazliczby5_5()");}
+</script>
+<div id="r-liczby5_5"></div>
+</li>
+<li class="numer" id="liczby5_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz wyrażenie w postaci \(a\sqrt{b} \).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \((\sqrt{48}-\sqrt{27}+\sqrt{75})\cdot \sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \((\sqrt{240}+3\sqrt{60}-\sqrt{135})\cdot 2\sqrt{3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \((11\sqrt{6}+\sqrt{96}-\sqrt{150}):3\sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \((20\sqrt{0,1}-\sqrt{90}+\sqrt{360}):5\sqrt{5} \)</div></div><button class="butt" id="gliczby5_6" onclick="pokazliczby5_6()">Rozwiązanie</button>
+<script>
+function pokazliczby5_6(){
+var dliczby5_6=document.getElementById("r-liczby5_6");
+var rliczby5_6=document.createElement("img");
+rliczby5_6.setAttribute('src','roz/liczby5_6.png');
+dliczby5_6.appendChild(rliczby5_6);
+var uliczby5_6=document.getElementById("gliczby5_6");
+uliczby5_6.innerHTML="Ukryj rozwiązanie";
+uliczby5_6.setAttribute("onclick","usunliczby5_6()");}
+function usunliczby5_6(){
+var dliczby5_6=document.getElementById("r-liczby5_6");
+dliczby5_6.innerHTML=null;
+var uliczby5_6a=document.getElementById("gliczby5_6");
+uliczby5_6a.innerHTML="Rozwiązanie";
+uliczby5_6a.setAttribute("onclick","pokazliczby5_6()");}
+</script>
+<div id="r-liczby5_6"></div>
+</li>
+<li class="numer" id="liczby5_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sprawdź, czy równość jest prawdziwa.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{72}:\sqrt{2}=\sqrt{18}\cdot \sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{1000}\cdot \sqrt{0,1}=(\sqrt{100})^2 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt{\frac{4}{9}}\cdot \sqrt{2\frac{1}{4}}=\sqrt{1\frac{7}{9}}\cdot \sqrt{\frac{9}{16}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\frac{\sqrt{6}\cdot \sqrt{7}}{\sqrt{8}}=\sqrt{1,5}\cdot \sqrt{3,5} \)</div></div><button class="butt" id="gliczby5_7" onclick="pokazliczby5_7()">Rozwiązanie</button>
+<script>
+function pokazliczby5_7(){
+var dliczby5_7=document.getElementById("r-liczby5_7");
+var rliczby5_7=document.createElement("img");
+rliczby5_7.setAttribute('src','roz/liczby5_7.png');
+dliczby5_7.appendChild(rliczby5_7);
+var uliczby5_7=document.getElementById("gliczby5_7");
+uliczby5_7.innerHTML="Ukryj rozwiązanie";
+uliczby5_7.setAttribute("onclick","usunliczby5_7()");}
+function usunliczby5_7(){
+var dliczby5_7=document.getElementById("r-liczby5_7");
+dliczby5_7.innerHTML=null;
+var uliczby5_7a=document.getElementById("gliczby5_7");
+uliczby5_7a.innerHTML="Rozwiązanie";
+uliczby5_7a.setAttribute("onclick","pokazliczby5_7()");}
+</script>
+<div id="r-liczby5_7"></div>
+</li>
+<li class="numer" id="liczby5_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uporządkuj liczby rosnąco. Nie korzystaj z kalkulatora. </p>
+<div class="row odp"><div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\(\sqrt{2,5},\ \sqrt{\frac{2}{5}}, \ 2\sqrt{5},\ 5\sqrt{2}, \ \sqrt{0,25}, \ \sqrt{25} \)</div></div><button class="butt" id="gliczby5_8" onclick="pokazliczby5_8()">Rozwiązanie</button>
+<script>
+function pokazliczby5_8(){
+var dliczby5_8=document.getElementById("r-liczby5_8");
+var rliczby5_8=document.createElement("img");
+rliczby5_8.setAttribute('src','roz/liczby5_8.png');
+dliczby5_8.appendChild(rliczby5_8);
+var uliczby5_8=document.getElementById("gliczby5_8");
+uliczby5_8.innerHTML="Ukryj rozwiązanie";
+uliczby5_8.setAttribute("onclick","usunliczby5_8()");}
+function usunliczby5_8(){
+var dliczby5_8=document.getElementById("r-liczby5_8");
+dliczby5_8.innerHTML=null;
+var uliczby5_8a=document.getElementById("gliczby5_8");
+uliczby5_8a.innerHTML="Rozwiązanie";
+uliczby5_8a.setAttribute("onclick","pokazliczby5_8()");}
+</script>
+<div id="r-liczby5_8"></div>
+</li>
+<li class="numer" id="liczby5_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Boki \(AB \) i \(AC \) trójkąta \(ABC \) są odpowiednio równe \(4\sqrt{5} \) i \(5\sqrt{2} \). Wysokość opuszczona na bok \(AB \) ma  długość \(3\sqrt{5} \). Oblicz wysokość opuszczoną na bok \(AC \). </p>
+<div class="row odp"></div><button class="butt" id="gliczby5_9" onclick="pokazliczby5_9()">Rozwiązanie</button>
+<script>
+function pokazliczby5_9(){
+var dliczby5_9=document.getElementById("r-liczby5_9");
+var rliczby5_9=document.createElement("img");
+rliczby5_9.setAttribute('src','roz/liczby5_9.png');
+dliczby5_9.appendChild(rliczby5_9);
+var uliczby5_9=document.getElementById("gliczby5_9");
+uliczby5_9.innerHTML="Ukryj rozwiązanie";
+uliczby5_9.setAttribute("onclick","usunliczby5_9()");}
+function usunliczby5_9(){
+var dliczby5_9=document.getElementById("r-liczby5_9");
+dliczby5_9.innerHTML=null;
+var uliczby5_9a=document.getElementById("gliczby5_9");
+uliczby5_9a.innerHTML="Rozwiązanie";
+uliczby5_9a.setAttribute("onclick","pokazliczby5_9()");}
+</script>
+<div id="r-liczby5_9"></div>
+</li>
+<li class="numer" id="liczby5_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wykonaj działania.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \((4-2\sqrt{5})\cdot (\sqrt{5}+3) \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \((2\sqrt{6}+6)\cdot (2\sqrt{3}-3\sqrt{2}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \((9-2\sqrt{15})\cdot (3\sqrt{3}+2\sqrt{5}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \((2\sqrt{5}-\sqrt{2})\cdot (\sqrt{10}+3) \)</div></div><button class="butt" id="gliczby5_10" onclick="pokazliczby5_10()">Rozwiązanie</button>
+<script>
+function pokazliczby5_10(){
+var dliczby5_10=document.getElementById("r-liczby5_10");
+var rliczby5_10=document.createElement("img");
+rliczby5_10.setAttribute('src','roz/liczby5_10.png');
+dliczby5_10.appendChild(rliczby5_10);
+var uliczby5_10=document.getElementById("gliczby5_10");
+uliczby5_10.innerHTML="Ukryj rozwiązanie";
+uliczby5_10.setAttribute("onclick","usunliczby5_10()");}
+function usunliczby5_10(){
+var dliczby5_10=document.getElementById("r-liczby5_10");
+dliczby5_10.innerHTML=null;
+var uliczby5_10a=document.getElementById("gliczby5_10");
+uliczby5_10a.innerHTML="Rozwiązanie";
+uliczby5_10a.setAttribute("onclick","pokazliczby5_10()");}
+</script>
+<div id="r-liczby5_10"></div>
+</li>
+<li class="numer" id="liczby5_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uprość ułamek.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{\sqrt{12}+\sqrt{75}}{\sqrt{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{4\sqrt{45}-2\sqrt{20}}{\sqrt{5}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{2\sqrt{2}+\sqrt{32}}{\sqrt{2}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(\frac{\sqrt{12}+\sqrt{27}+\sqrt{147}}{\sqrt{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\frac{\sqrt{28}+\sqrt{112}}{2\sqrt{7}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\frac{\sqrt{80}+2\sqrt{125}-\sqrt{500}}{4\sqrt{5}} \)</div></div><button class="butt" id="gliczby5_11" onclick="pokazliczby5_11()">Rozwiązanie</button>
+<script>
+function pokazliczby5_11(){
+var dliczby5_11=document.getElementById("r-liczby5_11");
+var rliczby5_11=document.createElement("img");
+rliczby5_11.setAttribute('src','roz/liczby5_11.png');
+dliczby5_11.appendChild(rliczby5_11);
+var uliczby5_11=document.getElementById("gliczby5_11");
+uliczby5_11.innerHTML="Ukryj rozwiązanie";
+uliczby5_11.setAttribute("onclick","usunliczby5_11()");}
+function usunliczby5_11(){
+var dliczby5_11=document.getElementById("r-liczby5_11");
+dliczby5_11.innerHTML=null;
+var uliczby5_11a=document.getElementById("gliczby5_11");
+uliczby5_11a.innerHTML="Rozwiązanie";
+uliczby5_11a.setAttribute("onclick","pokazliczby5_11()");}
+</script>
+<div id="r-liczby5_11"></div>
+</li>
+<li class="numer" id="liczby5_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz podaną liczbę w najprostszej postaci.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{\sqrt{27}+\sqrt{192}-\sqrt{108}}{\sqrt{75}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{4\sqrt{99}-\sqrt{176}}{\sqrt{275}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{3\sqrt{45}+6\sqrt{20}}{3\sqrt{5}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(\frac{\sqrt{15}-\sqrt{12}}{\sqrt{5}-2} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\frac{\sqrt{28}+\sqrt{175}}{\sqrt{700}-\sqrt{63}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\frac{(5\sqrt{3}+\sqrt{50})(5-\sqrt{24})}{\sqrt{75}-5\sqrt{2}} \)</div></div><button class="butt" id="gliczby5_12" onclick="pokazliczby5_12()">Rozwiązanie</button>
+<script>
+function pokazliczby5_12(){
+var dliczby5_12=document.getElementById("r-liczby5_12");
+var rliczby5_12=document.createElement("img");
+rliczby5_12.setAttribute('src','roz/liczby5_12.png');
+dliczby5_12.appendChild(rliczby5_12);
+var uliczby5_12=document.getElementById("gliczby5_12");
+uliczby5_12.innerHTML="Ukryj rozwiązanie";
+uliczby5_12.setAttribute("onclick","usunliczby5_12()");}
+function usunliczby5_12(){
+var dliczby5_12=document.getElementById("r-liczby5_12");
+dliczby5_12.innerHTML=null;
+var uliczby5_12a=document.getElementById("gliczby5_12");
+uliczby5_12a.innerHTML="Rozwiązanie";
+uliczby5_12a.setAttribute("onclick","pokazliczby5_12()");}
+</script>
+<div id="r-liczby5_12"></div>
+</li>
+<li class="numer" id="liczby5_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę \(\frac{1}{a} \) w postaci ułamka, którego mianownik jest liczbą całkowitą.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(a=\sqrt{3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(a=3\sqrt{6} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(a=\frac{\sqrt{2}}{3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(a=\sqrt{\frac{2}{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(a=\frac{3\sqrt{2}}{4} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(a=\frac{2\sqrt{10}}{5} \)</div></div><button class="butt" id="gliczby5_13" onclick="pokazliczby5_13()">Rozwiązanie</button>
+<script>
+function pokazliczby5_13(){
+var dliczby5_13=document.getElementById("r-liczby5_13");
+var rliczby5_13=document.createElement("img");
+rliczby5_13.setAttribute('src','roz/liczby5_13.png');
+dliczby5_13.appendChild(rliczby5_13);
+var uliczby5_13=document.getElementById("gliczby5_13");
+uliczby5_13.innerHTML="Ukryj rozwiązanie";
+uliczby5_13.setAttribute("onclick","usunliczby5_13()");}
+function usunliczby5_13(){
+var dliczby5_13=document.getElementById("r-liczby5_13");
+dliczby5_13.innerHTML=null;
+var uliczby5_13a=document.getElementById("gliczby5_13");
+uliczby5_13a.innerHTML="Rozwiązanie";
+uliczby5_13a.setAttribute("onclick","pokazliczby5_13()");}
+</script>
+<div id="r-liczby5_13"></div>
+</li>
+<li class="numer" id="liczby5_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz pierwiastek kwadratowy z podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \((\sqrt{50}-7)^2 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \((\sqrt{20}-5)^2 \)</div><div class="col-xs-12 col-md-6 col-lg-2">c) \((-\sqrt{9})^2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">d) \((\sqrt{6}-\sqrt{2}-\sqrt{3})^2 \)</div></div><button class="butt" id="gliczby5_14" onclick="pokazliczby5_14()">Rozwiązanie</button>
+<script>
+function pokazliczby5_14(){
+var dliczby5_14=document.getElementById("r-liczby5_14");
+var rliczby5_14=document.createElement("img");
+rliczby5_14.setAttribute('src','roz/liczby5_14.png');
+dliczby5_14.appendChild(rliczby5_14);
+var uliczby5_14=document.getElementById("gliczby5_14");
+uliczby5_14.innerHTML="Ukryj rozwiązanie";
+uliczby5_14.setAttribute("onclick","usunliczby5_14()");}
+function usunliczby5_14(){
+var dliczby5_14=document.getElementById("r-liczby5_14");
+dliczby5_14.innerHTML=null;
+var uliczby5_14a=document.getElementById("gliczby5_14");
+uliczby5_14a.innerHTML="Rozwiązanie";
+uliczby5_14a.setAttribute("onclick","pokazliczby5_14()");}
+</script>
+<div id="r-liczby5_14"></div>
+</li>
+<li class="numer" id="liczby5_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że zachodzi podana równość.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{8}+\sqrt{32}=\sqrt{2}+\sqrt{50} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{5}+\sqrt{405}=\sqrt{45}+\sqrt{245} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt{12}+\sqrt{27}+\sqrt{48}=\sqrt{3}+\sqrt{192} \)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(\sqrt{68}+\sqrt{153}=\sqrt{17}+\sqrt{272} \)</div></div><button class="butt" id="gliczby5_15" onclick="pokazliczby5_15()">Rozwiązanie</button>
+<script>
+function pokazliczby5_15(){
+var dliczby5_15=document.getElementById("r-liczby5_15");
+var rliczby5_15=document.createElement("img");
+rliczby5_15.setAttribute('src','roz/liczby5_15.png');
+dliczby5_15.appendChild(rliczby5_15);
+var uliczby5_15=document.getElementById("gliczby5_15");
+uliczby5_15.innerHTML="Ukryj rozwiązanie";
+uliczby5_15.setAttribute("onclick","usunliczby5_15()");}
+function usunliczby5_15(){
+var dliczby5_15=document.getElementById("r-liczby5_15");
+dliczby5_15.innerHTML=null;
+var uliczby5_15a=document.getElementById("gliczby5_15");
+uliczby5_15a.innerHTML="Rozwiązanie";
+uliczby5_15a.setAttribute("onclick","pokazliczby5_15()");}
+</script>
+<div id="r-liczby5_15"></div>
+</li>
+<li class="numer" id="liczby5_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że podane liczby są przeciwne.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{18}-5\sqrt{2}\ i\ \sqrt{50}-3\sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{3}-\sqrt{27}\ i\ \sqrt{147}-5\sqrt{3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\frac{2-2\sqrt{2}}{\sqrt{2}}\ i\ \sqrt{2}(\sqrt{2}-1) \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\frac{1-\sqrt{3}}{\sqrt{3}}\ i\ -\frac{1}{3}\sqrt{3}+1 \)</div></div><button class="butt" id="gliczby5_16" onclick="pokazliczby5_16()">Rozwiązanie</button>
+<script>
+function pokazliczby5_16(){
+var dliczby5_16=document.getElementById("r-liczby5_16");
+var rliczby5_16=document.createElement("img");
+rliczby5_16.setAttribute('src','roz/liczby5_16.png');
+dliczby5_16.appendChild(rliczby5_16);
+var uliczby5_16=document.getElementById("gliczby5_16");
+uliczby5_16.innerHTML="Ukryj rozwiązanie";
+uliczby5_16.setAttribute("onclick","usunliczby5_16()");}
+function usunliczby5_16(){
+var dliczby5_16=document.getElementById("r-liczby5_16");
+dliczby5_16.innerHTML=null;
+var uliczby5_16a=document.getElementById("gliczby5_16");
+uliczby5_16a.innerHTML="Rozwiązanie";
+uliczby5_16a.setAttribute("onclick","pokazliczby5_16()");}
+</script>
+<div id="r-liczby5_16"></div>
+</li>
+<li class="numer" id="liczby5_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że liczba \(x \) jest odwrotnością liczby \(y \).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(x=\frac{\sqrt{6}}{3},\ y=\frac{\sqrt{6}}{2} \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(x=2\sqrt{18},\ y=\frac{\sqrt{3}}{3\sqrt{24}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(x=2\sqrt{3}+\sqrt{12}+\frac{\sqrt{48}}{2},\ y=\frac{\sqrt{3}}{18} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">d) \(x=\sqrt{(1+\frac{1}{4})(1+\frac{1}{3})(1+\frac{1}{2})},\ y=\sqrt{(1-\frac{1}{5})(1-\frac{1}{4})(1-\frac{1}{3})} \)</div></div><button class="butt" id="gliczby5_17" onclick="pokazliczby5_17()">Rozwiązanie</button>
+<script>
+function pokazliczby5_17(){
+var dliczby5_17=document.getElementById("r-liczby5_17");
+var rliczby5_17=document.createElement("img");
+rliczby5_17.setAttribute('src','roz/liczby5_17.png');
+dliczby5_17.appendChild(rliczby5_17);
+var uliczby5_17=document.getElementById("gliczby5_17");
+uliczby5_17.innerHTML="Ukryj rozwiązanie";
+uliczby5_17.setAttribute("onclick","usunliczby5_17()");}
+function usunliczby5_17(){
+var dliczby5_17=document.getElementById("r-liczby5_17");
+dliczby5_17.innerHTML=null;
+var uliczby5_17a=document.getElementById("gliczby5_17");
+uliczby5_17a.innerHTML="Rozwiązanie";
+uliczby5_17a.setAttribute("onclick","pokazliczby5_17()");}
+</script>
+<div id="r-liczby5_17"></div>
+</li>
+<li class="numer" id="liczby5_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wśród liczb: \(\sqrt{3}-2,\ 2+\sqrt{3},\ 2-\sqrt{3},\ -\sqrt{3}-2 \) wskaż:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) pary liczb przeciwnych</div><div class="col-xs-12 col-md-12 col-lg-6">b) pary liczb odwrotnych</div></div><button class="butt" id="gliczby5_18" onclick="pokazliczby5_18()">Rozwiązanie</button>
+<script>
+function pokazliczby5_18(){
+var dliczby5_18=document.getElementById("r-liczby5_18");
+var rliczby5_18=document.createElement("img");
+rliczby5_18.setAttribute('src','roz/liczby5_18.png');
+dliczby5_18.appendChild(rliczby5_18);
+var uliczby5_18=document.getElementById("gliczby5_18");
+uliczby5_18.innerHTML="Ukryj rozwiązanie";
+uliczby5_18.setAttribute("onclick","usunliczby5_18()");}
+function usunliczby5_18(){
+var dliczby5_18=document.getElementById("r-liczby5_18");
+dliczby5_18.innerHTML=null;
+var uliczby5_18a=document.getElementById("gliczby5_18");
+uliczby5_18a.innerHTML="Rozwiązanie";
+uliczby5_18a.setAttribute("onclick","pokazliczby5_18()");}
+</script>
+<div id="r-liczby5_18"></div>
+</li>
+<li class="numer" id="liczby5_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Punkty \(E, F, G, H \) są środkami boków kwadratu \(ABCD \) (patrz rysunek). Czworokąt \(EFGH \) ma pole równe \(10 \). Oblicz długość odcinka \(AG \).</p>
+<div class="row odp"><canvas id="l5rys1" class="rys" width="320" height="300"></canvas><script>
+var canvas=document.getElementById("l5rys1");
+var context=canvas.getContext("2d");
+const img4=new Image();
+img4.src = "./l5r1.png";
+img4.onload=()=>{
+context.drawImage(img4, 40, 45, 905, 935, 0, 0, 320, 300);
+};
+</script>
+</div><button class="butt" id="gliczby5_19" onclick="pokazliczby5_19()">Rozwiązanie</button>
+<script>
+function pokazliczby5_19(){
+var dliczby5_19=document.getElementById("r-liczby5_19");
+var rliczby5_19=document.createElement("img");
+rliczby5_19.setAttribute('src','roz/liczby5_19.png');
+dliczby5_19.appendChild(rliczby5_19);
+var uliczby5_19=document.getElementById("gliczby5_19");
+uliczby5_19.innerHTML="Ukryj rozwiązanie";
+uliczby5_19.setAttribute("onclick","usunliczby5_19()");}
+function usunliczby5_19(){
+var dliczby5_19=document.getElementById("r-liczby5_19");
+dliczby5_19.innerHTML=null;
+var uliczby5_19a=document.getElementById("gliczby5_19");
+uliczby5_19a.innerHTML="Rozwiązanie";
+uliczby5_19a.setAttribute("onclick","pokazliczby5_19()");}
+</script>
+<div id="r-liczby5_19"></div>
+</li>
+<li class="numer" id="liczby5_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sprawdź, czy istnieje trójkąt o bokach:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{2}, 1, \sqrt{3} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{3},4,\sqrt{5} \)</div></div><button class="butt" id="gliczby5_20" onclick="pokazliczby5_20()">Rozwiązanie</button>
+<script>
+function pokazliczby5_20(){
+var dliczby5_20=document.getElementById("r-liczby5_20");
+var rliczby5_20=document.createElement("img");
+rliczby5_20.setAttribute('src','roz/liczby5_20.png');
+dliczby5_20.appendChild(rliczby5_20);
+var uliczby5_20=document.getElementById("gliczby5_20");
+uliczby5_20.innerHTML="Ukryj rozwiązanie";
+uliczby5_20.setAttribute("onclick","usunliczby5_20()");}
+function usunliczby5_20(){
+var dliczby5_20=document.getElementById("r-liczby5_20");
+dliczby5_20.innerHTML=null;
+var uliczby5_20a=document.getElementById("gliczby5_20");
+uliczby5_20a.innerHTML="Rozwiązanie";
+uliczby5_20a.setAttribute("onclick","pokazliczby5_20()");}
+</script>
+<div id="r-liczby5_20"></div>
+</li>
+<li class="numer" id="liczby5_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(2\ i\ \sqrt{3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(3\sqrt{2}\ i\ 2\sqrt{3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(2\sqrt{3} \ i\ \sqrt{13} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(5\sqrt{3}\ i\ 3\sqrt{5} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\sqrt{4\sqrt{3}}\ i\ \sqrt{5\sqrt{2}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\sqrt{5\sqrt{3}}\ i\ \sqrt{6\sqrt{2}} \)</div></div><button class="butt" id="gliczby5_21" onclick="pokazliczby5_21()">Rozwiązanie</button>
+<script>
+function pokazliczby5_21(){
+var dliczby5_21=document.getElementById("r-liczby5_21");
+var rliczby5_21=document.createElement("img");
+rliczby5_21.setAttribute('src','roz/liczby5_21.png');
+dliczby5_21.appendChild(rliczby5_21);
+var uliczby5_21=document.getElementById("gliczby5_21");
+uliczby5_21.innerHTML="Ukryj rozwiązanie";
+uliczby5_21.setAttribute("onclick","usunliczby5_21()");}
+function usunliczby5_21(){
+var dliczby5_21=document.getElementById("r-liczby5_21");
+dliczby5_21.innerHTML=null;
+var uliczby5_21a=document.getElementById("gliczby5_21");
+uliczby5_21a.innerHTML="Rozwiązanie";
+uliczby5_21a.setAttribute("onclick","pokazliczby5_21()");}
+</script>
+<div id="r-liczby5_21"></div>
+</li>
+<li class="numer" id="liczby5_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Usuń niewymierność z mianownika.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{5\sqrt{2}}{\sqrt{8}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{8+\sqrt{18}}{\sqrt{2}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{\sqrt{27}+\sqrt{48}}{\sqrt{3}} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(\frac{10}{\sqrt{2}+\sqrt{8}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\frac{\sqrt{5}}{\sqrt{20}+\sqrt{45}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\frac{\sqrt{2}+\sqrt{3}}{\sqrt{24}+\sqrt{54}} \)</div></div><button class="butt" id="gliczby5_22" onclick="pokazliczby5_22()">Rozwiązanie</button>
+<script>
+function pokazliczby5_22(){
+var dliczby5_22=document.getElementById("r-liczby5_22");
+var rliczby5_22=document.createElement("img");
+rliczby5_22.setAttribute('src','roz/liczby5_22.png');
+dliczby5_22.appendChild(rliczby5_22);
+var uliczby5_22=document.getElementById("gliczby5_22");
+uliczby5_22.innerHTML="Ukryj rozwiązanie";
+uliczby5_22.setAttribute("onclick","usunliczby5_22()");}
+function usunliczby5_22(){
+var dliczby5_22=document.getElementById("r-liczby5_22");
+dliczby5_22.innerHTML=null;
+var uliczby5_22a=document.getElementById("gliczby5_22");
+uliczby5_22a.innerHTML="Rozwiązanie";
+uliczby5_22a.setAttribute("onclick","pokazliczby5_22()");}
+</script>
+<div id="r-liczby5_22"></div>
+</li>
+<li class="numer" id="liczby5_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{19+8\sqrt{3}}=4+\sqrt{3} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{4-2\sqrt{3}}=\sqrt{3}-1 \)</div></div><button class="butt" id="gliczby5_23" onclick="pokazliczby5_23()">Rozwiązanie</button>
+<script>
+function pokazliczby5_23(){
+var dliczby5_23=document.getElementById("r-liczby5_23");
+var rliczby5_23=document.createElement("img");
+rliczby5_23.setAttribute('src','roz/liczby5_23.png');
+dliczby5_23.appendChild(rliczby5_23);
+var uliczby5_23=document.getElementById("gliczby5_23");
+uliczby5_23.innerHTML="Ukryj rozwiązanie";
+uliczby5_23.setAttribute("onclick","usunliczby5_23()");}
+function usunliczby5_23(){
+var dliczby5_23=document.getElementById("r-liczby5_23");
+dliczby5_23.innerHTML=null;
+var uliczby5_23a=document.getElementById("gliczby5_23");
+uliczby5_23a.innerHTML="Rozwiązanie";
+uliczby5_23a.setAttribute("onclick","pokazliczby5_23()");}
+</script>
+<div id="r-liczby5_23"></div>
+</li>
+<li class="numer" id="liczby5_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(2-\sqrt{(\sqrt{3}-2)^2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{(\sqrt{3}+2)^2}+\sqrt{(2-\sqrt{3})^2} \)</div></div><button class="butt" id="gliczby5_24" onclick="pokazliczby5_24()">Rozwiązanie</button>
+<script>
+function pokazliczby5_24(){
+var dliczby5_24=document.getElementById("r-liczby5_24");
+var rliczby5_24=document.createElement("img");
+rliczby5_24.setAttribute('src','roz/liczby5_24.png');
+dliczby5_24.appendChild(rliczby5_24);
+var uliczby5_24=document.getElementById("gliczby5_24");
+uliczby5_24.innerHTML="Ukryj rozwiązanie";
+uliczby5_24.setAttribute("onclick","usunliczby5_24()");}
+function usunliczby5_24(){
+var dliczby5_24=document.getElementById("r-liczby5_24");
+dliczby5_24.innerHTML=null;
+var uliczby5_24a=document.getElementById("gliczby5_24");
+uliczby5_24a.innerHTML="Rozwiązanie";
+uliczby5_24a.setAttribute("onclick","pokazliczby5_24()");}
+</script>
+<div id="r-liczby5_24"></div>
+</li>
+<li class="numer" id="liczby5_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozwiąż równanie.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{6}\cdot \sqrt{x}=\sqrt{90} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{50}\cdot 2\sqrt{x}=\sqrt{200} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\sqrt{18}\cdot \sqrt{x}=\sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\sqrt{40}\cdot \sqrt{x}=\sqrt{72} \)</div></div><button class="butt" id="gliczby5_25" onclick="pokazliczby5_25()">Rozwiązanie</button>
+<script>
+function pokazliczby5_25(){
+var dliczby5_25=document.getElementById("r-liczby5_25");
+var rliczby5_25=document.createElement("img");
+rliczby5_25.setAttribute('src','roz/liczby5_25.png');
+dliczby5_25.appendChild(rliczby5_25);
+var uliczby5_25=document.getElementById("gliczby5_25");
+uliczby5_25.innerHTML="Ukryj rozwiązanie";
+uliczby5_25.setAttribute("onclick","usunliczby5_25()");}
+function usunliczby5_25(){
+var dliczby5_25=document.getElementById("r-liczby5_25");
+dliczby5_25.innerHTML=null;
+var uliczby5_25a=document.getElementById("gliczby5_25");
+uliczby5_25a.innerHTML="Rozwiązanie";
+uliczby5_25a.setAttribute("onclick","pokazliczby5_25()");}
+</script>
+<div id="r-liczby5_25"></div></li>
+<li class="numer" id="liczby5_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozwiąż równania.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt{x}=0,\ \sqrt{x^2}=0 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(\sqrt{x-1}=0,\ \sqrt{1-x}=0 \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(\sqrt{x^2-1}=0,\ \sqrt{1-x^2}=0 \)</div><div class="col-xs-12 col-md-12 col-lg-12">d) \(\sqrt{x-2}=\sqrt{2-x},\ \sqrt{x+3}=\sqrt{-x+3} \)</div><div class="col-xs-12 col-md-12 col-lg-12">e) \(\sqrt{x^2-4}=\sqrt{4-x^2},\ \sqrt{x^2-5}=\sqrt{5-x^2} \)</div><div class="col-xs-12 col-md-12 col-lg-12">f) \(\sqrt{(x+2)^2-9}=\sqrt{9-(x+2)^2},\ \sqrt{(x-3)^2-5}=\sqrt{5-(x-3)^2} \)</div></div><button class="butt" id="gliczby5_26" onclick="pokazliczby5_26()">Rozwiązanie</button>
+<script>
+function pokazliczby5_26(){
+var dliczby5_26=document.getElementById("r-liczby5_26");
+var rliczby5_26=document.createElement("img");
+rliczby5_26.setAttribute('src','roz/liczby5_26.png');
+dliczby5_26.appendChild(rliczby5_26);
+var uliczby5_26=document.getElementById("gliczby5_26");
+uliczby5_26.innerHTML="Ukryj rozwiązanie";
+uliczby5_26.setAttribute("onclick","usunliczby5_26()");}
+function usunliczby5_26(){
+var dliczby5_26=document.getElementById("r-liczby5_26");
+dliczby5_26.innerHTML=null;
+var uliczby5_26a=document.getElementById("gliczby5_26");
+uliczby5_26a.innerHTML="Rozwiązanie";
+uliczby5_26a.setAttribute("onclick","pokazliczby5_26()");}
+</script>
+<div id="r-liczby5_26"></div></li>
+<li class="numer" id="liczby5_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczbę \(a \) spełniającą podany warunek.</p>
+  <div class="row odp">
+    <div class="col-xs-12 col-md-6 col-lg-4">a) \(\sqrt{a}=2 \)</div>
+	<div class="col-xs-12 col-md-6 col-lg-4">b) \(\sqrt{a+1}=3 \)</div>
+	<div class="col-xs-12 col-md-6 col-lg-4">c) \(\sqrt{2a-1}=4 \)</div>
+  </div>
+  <div class="row odp">
+    <div class="col-xs-12 col-md-6 col-lg-4">d) \(\sqrt{3-a}=5 \)</div>
+	<div class="col-xs-12 col-md-6 col-lg-4">e) \(\sqrt{a}=1-\sqrt{3} \)</div>
+	<div class="col-xs-12 col-md-6 col-lg-4">f) \(\sqrt{a}=a \)</div>
+  </div>
+  <div class="row odp">
+    <div class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-1">g) \(\sqrt{a}=-a \)</div>
+	<div class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-1">h) \(\sqrt{a-1}=1-a \)</div>
+  </div>
+  <button class="butt" id="gliczby5_27" onclick="pokazliczby5_27()">Rozwiązanie</button>
+<script>
+function pokazliczby5_27(){
+var dliczby5_27=document.getElementById("r-liczby5_27");
+var rliczby5_27=document.createElement("img");
+rliczby5_27.setAttribute('src','roz/liczby5_27.png');
+dliczby5_27.appendChild(rliczby5_27);
+var uliczby5_27=document.getElementById("gliczby5_27");
+uliczby5_27.innerHTML="Ukryj rozwiązanie";
+uliczby5_27.setAttribute("onclick","usunliczby5_27()");}
+function usunliczby5_27(){
+var dliczby5_27=document.getElementById("r-liczby5_27");
+dliczby5_27.innerHTML=null;
+var uliczby5_27a=document.getElementById("gliczby5_27");
+uliczby5_27a.innerHTML="Rozwiązanie";
+uliczby5_27a.setAttribute("onclick","pokazliczby5_27()");}
+</script>
+<div id="r-liczby5_27"></div>
+</li>
+<li class="numer" id="liczby5_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz wyrażenie w najprostszej postaci.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\sqrt{(a-4)^2} \) dla \(a\geq4 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{(a-3)^2} \) dla \(a&lt;3 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12 col-lg-offset-2">c) \(\sqrt{(a-1)^2}+\sqrt{(a-5)^2} \) dla \(1\leq a \leq 5 \)</div></div><button class="butt" id="gliczby5_28" onclick="pokazliczby5_28()">Rozwiązanie</button>
+<script>
+function pokazliczby5_28(){
+var dliczby5_28=document.getElementById("r-liczby5_28");
+var rliczby5_28=document.createElement("img");
+rliczby5_28.setAttribute('src','roz/liczby5_28.png');
+dliczby5_28.appendChild(rliczby5_28);
+var uliczby5_28=document.getElementById("gliczby5_28");
+uliczby5_28.innerHTML="Ukryj rozwiązanie";
+uliczby5_28.setAttribute("onclick","usunliczby5_28()");}
+function usunliczby5_28(){
+var dliczby5_28=document.getElementById("r-liczby5_28");
+dliczby5_28.innerHTML=null;
+var uliczby5_28a=document.getElementById("gliczby5_28");
+uliczby5_28a.innerHTML="Rozwiązanie";
+uliczby5_28a.setAttribute("onclick","pokazliczby5_28()");}
+</script>
+<div id="r-liczby5_28"></div>
+</li>
+<li class="numer" id="liczby5_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że podana liczba jest wymierna.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(\sqrt{16\sqrt{8}\cdot 8\sqrt{4}\cdot 4\sqrt{2}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(\sqrt{\sqrt{\sqrt{\sqrt{\frac{1}{2}-\frac{1}{4}}-\frac{1}{4}}-\frac{1}{4}}-\frac{1}{4}} \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(\frac{\sqrt{3}}{1+\frac{1}{1+\frac{1}{1+\sqrt{3}}}} \)</div></div><button class="butt" id="gliczby5_29" onclick="pokazliczby5_29()">Rozwiązanie</button>
+<script>
+function pokazliczby5_29(){
+var dliczby5_29=document.getElementById("r-liczby5_29");
+var rliczby5_29=document.createElement("img");
+rliczby5_29.setAttribute('src','roz/liczby5_29.png');
+dliczby5_29.appendChild(rliczby5_29);
+var uliczby5_29=document.getElementById("gliczby5_29");
+uliczby5_29.innerHTML="Ukryj rozwiązanie";
+uliczby5_29.setAttribute("onclick","usunliczby5_29()");}
+function usunliczby5_29(){
+var dliczby5_29=document.getElementById("r-liczby5_29");
+dliczby5_29.innerHTML=null;
+var uliczby5_29a=document.getElementById("gliczby5_29");
+uliczby5_29a.innerHTML="Rozwiązanie";
+uliczby5_29a.setAttribute("onclick","pokazliczby5_29()");}
+</script>
+<div id="r-liczby5_29"></div>
+</li>
+<li class="numer" id="liczby5_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wypisano wszystkie dzielniki naturalne liczby \(36 \) i z każdego z nich obliczono pierwiastek kwadratowy. Udowodnij, że suma tych pierwiastków jest mniejsza niż \(36 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby5_30" onclick="pokazliczby5_30()">Rozwiązanie</button>
+<script>
+function pokazliczby5_30(){
+var dliczby5_30=document.getElementById("r-liczby5_30");
+var rliczby5_30=document.createElement("img");
+rliczby5_30.setAttribute('src','roz/liczby5_30.png');
+dliczby5_30.appendChild(rliczby5_30);
+var uliczby5_30=document.getElementById("gliczby5_30");
+uliczby5_30.innerHTML="Ukryj rozwiązanie";
+uliczby5_30.setAttribute("onclick","usunliczby5_30()");}
+function usunliczby5_30(){
+var dliczby5_30=document.getElementById("r-liczby5_30");
+dliczby5_30.innerHTML=null;
+var uliczby5_30a=document.getElementById("gliczby5_30");
+uliczby5_30a.innerHTML="Rozwiązanie";
+uliczby5_30a.setAttribute("onclick","pokazliczby5_30()");}
+</script>
+<div id="r-liczby5_30"></div>
+</li>
+<li class="numer" id="liczby5_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że liczba \((\sqrt{3}-\sqrt{2})^2 + 2\sqrt{6} \) jest naturalna.</p>
+<div class="row odp"></div><button class="butt" id="gliczby5_31" onclick="pokazliczby5_31()">Rozwiązanie</button>
+<script>
+function pokazliczby5_31(){
+var dliczby5_31=document.getElementById("r-liczby5_31");
+var rliczby5_31=document.createElement("img");
+rliczby5_31.setAttribute('src','roz/liczby5_31.png');
+dliczby5_31.appendChild(rliczby5_31);
+var uliczby5_31=document.getElementById("gliczby5_31");
+uliczby5_31.innerHTML="Ukryj rozwiązanie";
+uliczby5_31.setAttribute("onclick","usunliczby5_31()");}
+function usunliczby5_31(){
+var dliczby5_31=document.getElementById("r-liczby5_31");
+dliczby5_31.innerHTML=null;
+var uliczby5_31a=document.getElementById("gliczby5_31");
+uliczby5_31a.innerHTML="Rozwiązanie";
+uliczby5_31a.setAttribute("onclick","pokazliczby5_31()");}
+</script>
+<div id="r-liczby5_31"></div>
+</li>
+<li class="numer" id="liczby5_32"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozwiąż równanie \(\sqrt{\sqrt{\sqrt{\sqrt{x}+1}+2}+3}=\sqrt{1+2+3} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby5_32" onclick="pokazliczby5_32()">Rozwiązanie</button>
+<script>
+function pokazliczby5_32(){
+var dliczby5_32=document.getElementById("r-liczby5_32");
+var rliczby5_32=document.createElement("img");
+rliczby5_32.setAttribute('src','roz/liczby5_32.png');
+dliczby5_32.appendChild(rliczby5_32);
+var uliczby5_32=document.getElementById("gliczby5_32");
+uliczby5_32.innerHTML="Ukryj rozwiązanie";
+uliczby5_32.setAttribute("onclick","usunliczby5_32()");}
+function usunliczby5_32(){
+var dliczby5_32=document.getElementById("r-liczby5_32");
+dliczby5_32.innerHTML=null;
+var uliczby5_32a=document.getElementById("gliczby5_32");
+uliczby5_32a.innerHTML="Rozwiązanie";
+uliczby5_32a.setAttribute("onclick","pokazliczby5_32()");}
+</script>
+<div id="r-liczby5_32"></div></li>
+<li class="numer" id="liczby5_33"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że \(\sqrt{10+\sqrt{24}+\sqrt{40}+\sqrt{60}}=\sqrt{2}+\sqrt{3}+\sqrt{5} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby5_33" onclick="pokazliczby5_33()">Rozwiązanie</button>
+<script>
+function pokazliczby5_33(){
+var dliczby5_33=document.getElementById("r-liczby5_33");
+var rliczby5_33=document.createElement("img");
+rliczby5_33.setAttribute('src','roz/liczby5_33.png');
+dliczby5_33.appendChild(rliczby5_33);
+var uliczby5_33=document.getElementById("gliczby5_33");
+uliczby5_33.innerHTML="Ukryj rozwiązanie";
+uliczby5_33.setAttribute("onclick","usunliczby5_33()");}
+function usunliczby5_33(){
+var dliczby5_33=document.getElementById("r-liczby5_33");
+dliczby5_33.innerHTML=null;
+var uliczby5_33a=document.getElementById("gliczby5_33");
+uliczby5_33a.innerHTML="Rozwiązanie";
+uliczby5_33a.setAttribute("onclick","pokazliczby5_33()");}
+</script>
+<div id="r-liczby5_33"></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

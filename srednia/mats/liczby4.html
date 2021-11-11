@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="../../logo.png">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rozwinięcie dziesiętne liczby rzeczywistej</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+
+			<h3>Szkoła średnia</h3><ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Rozwinięcie dziesiętne liczby rzeczywistej</p>
+						  <ol class="list-group powt">
+<li class="numer" id="liczby4_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozszerz ułamek tak, aby jesto mianownikiem była potęga liczby \(10 \), a następnie zapisz go w postaci dziesiętnej.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{7}{8} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{24}{25} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{111}{250} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{13}{40} \)</div></div><button class="butt" id="gliczby4_1" onclick="pokazliczby4_1()">Rozwiązanie</button>
+<script>
+function pokazliczby4_1(){
+var dliczby4_1=document.getElementById("r-liczby4_1");
+var rliczby4_1=document.createElement("img");
+rliczby4_1.setAttribute('src','roz/liczby4_1.png');
+dliczby4_1.appendChild(rliczby4_1);
+var uliczby4_1=document.getElementById("gliczby4_1");
+uliczby4_1.innerHTML="Ukryj rozwiązanie";
+uliczby4_1.setAttribute("onclick","usunliczby4_1()");}
+function usunliczby4_1(){
+var dliczby4_1=document.getElementById("r-liczby4_1");
+dliczby4_1.innerHTML=null;
+var uliczby4_1a=document.getElementById("gliczby4_1");
+uliczby4_1a.innerHTML="Rozwiązanie";
+uliczby4_1a.setAttribute("onclick","pokazliczby4_1()");}
+</script>
+<div id="r-liczby4_1"></div>
+</li>
+<li class="numer" id="liczby4_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby i wpisz jeden z symboli: \(>, &lt;, = \).</p>
+<div class="row odp"><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(1\frac{4}{5} \ ? \ 1,7(9) \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{7}{8} \ ? \ 0,(875) \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(4\frac{2}{3} \ ? \ 4,(65) \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(3\frac{2}{11} \ ? \ 3,(18) \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(-\frac{1}{25} \ ? \ -0,0(4) \)</div><div class="col-xs-12 col-md-6 col-lg-4"></div>f) \(-\frac{1}{6} \ ? \ -0,(16) \)</div></div><button class="butt" id="gliczby4_2" onclick="pokazliczby4_2()">Rozwiązanie</button>
+<script>
+function pokazliczby4_2(){
+var dliczby4_2=document.getElementById("r-liczby4_2");
+var rliczby4_2=document.createElement("img");
+rliczby4_2.setAttribute('src','roz/liczby4_2.png');
+dliczby4_2.appendChild(rliczby4_2);
+var uliczby4_2=document.getElementById("gliczby4_2");
+uliczby4_2.innerHTML="Ukryj rozwiązanie";
+uliczby4_2.setAttribute("onclick","usunliczby4_2()");}
+function usunliczby4_2(){
+var dliczby4_2=document.getElementById("r-liczby4_2");
+dliczby4_2.innerHTML=null;
+var uliczby4_2a=document.getElementById("gliczby4_2");
+uliczby4_2a.innerHTML="Rozwiązanie";
+uliczby4_2a.setAttribute("onclick","pokazliczby4_2()");}
+</script>
+<div id="r-liczby4_2"></div>
+</li>
+<li class="numer" id="liczby4_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź rozwinięcie dziesiętne podanej liczby.</p>
+<div class="row odp"><div class="col-xs-2 col-md-2 col-lg-2">a) \(\frac{17}{20} \)</div><div class="col-xs-2 col-md-2 col-lg-2">b)\(-\frac{7}{8} \)</div><div class="col-xs-2 col-md-2 col-lg-2">c) \(\frac{5}{18} \)</div><div class="col-xs-2 col-md-2 col-lg-2">d) \(\frac{1}{6} \)</div><div class="col-xs-2 col-md-2 col-lg-2">e) \(2\frac{14}{45} \)</div><div class="col-xs-2 col-md-2 col-lg-2">f) \(\frac{123}{99} \)</div></div><button class="butt" id="gliczby4_3" onclick="pokazliczby4_3()">Rozwiązanie</button>
+<script>
+function pokazliczby4_3(){
+var dliczby4_3=document.getElementById("r-liczby4_3");
+var rliczby4_3=document.createElement("img");
+rliczby4_3.setAttribute('src','roz/liczby4_3.png');
+dliczby4_3.appendChild(rliczby4_3);
+var uliczby4_3=document.getElementById("gliczby4_3");
+uliczby4_3.innerHTML="Ukryj rozwiązanie";
+uliczby4_3.setAttribute("onclick","usunliczby4_3()");}
+function usunliczby4_3(){
+var dliczby4_3=document.getElementById("r-liczby4_3");
+dliczby4_3.innerHTML=null;
+var uliczby4_3a=document.getElementById("gliczby4_3");
+uliczby4_3a.innerHTML="Rozwiązanie";
+uliczby4_3a.setAttribute("onclick","pokazliczby4_3()");}
+</script>
+<div id="r-liczby4_3"></div>
+</li>
+<li class="numer" id="liczby4_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz długość okresu rozwinięcia dziesiętnego podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{5}{9} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{5432}{9999} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{5}{22} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{3}{260} \)</div></div><button class="butt" id="gliczby4_4" onclick="pokazliczby4_4()">Rozwiązanie</button>
+<script>
+function pokazliczby4_4(){
+var dliczby4_4=document.getElementById("r-liczby4_4");
+var rliczby4_4=document.createElement("img");
+rliczby4_4.setAttribute('src','roz/liczby4_4.png');
+dliczby4_4.appendChild(rliczby4_4);
+var uliczby4_4=document.getElementById("gliczby4_4");
+uliczby4_4.innerHTML="Ukryj rozwiązanie";
+uliczby4_4.setAttribute("onclick","usunliczby4_4()");}
+function usunliczby4_4(){
+var dliczby4_4=document.getElementById("r-liczby4_4");
+dliczby4_4.innerHTML=null;
+var uliczby4_4a=document.getElementById("gliczby4_4");
+uliczby4_4a.innerHTML="Rozwiązanie";
+uliczby4_4a.setAttribute("onclick","pokazliczby4_4()");}
+</script>
+<div id="r-liczby4_4"></div>
+</li>
+<li class="numer" id="liczby4_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zaokrąglij podaną liczbę do części setnych.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(2,335 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(7,71(234) \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(10,9(96) \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(3,(7) \)</div></div><button class="butt" id="gliczby4_5" onclick="pokazliczby4_5()">Rozwiązanie</button>
+<script>
+function pokazliczby4_5(){
+var dliczby4_5=document.getElementById("r-liczby4_5");
+var rliczby4_5=document.createElement("img");
+rliczby4_5.setAttribute('src','roz/liczby4_5.png');
+dliczby4_5.appendChild(rliczby4_5);
+var uliczby4_5=document.getElementById("gliczby4_5");
+uliczby4_5.innerHTML="Ukryj rozwiązanie";
+uliczby4_5.setAttribute("onclick","usunliczby4_5()");}
+function usunliczby4_5(){
+var dliczby4_5=document.getElementById("r-liczby4_5");
+dliczby4_5.innerHTML=null;
+var uliczby4_5a=document.getElementById("gliczby4_5");
+uliczby4_5a.innerHTML="Rozwiązanie";
+uliczby4_5a.setAttribute("onclick","pokazliczby4_5()");}
+</script>
+<div id="r-liczby4_5"></div>
+</li>
+<li class="numer" id="liczby4_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź przybliżenie ułamka:</p>
+<div class="row odp"><div class="row"><div class="col-xs-12 col-md-12 col-lg-6">a) \(\frac{3}{7} \) z dokładnością do \(0,1 \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\frac{3}{13} \) z dokładnością do \(0,001 \)</div></div><div class="row"><div class="col-xs-12 col-md-12 col-lg-6">c) \(\frac{25}{21} \) z dokładnością do \(0,0001 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\frac{86}{33} \) z dokładnością do \(0,01 \)</div></div></div><button class="butt" id="gliczby4_6" onclick="pokazliczby4_6()">Rozwiązanie</button>
+<script>
+function pokazliczby4_6(){
+var dliczby4_6=document.getElementById("r-liczby4_6");
+var rliczby4_6=document.createElement("img");
+rliczby4_6.setAttribute('src','roz/liczby4_6.png');
+dliczby4_6.appendChild(rliczby4_6);
+var uliczby4_6=document.getElementById("gliczby4_6");
+uliczby4_6.innerHTML="Ukryj rozwiązanie";
+uliczby4_6.setAttribute("onclick","usunliczby4_6()");}
+function usunliczby4_6(){
+var dliczby4_6=document.getElementById("r-liczby4_6");
+dliczby4_6.innerHTML=null;
+var uliczby4_6a=document.getElementById("gliczby4_6");
+uliczby4_6a.innerHTML="Rozwiązanie";
+uliczby4_6a.setAttribute("onclick","pokazliczby4_6()");}
+</script>
+<div id="r-liczby4_6"></div>
+</li>
+<li class="numer" id="liczby4_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj przybliżoną wartość liczby \(\frac{62}{21} \) z dokładnością do \(n \) miejsc po przecinku. Oceń, czy jest to przypliżenie z nadmiarem czy z niedomiarem.</p>
+<div class="row odp"><div class="col-xs-12 col-md-4 col-lg-2">a) \(n=5 \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(n=4 \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(n=3 \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(n=2 \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(n=1 \)</div></div><button class="butt" id="gliczby4_7" onclick="pokazliczby4_7()">Rozwiązanie</button>
+<script>
+function pokazliczby4_7(){
+var dliczby4_7=document.getElementById("r-liczby4_7");
+var rliczby4_7=document.createElement("img");
+rliczby4_7.setAttribute('src','roz/liczby4_7.png');
+dliczby4_7.appendChild(rliczby4_7);
+var uliczby4_7=document.getElementById("gliczby4_7");
+uliczby4_7.innerHTML="Ukryj rozwiązanie";
+uliczby4_7.setAttribute("onclick","usunliczby4_7()");}
+function usunliczby4_7(){
+var dliczby4_7=document.getElementById("r-liczby4_7");
+dliczby4_7.innerHTML=null;
+var uliczby4_7a=document.getElementById("gliczby4_7");
+uliczby4_7a.innerHTML="Rozwiązanie";
+uliczby4_7a.setAttribute("onclick","pokazliczby4_7()");}
+</script>
+<div id="r-liczby4_7"></div>
+</li>
+<li class="numer" id="liczby4_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zaokrąglij liczbę \(\sqrt{7} \) z podaną dokładnością. Czy jest to przybliżenie z niedomiarem czy z nadmiarem?</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) do jedności</div><div class="col-xs-12 col-md-12 col-lg-6">b) do części dziesiątych</div><div class="col-xs-12 col-md-12 col-lg-6">c) do części setnych</div><div class="col-xs-12 col-md-12 col-lg-6">d) do części tysięcznych</div></div><button class="butt" id="gliczby4_8" onclick="pokazliczby4_8()">Rozwiązanie</button>
+<script>
+function pokazliczby4_8(){
+var dliczby4_8=document.getElementById("r-liczby4_8");
+var rliczby4_8=document.createElement("img");
+rliczby4_8.setAttribute('src','roz/liczby4_8.png');
+dliczby4_8.appendChild(rliczby4_8);
+var uliczby4_8=document.getElementById("gliczby4_8");
+uliczby4_8.innerHTML="Ukryj rozwiązanie";
+uliczby4_8.setAttribute("onclick","usunliczby4_8()");}
+function usunliczby4_8(){
+var dliczby4_8=document.getElementById("r-liczby4_8");
+dliczby4_8.innerHTML=null;
+var uliczby4_8a=document.getElementById("gliczby4_8");
+uliczby4_8a.innerHTML="Rozwiązanie";
+uliczby4_8a.setAttribute("onclick","pokazliczby4_8()");}
+</script>
+<div id="r-liczby4_8"></div>
+</li>
+<li class="numer" id="liczby4_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczba \(a \) jest przybliżeniem \(\frac{1}{8} \) z dokładnością do dwóch miejsc po przecinku, a liczba \(b \) - przybliżeniem \(a \) z dokładnością do jednego miejsca po przecinku. Oblicz \(b \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_9" onclick="pokazliczby4_9()">Rozwiązanie</button>
+<script>
+function pokazliczby4_9(){
+var dliczby4_9=document.getElementById("r-liczby4_9");
+var rliczby4_9=document.createElement("img");
+rliczby4_9.setAttribute('src','roz/liczby4_9.png');
+dliczby4_9.appendChild(rliczby4_9);
+var uliczby4_9=document.getElementById("gliczby4_9");
+uliczby4_9.innerHTML="Ukryj rozwiązanie";
+uliczby4_9.setAttribute("onclick","usunliczby4_9()");}
+function usunliczby4_9(){
+var dliczby4_9=document.getElementById("r-liczby4_9");
+dliczby4_9.innerHTML=null;
+var uliczby4_9a=document.getElementById("gliczby4_9");
+uliczby4_9a.innerHTML="Rozwiązanie";
+uliczby4_9a.setAttribute("onclick","pokazliczby4_9()");}
+</script>
+<div id="r-liczby4_9"></div>
+</li>
+<li class="numer" id="liczby4_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz cyfry, które znajdują się na \(13. \) i \(100. \) miejscu po przecinku w rozwinięciu dziesiętnym podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(0,(4567) \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(3,5(1234 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(7,937(739) \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(5,01(2345678) \)</div></div><button class="butt" id="gliczby4_10" onclick="pokazliczby4_10()">Rozwiązanie</button>
+<script>
+function pokazliczby4_10(){
+var dliczby4_10=document.getElementById("r-liczby4_10");
+var rliczby4_10=document.createElement("img");
+rliczby4_10.setAttribute('src','roz/liczby4_10.png');
+dliczby4_10.appendChild(rliczby4_10);
+var uliczby4_10=document.getElementById("gliczby4_10");
+uliczby4_10.innerHTML="Ukryj rozwiązanie";
+uliczby4_10.setAttribute("onclick","usunliczby4_10()");}
+function usunliczby4_10(){
+var dliczby4_10=document.getElementById("r-liczby4_10");
+dliczby4_10.innerHTML=null;
+var uliczby4_10a=document.getElementById("gliczby4_10");
+uliczby4_10a.innerHTML="Rozwiązanie";
+uliczby4_10a.setAttribute("onclick","pokazliczby4_10()");}
+</script>
+<div id="r-liczby4_10"></div>
+</li>
+<li class="numer" id="liczby4_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz cyfrę, która znajduje się na \(2020. \) miejscu po przecinku w rozwinięciu dziesiętnym podanej liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{5}{6} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{6}{13} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{19}{27} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{1}{2^{2020}} \)</div></div><button class="butt" id="gliczby4_11" onclick="pokazliczby4_11()">Rozwiązanie</button>
+<script>
+function pokazliczby4_11(){
+var dliczby4_11=document.getElementById("r-liczby4_11");
+var rliczby4_11=document.createElement("img");
+rliczby4_11.setAttribute('src','roz/liczby4_11.png');
+dliczby4_11.appendChild(rliczby4_11);
+var uliczby4_11=document.getElementById("gliczby4_11");
+uliczby4_11.innerHTML="Ukryj rozwiązanie";
+uliczby4_11.setAttribute("onclick","usunliczby4_11()");}
+function usunliczby4_11(){
+var dliczby4_11=document.getElementById("r-liczby4_11");
+dliczby4_11.innerHTML=null;
+var uliczby4_11a=document.getElementById("gliczby4_11");
+uliczby4_11a.innerHTML="Rozwiązanie";
+uliczby4_11a.setAttribute("onclick","pokazliczby4_11()");}
+</script>
+<div id="r-liczby4_11"></div>
+</li>
+<li class="numer" id="liczby4_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz z pomocą kalkulatora rozwinięcia dziesiętne ułamki i sformułuj spostrzeżenia.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{1}{9}, \frac{3}{9}, \frac{8}{9} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{1}{99}, \frac{31}{99}, \frac{54}{99} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{1}{999}, \frac{112}{999}, \frac{605}{999} \)</div></div><button class="butt" id="gliczby4_12" onclick="pokazliczby4_12()">Rozwiązanie</button>
+<script>
+function pokazliczby4_12(){
+var dliczby4_12=document.getElementById("r-liczby4_12");
+var rliczby4_12=document.createElement("img");
+rliczby4_12.setAttribute('src','roz/liczby4_12.png');
+dliczby4_12.appendChild(rliczby4_12);
+var uliczby4_12=document.getElementById("gliczby4_12");
+uliczby4_12.innerHTML="Ukryj rozwiązanie";
+uliczby4_12.setAttribute("onclick","usunliczby4_12()");}
+function usunliczby4_12(){
+var dliczby4_12=document.getElementById("r-liczby4_12");
+dliczby4_12.innerHTML=null;
+var uliczby4_12a=document.getElementById("gliczby4_12");
+uliczby4_12a.innerHTML="Rozwiązanie";
+uliczby4_12a.setAttribute("onclick","pokazliczby4_12()");}
+</script>
+<div id="r-liczby4_12"></div>
+</li>
+<li class="numer" id="liczby4_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przedstaw podane liczby w postaci nieskracalnych ułamków zwykłych.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) \(0,6; 0,45; 0,06; 0,4375 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \(0,(1); 0,(2); 0,(3); 0,(4); 0,(5) \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \(2,(3); 3,(71); -5,(24); 6,00(4) \)</div></div><button class="butt" id="gliczby4_13" onclick="pokazliczby4_13()">Rozwiązanie</button>
+<script>
+function pokazliczby4_13(){
+var dliczby4_13=document.getElementById("r-liczby4_13");
+var rliczby4_13=document.createElement("img");
+rliczby4_13.setAttribute('src','roz/liczby4_13.png');
+dliczby4_13.appendChild(rliczby4_13);
+var uliczby4_13=document.getElementById("gliczby4_13");
+uliczby4_13.innerHTML="Ukryj rozwiązanie";
+uliczby4_13.setAttribute("onclick","usunliczby4_13()");}
+function usunliczby4_13(){
+var dliczby4_13=document.getElementById("r-liczby4_13");
+dliczby4_13.innerHTML=null;
+var uliczby4_13a=document.getElementById("gliczby4_13");
+uliczby4_13a.innerHTML="Rozwiązanie";
+uliczby4_13a.setAttribute("onclick","pokazliczby4_13()");}
+</script>
+<div id="r-liczby4_13"></div>
+</li>
+<li class="numer" id="liczby4_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ile różnych liczb zapisano?</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12 rys">\(1,(321); 1,3(213); 1,321; \frac{440}{333}; 1,32(132) \)</div></div><button class="butt" id="gliczby4_14" onclick="pokazliczby4_14()">Rozwiązanie</button>
+<script>
+function pokazliczby4_14(){
+var dliczby4_14=document.getElementById("r-liczby4_14");
+var rliczby4_14=document.createElement("img");
+rliczby4_14.setAttribute('src','roz/liczby4_14.png');
+dliczby4_14.appendChild(rliczby4_14);
+var uliczby4_14=document.getElementById("gliczby4_14");
+uliczby4_14.innerHTML="Ukryj rozwiązanie";
+uliczby4_14.setAttribute("onclick","usunliczby4_14()");}
+function usunliczby4_14(){
+var dliczby4_14=document.getElementById("r-liczby4_14");
+dliczby4_14.innerHTML=null;
+var uliczby4_14a=document.getElementById("gliczby4_14");
+uliczby4_14a.innerHTML="Rozwiązanie";
+uliczby4_14a.setAttribute("onclick","pokazliczby4_14()");}
+</script>
+<div id="r-liczby4_14"></div>
+</li>
+<li class="numer" id="liczby4_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(12,(32) \ i \ 12,(323) \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(3,431 \ i \ 3,(431) \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(2\frac{1}{9} \ i \ 2,(1) \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(-\frac{5}{11} \ i \ -0,(46) \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(1\frac{3}{4} \ i \ \sqrt{3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(-1\frac{1}{3} \ i \ -\sqrt{2} \)</div></div><button class="butt" id="gliczby4_15" onclick="pokazliczby4_15()">Rozwiązanie</button>
+<script>
+function pokazliczby4_15(){
+var dliczby4_15=document.getElementById("r-liczby4_15");
+var rliczby4_15=document.createElement("img");
+rliczby4_15.setAttribute('src','roz/liczby4_15.png');
+dliczby4_15.appendChild(rliczby4_15);
+var uliczby4_15=document.getElementById("gliczby4_15");
+uliczby4_15.innerHTML="Ukryj rozwiązanie";
+uliczby4_15.setAttribute("onclick","usunliczby4_15()");}
+function usunliczby4_15(){
+var dliczby4_15=document.getElementById("r-liczby4_15");
+dliczby4_15.innerHTML=null;
+var uliczby4_15a=document.getElementById("gliczby4_15");
+uliczby4_15a.innerHTML="Rozwiązanie";
+uliczby4_15a.setAttribute("onclick","pokazliczby4_15()");}
+</script>
+<div id="r-liczby4_15"></div>
+</li>
+<li class="numer" id="liczby4_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przeczytaj podaną w ramce informację i rozwiąż zadanie.</p>
+<div class="row odp"><div class="col-xs-11 col-md-11 col-lg-11 well1"><b>Sposób na przedstawienie ułamka okresowego w postaci ułamka zwykłego</b><br><span class="cen">\(0,23(5)=\frac{p}{q}=\frac{235-23}{900}=\frac{212}{900}=\frac{53}{225} \)</span><br>\(&#8226;\)  Aby obliczyć \(p \), od liczby utworzonej z cyfr po przecinku odejmujemy liczbę utworzoną z cyfr stojących między przecinkiem a okresem<br>\(&#8226;\)  Aby otrzymać \(q \), zapisujemy tyle dziewiątek, ile jest cyfr w okresie, i tyle zer, ile jest cyfr między przecinkiem a okresem.</div></div>
+<p class="tresc">Przedstaw liczbę w postaci ułamka zwykłego.</p><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(0,(81) \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(0,32(005) \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(2,1(301) \)</div></div><button class="butt" id="gliczby4_16" onclick="pokazliczby4_16()">Rozwiązanie</button>
+<script>
+function pokazliczby4_16(){
+var dliczby4_16=document.getElementById("r-liczby4_16");
+var rliczby4_16=document.createElement("img");
+rliczby4_16.setAttribute('src','roz/liczby4_16.png');
+dliczby4_16.appendChild(rliczby4_16);
+var uliczby4_16=document.getElementById("gliczby4_16");
+uliczby4_16.innerHTML="Ukryj rozwiązanie";
+uliczby4_16.setAttribute("onclick","usunliczby4_16()");}
+function usunliczby4_16(){
+var dliczby4_16=document.getElementById("r-liczby4_16");
+dliczby4_16.innerHTML=null;
+var uliczby4_16a=document.getElementById("gliczby4_16");
+uliczby4_16a.innerHTML="Rozwiązanie";
+uliczby4_16a.setAttribute("onclick","pokazliczby4_16()");}
+</script>
+<div id="r-liczby4_16"></div>
+</li>
+<li class="numer" id="liczby4_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Wynik zapisz w postaci dziesiętnej.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(0,(2)+0,(98) \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(0,(9)+0,(1) \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(3,(13)-1,(46) \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(0,(2)+0,2(7) \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(6\cdot 1,3)+0,(3) \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(5\cdot 0,1(5)-0,4(5) \)</div></div><button class="butt" id="gliczby4_17" onclick="pokazliczby4_17()">Rozwiązanie</button>
+<script>
+function pokazliczby4_17(){
+var dliczby4_17=document.getElementById("r-liczby4_17");
+var rliczby4_17=document.createElement("img");
+rliczby4_17.setAttribute('src','roz/liczby4_17.png');
+dliczby4_17.appendChild(rliczby4_17);
+var uliczby4_17=document.getElementById("gliczby4_17");
+uliczby4_17.innerHTML="Ukryj rozwiązanie";
+uliczby4_17.setAttribute("onclick","usunliczby4_17()");}
+function usunliczby4_17(){
+var dliczby4_17=document.getElementById("r-liczby4_17");
+dliczby4_17.innerHTML=null;
+var uliczby4_17a=document.getElementById("gliczby4_17");
+uliczby4_17a.innerHTML="Rozwiązanie";
+uliczby4_17a.setAttribute("onclick","pokazliczby4_17()");}
+</script>
+<div id="r-liczby4_17"></div>
+</li>
+<li class="numer" id="liczby4_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź rozwinięcie dziesiętne liczby \(\frac{7}{23} \). Możesz skorzystać z poniższej metody.</p><div class="odp">
+<div class="col-xs-12 col-md-12 col-lg-12">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-9wq8" colspan="2">Jak znaleźć rozwinięcie dziesiętne liczby \(\frac{6}{19} \)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">6 : 19 = 0,31578947</td>
+    <td class="tg-0pky">Dzielimy na kalkulatorze 6 przez 19</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8"><span style="color:#0D84C4">0,3157894</span></td>
+    <td class="tg-0pky">Zapisujemy wynik, pomijając ostatnią cyfrę.<br>Jeżeli bezpośrednio przed pomijaną cyfrą są <br>zera, je również pomijamy</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">0,3157894 x 19 = 5,9999986</td>
+    <td class="tg-0pky">Zapisaną liczbę mnożymy przez 19</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">6-5,9999986=0,0000014<br><br>14 : 19= 0,73684211<br></td>
+    <td class="tg-0pky">Obliczamy ile brakuje do 6, pomijamy zera <br>i otrzymaną liczbę naturalną (czyli 14) <br>dzielimy przez 19</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8">0,3157894<span style="color:#0D84C4">7368421</span></td>
+    <td class="tg-0pky">Cyfry po przecinku ( z pominięciem ostatniej)<br>dopisujemy na końcu wcześniej otrzymanego <br>rozwinięcia dziesiętnego<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">0,7368421 x 19=13,9999999</td>
+    <td class="tg-0pky">Liczbę 0,7368421 mnożymy przez 19</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">14-13,9999999=0,000001<br>1 : 19=0,05263158<br><br>0,31578947368421<span style="color:#0D84C4">0526315</span><br><br>0,0526315 x 19=0,9999985<br>1-0,9999985=0,0000015<br>15 : 19=0,78947368<br><br>0,315789473684210526315<span style="color:#0D84C4">7894736</span><br></td>
+    <td class="tg-lboi"><br><br><br>Powtarzamy powyższe kroki tak długo,<br>aż otrzymamy okres ułamka<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow" colspan="2">Odpowiedź:&nbsp;&nbsp;\(\frac{6}{19} \)=0,(315789473684210526)</td>
+  </tr>
+</tbody>
+</table></div></div><button class="butt" id="gliczby4_18" onclick="pokazliczby4_18()">Rozwiązanie</button>
+<script>
+function pokazliczby4_18(){
+var dliczby4_18=document.getElementById("r-liczby4_18");
+var rliczby4_18=document.createElement("img");
+rliczby4_18.setAttribute('src','roz/liczby4_18.png');
+dliczby4_18.appendChild(rliczby4_18);
+var uliczby4_18=document.getElementById("gliczby4_18");
+uliczby4_18.innerHTML="Ukryj rozwiązanie";
+uliczby4_18.setAttribute("onclick","usunliczby4_18()");}
+function usunliczby4_18(){
+var dliczby4_18=document.getElementById("r-liczby4_18");
+dliczby4_18.innerHTML=null;
+var uliczby4_18a=document.getElementById("gliczby4_18");
+uliczby4_18a.innerHTML="Rozwiązanie";
+uliczby4_18a.setAttribute("onclick","pokazliczby4_18()");}
+</script>
+<div id="r-liczby4_18"></div></li>
+<li class="numer" id="liczby4_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczby: \(3\cdot x, 4\cdot x, 5\cdot x\ i\ 6\cdot x \) w postaci dziesiętnej oraz w postaci ułamka zwykłego, jeżeli:</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(x=0,(2) \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(x=0,(05) \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(x=0,(25) \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(x=0,(24) \)</div></div><button class="butt" id="gliczby4_19" onclick="pokazliczby4_19()">Rozwiązanie</button>
+<script>
+function pokazliczby4_19(){
+var dliczby4_19=document.getElementById("r-liczby4_19");
+var rliczby4_19=document.createElement("img");
+rliczby4_19.setAttribute('src','roz/liczby4_19.png');
+dliczby4_19.appendChild(rliczby4_19);
+var uliczby4_19=document.getElementById("gliczby4_19");
+uliczby4_19.innerHTML="Ukryj rozwiązanie";
+uliczby4_19.setAttribute("onclick","usunliczby4_19()");}
+function usunliczby4_19(){
+var dliczby4_19=document.getElementById("r-liczby4_19");
+dliczby4_19.innerHTML=null;
+var uliczby4_19a=document.getElementById("gliczby4_19");
+uliczby4_19a.innerHTML="Rozwiązanie";
+uliczby4_19a.setAttribute("onclick","pokazliczby4_19()");}
+</script>
+<div id="r-liczby4_19"></div>
+</li>
+<li class="numer" id="liczby4_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że jeśli \(a \) jest liczbą naturalną, to ułamek okresowy \(a,(9) \) jest równy \(a+1 \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_20" onclick="pokazliczby4_20()">Rozwiązanie</button>
+<script>
+function pokazliczby4_20(){
+var dliczby4_20=document.getElementById("r-liczby4_20");
+var rliczby4_20=document.createElement("img");
+rliczby4_20.setAttribute('src','roz/liczby4_20.png');
+dliczby4_20.appendChild(rliczby4_20);
+var uliczby4_20=document.getElementById("gliczby4_20");
+uliczby4_20.innerHTML="Ukryj rozwiązanie";
+uliczby4_20.setAttribute("onclick","usunliczby4_20()");}
+function usunliczby4_20(){
+var dliczby4_20=document.getElementById("r-liczby4_20");
+dliczby4_20.innerHTML=null;
+var uliczby4_20a=document.getElementById("gliczby4_20");
+uliczby4_20a.innerHTML="Rozwiązanie";
+uliczby4_20a.setAttribute("onclick","pokazliczby4_20()");}
+</script>
+<div id="r-liczby4_20"></div>
+</li>
+<li class="numer" id="liczby4_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź najmniejszą i największą liczbę naturalną, która:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) po zaokrągleniu do setek jest równa \(3100 \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) po zaokrągleniu do tysięcy jest równa \(54000 \)</div></div><button class="butt" id="gliczby4_21" onclick="pokazliczby4_21()">Rozwiązanie</button>
+<script>
+function pokazliczby4_21(){
+var dliczby4_21=document.getElementById("r-liczby4_21");
+var rliczby4_21=document.createElement("img");
+rliczby4_21.setAttribute('src','roz/liczby4_21.png');
+dliczby4_21.appendChild(rliczby4_21);
+var uliczby4_21=document.getElementById("gliczby4_21");
+uliczby4_21.innerHTML="Ukryj rozwiązanie";
+uliczby4_21.setAttribute("onclick","usunliczby4_21()");}
+function usunliczby4_21(){
+var dliczby4_21=document.getElementById("r-liczby4_21");
+dliczby4_21.innerHTML=null;
+var uliczby4_21a=document.getElementById("gliczby4_21");
+uliczby4_21a.innerHTML="Rozwiązanie";
+uliczby4_21a.setAttribute("onclick","pokazliczby4_21()");}
+</script>
+<div id="r-liczby4_21"></div>
+</li>
+<li class="numer" id="liczby4_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dane są dwie liczby: \(a=47,8645 \) i \(b=19,3345 \). Obliczono przybliżoną wartość sumy tych liczb na dwa sposoby:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">I. Zaokrąglono każdą do części dziesiątych, wynik dodano, a następnie zaokrąglono do jedności.</div><div class="col-xs-12 col-md-12 col-lg-12">II. Zaokrąglono każdą z nich do jedności i dodano wyniki.</div></div><p class="tresc">Oblicz błędy tych przybliżeń</p><button class="butt" id="gliczby4_22" onclick="pokazliczby4_22()">Rozwiązanie</button>
+<script>
+function pokazliczby4_22(){
+var dliczby4_22=document.getElementById("r-liczby4_22");
+var rliczby4_22=document.createElement("img");
+rliczby4_22.setAttribute('src','roz/liczby4_22.png');
+dliczby4_22.appendChild(rliczby4_22);
+var uliczby4_22=document.getElementById("gliczby4_22");
+uliczby4_22.innerHTML="Ukryj rozwiązanie";
+uliczby4_22.setAttribute("onclick","usunliczby4_22()");}
+function usunliczby4_22(){
+var dliczby4_22=document.getElementById("r-liczby4_22");
+dliczby4_22.innerHTML=null;
+var uliczby4_22a=document.getElementById("gliczby4_22");
+uliczby4_22a.innerHTML="Rozwiązanie";
+uliczby4_22a.setAttribute("onclick","pokazliczby4_22()");}
+</script>
+<div id="r-liczby4_22"></div>
+</li>
+<li class="numer" id="liczby4_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczbę, której przybliżeniem jest liczba \(32,2 \), a błąd przybliżenia jest równy</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(0,03 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(-0,03 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(-0,015 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(0,0096 \)</div></div><button class="butt" id="gliczby4_23" onclick="pokazliczby4_23()">Rozwiązanie</button>
+<script>
+function pokazliczby4_23(){
+var dliczby4_23=document.getElementById("r-liczby4_23");
+var rliczby4_23=document.createElement("img");
+rliczby4_23.setAttribute('src','roz/liczby4_23.png');
+dliczby4_23.appendChild(rliczby4_23);
+var uliczby4_23=document.getElementById("gliczby4_23");
+uliczby4_23.innerHTML="Ukryj rozwiązanie";
+uliczby4_23.setAttribute("onclick","usunliczby4_23()");}
+function usunliczby4_23(){
+var dliczby4_23=document.getElementById("r-liczby4_23");
+dliczby4_23.innerHTML=null;
+var uliczby4_23a=document.getElementById("gliczby4_23");
+uliczby4_23a.innerHTML="Rozwiązanie";
+uliczby4_23a.setAttribute("onclick","pokazliczby4_23()");}
+</script>
+<div id="r-liczby4_23"></div>
+</li>
+<li class="numer" id="liczby4_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz sumę pierwszych tysiąca cyfr po rzecinku rozwinięcia dziesiętnego ułamka \(\frac{3}{7} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_24" onclick="pokazliczby4_24()">Rozwiązanie</button>
+<script>
+function pokazliczby4_24(){
+var dliczby4_24=document.getElementById("r-liczby4_24");
+var rliczby4_24=document.createElement("img");
+rliczby4_24.setAttribute('src','roz/liczby4_24.png');
+dliczby4_24.appendChild(rliczby4_24);
+var uliczby4_24=document.getElementById("gliczby4_24");
+uliczby4_24.innerHTML="Ukryj rozwiązanie";
+uliczby4_24.setAttribute("onclick","usunliczby4_24()");}
+function usunliczby4_24(){
+var dliczby4_24=document.getElementById("r-liczby4_24");
+dliczby4_24.innerHTML=null;
+var uliczby4_24a=document.getElementById("gliczby4_24");
+uliczby4_24a.innerHTML="Rozwiązanie";
+uliczby4_24a.setAttribute("onclick","pokazliczby4_24()");}
+</script>
+<div id="r-liczby4_24"></div>
+</li>
+<li class="numer" id="liczby4_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ustal, jaka cyfra znajduje się na \(2019 \). miejscu po przecinku liczby, której zapis dziesiętny składa się z kolejnych liczb naturalnych.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12 rys">\(0,12345678910111213... \)</div></div><button class="butt" id="gliczby4_25" onclick="pokazliczby4_25()">Rozwiązanie</button>
+<script>
+function pokazliczby4_25(){
+var dliczby4_25=document.getElementById("r-liczby4_25");
+var rliczby4_25=document.createElement("img");
+rliczby4_25.setAttribute('src','roz/liczby4_25.png');
+dliczby4_25.appendChild(rliczby4_25);
+var uliczby4_25=document.getElementById("gliczby4_25");
+uliczby4_25.innerHTML="Ukryj rozwiązanie";
+uliczby4_25.setAttribute("onclick","usunliczby4_25()");}
+function usunliczby4_25(){
+var dliczby4_25=document.getElementById("r-liczby4_25");
+dliczby4_25.innerHTML=null;
+var uliczby4_25a=document.getElementById("gliczby4_25");
+uliczby4_25a.innerHTML="Rozwiązanie";
+uliczby4_25a.setAttribute("onclick","pokazliczby4_25()");}
+</script>
+<div id="r-liczby4_25"></div>
+</li>
+<li class="numer" id="liczby4_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Na którym miejscu po przecinku w rozwinięciach dziesiętnych liczb \(0,01(5821) \) i \(1,203(36748) \) występuje ta sama cyfra?</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_26" onclick="pokazliczby4_26()">Rozwiązanie</button>
+<script>
+function pokazliczby4_26(){
+var dliczby4_26=document.getElementById("r-liczby4_26");
+var rliczby4_26=document.createElement("img");
+rliczby4_26.setAttribute('src','roz/liczby4_26.png');
+dliczby4_26.appendChild(rliczby4_26);
+var uliczby4_26=document.getElementById("gliczby4_26");
+uliczby4_26.innerHTML="Ukryj rozwiązanie";
+uliczby4_26.setAttribute("onclick","usunliczby4_26()");}
+function usunliczby4_26(){
+var dliczby4_26=document.getElementById("r-liczby4_26");
+dliczby4_26.innerHTML=null;
+var uliczby4_26a=document.getElementById("gliczby4_26");
+uliczby4_26a.innerHTML="Rozwiązanie";
+uliczby4_26a.setAttribute("onclick","pokazliczby4_26()");}
+</script>
+<div id="r-liczby4_26"></div>
+</li>
+<li class="numer" id="liczby4_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie ułamki właściwe postaci \(\frac{3n}{110} \), gdzie \(n \) jest dodatnią liczbą naturalną, które mają skończone rozwinięcie dziesiętne.</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_27" onclick="pokazliczby4_27()">Rozwiązanie</button>
+<script>
+function pokazliczby4_27(){
+var dliczby4_27=document.getElementById("r-liczby4_27");
+var rliczby4_27=document.createElement("img");
+rliczby4_27.setAttribute('src','roz/liczby4_27.png');
+dliczby4_27.appendChild(rliczby4_27);
+var uliczby4_27=document.getElementById("gliczby4_27");
+uliczby4_27.innerHTML="Ukryj rozwiązanie";
+uliczby4_27.setAttribute("onclick","usunliczby4_27()");}
+function usunliczby4_27(){
+var dliczby4_27=document.getElementById("r-liczby4_27");
+dliczby4_27.innerHTML=null;
+var uliczby4_27a=document.getElementById("gliczby4_27");
+uliczby4_27a.innerHTML="Rozwiązanie";
+uliczby4_27a.setAttribute("onclick","pokazliczby4_27()");}
+</script>
+<div id="r-liczby4_27"></div>
+</li>
+<li class="numer" id="liczby4_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie pary cyfr \(a\neq0 \) i \(b\neq0 \), dla któreych \(\sqrt{0,(a)}=0,(b) \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_28" onclick="pokazliczby4_28()">Rozwiązanie</button>
+<script>
+function pokazliczby4_28(){
+var dliczby4_28=document.getElementById("r-liczby4_28");
+var rliczby4_28=document.createElement("img");
+rliczby4_28.setAttribute('src','roz/liczby4_28.png');
+dliczby4_28.appendChild(rliczby4_28);
+var uliczby4_28=document.getElementById("gliczby4_28");
+uliczby4_28.innerHTML="Ukryj rozwiązanie";
+uliczby4_28.setAttribute("onclick","usunliczby4_28()");}
+function usunliczby4_28(){
+var dliczby4_28=document.getElementById("r-liczby4_28");
+dliczby4_28.innerHTML=null;
+var uliczby4_28a=document.getElementById("gliczby4_28");
+uliczby4_28a.innerHTML="Rozwiązanie";
+uliczby4_28a.setAttribute("onclick","pokazliczby4_28()");}
+</script>
+<div id="r-liczby4_28"></div>
+</li>
+<li class="numer" id="liczby4_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj trzy różne ułamki zwykłe mające rozwinięcie dziesiętne nieskończone i spełniające nierówność \(\frac{1}{5}&lt;x&lt;\frac{1}{4} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby4_29" onclick="pokazliczby4_29()">Rozwiązanie</button>
+<script>
+function pokazliczby4_29(){
+var dliczby4_29=document.getElementById("r-liczby4_29");
+var rliczby4_29=document.createElement("img");
+rliczby4_29.setAttribute('src','roz/liczby4_29.png');
+dliczby4_29.appendChild(rliczby4_29);
+var uliczby4_29=document.getElementById("gliczby4_29");
+uliczby4_29.innerHTML="Ukryj rozwiązanie";
+uliczby4_29.setAttribute("onclick","usunliczby4_29()");}
+function usunliczby4_29(){
+var dliczby4_29=document.getElementById("r-liczby4_29");
+dliczby4_29.innerHTML=null;
+var uliczby4_29a=document.getElementById("gliczby4_29");
+uliczby4_29a.innerHTML="Rozwiązanie";
+uliczby4_29a.setAttribute("onclick","pokazliczby4_29()");}
+</script>
+<div id="r-liczby4_29"></div>
+</li>
+<li class="numer" id="liczby4_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wynik pierwiastkowania liczby naturalnej \(n \) zaokrąglono do części dziesiątych. Czy można jednoznacznie ustalić wartość liczby \(n \)?</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(\sqrt{n}\approx 2,2 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt{n}\approx7,7 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[3]{n}\approx2,2 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\sqrt[3]{n}\approx3,3 \)</div></div><button class="butt" id="gliczby4_30" onclick="pokazliczby4_30()">Rozwiązanie</button>
+<script>
+function pokazliczby4_30(){
+var dliczby4_30=document.getElementById("r-liczby4_30");
+var rliczby4_30=document.createElement("img");
+rliczby4_30.setAttribute('src','roz/liczby4_30.png');
+dliczby4_30.appendChild(rliczby4_30);
+var uliczby4_30=document.getElementById("gliczby4_30");
+uliczby4_30.innerHTML="Ukryj rozwiązanie";
+uliczby4_30.setAttribute("onclick","usunliczby4_30()");}
+function usunliczby4_30(){
+var dliczby4_30=document.getElementById("r-liczby4_30");
+dliczby4_30.innerHTML=null;
+var uliczby4_30a=document.getElementById("gliczby4_30");
+uliczby4_30a.innerHTML="Rozwiązanie";
+uliczby4_30a.setAttribute("onclick","pokazliczby4_30()");}
+</script>
+<div id="r-liczby4_30"></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<script src="../js/jquery.js"></script>
+      <script src="../js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="../../logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Potęga o wykładniku całkowitym</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+
+			<h3>Szkoła średnia</h3><ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Potęga o wykładniku całkowitym</p>
+						  <ol class="list-group powt">
+<li class="numer" id="liczby7_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(3^{-4},\  (-4)^{-3},\  -4^{-2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \((\frac{1}{3})^{-2},\  (-\frac{2}{3})^{-3},\  (-\frac{3}{2})^{-2} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \((2\frac{1}{3})^{-2},\  (-1\frac{1}{4})^{-2},\  0,25^{-3} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \((\sqrt{7})^{-4},\  (\frac{\sqrt{5}}{5})^{-2},\  (-\frac{\sqrt{3}}{2})^{-6} \)</div></div><button class="butt" id="gliczby7_1" onclick="pokazliczby7_1()">Rozwiązanie</button>
+<script>
+function pokazliczby7_1(){
+var dliczby7_1=document.getElementById("r-liczby7_1");
+var rliczby7_1=document.createElement("img");
+rliczby7_1.setAttribute('src','roz/liczby7_1.png');
+dliczby7_1.appendChild(rliczby7_1);
+rliczby7_1.setAttribute("width","95%");
+rliczby7_1.setAttribute("height","auto");
+var uliczby7_1=document.getElementById("gliczby7_1");
+uliczby7_1.innerHTML="Ukryj rozwiązanie";
+uliczby7_1.setAttribute("onclick","usunliczby7_1()");}
+function usunliczby7_1(){
+var dliczby7_1=document.getElementById("r-liczby7_1");
+dliczby7_1.innerHTML=null;
+var uliczby7_1a=document.getElementById("gliczby7_1");
+uliczby7_1a.innerHTML="Rozwiązanie";
+uliczby7_1a.setAttribute("onclick","pokazliczby7_1()");}
+</script>
+<div id="r-liczby7_1"></div>
+</li>
+<li class="numer" id="liczby7_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz. Podaj, z których praw działań na potęgach korzystasz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(3^{-3}\cdot 3^6\cdot 3^{-5} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(((-2)^{-8}\cdot (-2)^{-4}):(-2)^{-5} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \((-0,6)^{-5}:(-0,6)^{-7} \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \((1\frac{1}{3})^{-1}:(1\frac{1}{3})^{-3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">e) \((2^3)^{-3}\cdot 2^4 \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \((7^2)^{-18}\cdot (7^{-9})^{-4} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">g) \(\left ((\frac{5}{3})^2\right )^{-4}\cdot \left ((\frac{3}{5})^{-1}\right )^6 \)</div><div class="col-xs-12 col-md-12 col-lg-6">h) \(\left ((3\frac{7}{12})^5\right )^{-2}\cdot \left ((3\frac{7}{12})^{-2}\right )^{-5} \)</div></div><button class="butt" id="gliczby7_2" onclick="pokazliczby7_2()">Rozwiązanie</button>
+<script>
+function pokazliczby7_2(){
+var dliczby7_2=document.getElementById("r-liczby7_2");
+var rliczby7_2=document.createElement("img");
+rliczby7_2.setAttribute('src','roz/liczby7_2.png');
+rliczby7_2.setAttribute("width","95%");
+rliczby7_2.setAttribute("height","auto");
+dliczby7_2.appendChild(rliczby7_2);
+var uliczby7_2=document.getElementById("gliczby7_2");
+uliczby7_2.innerHTML="Ukryj rozwiązanie";
+uliczby7_2.setAttribute("onclick","usunliczby7_2()");}
+function usunliczby7_2(){
+var dliczby7_2=document.getElementById("r-liczby7_2");
+dliczby7_2.innerHTML=null;
+var uliczby7_2a=document.getElementById("gliczby7_2");
+uliczby7_2a.innerHTML="Rozwiązanie";
+uliczby7_2a.setAttribute("onclick","pokazliczby7_2()");}
+</script>
+<div id="r-liczby7_2"></div>
+</li>
+<li class="numer" id="liczby7_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz </p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \(100^{-5}\cdot 0,1^{-5}\cdot 0,01^{-5} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \((\frac{1}{2})^{-3}\cdot (\frac{2}{3})^{-3}\cdot (\frac{3}{4})^{-3}\cdot (\frac{4}{5})^{-3} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \((14\cdot 0,1)^{-2}\cdot 14^3\cdot 0,1 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(\frac{(125\cdot 15)^{-3}}{125^{-4}} \)</div><div class="row odp"></div><div class="col-xs-12 col-md-12 col-lg-6">e) \(\frac{2^{-3}}{2^{-4}}+\frac{2^{-5}}{2^{-6}}+\frac{2^{-7}}{2^{-8}}+\frac{2^{-9}}{2^{-10}} \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \(\frac{3^6}{3^{-2}}-\frac{3^4}{3^{-1}}-\frac{3^{-5}}{3^{-8}}-\frac{3^{-1}}{3^{-9}} \)</div></div><button class="butt" id="gliczby7_3" onclick="pokazliczby7_3()">Rozwiązanie</button>
+<script>
+function pokazliczby7_3(){
+var dliczby7_3=document.getElementById("r-liczby7_3");
+var rliczby7_3=document.createElement("img");
+rliczby7_3.setAttribute('src','roz/liczby7_3.png');
+rliczby7_3.setAttribute("width","95%");
+rliczby7_3.setAttribute("height","auto");
+dliczby7_3.appendChild(rliczby7_3);
+var uliczby7_3=document.getElementById("gliczby7_3");
+uliczby7_3.innerHTML="Ukryj rozwiązanie";
+uliczby7_3.setAttribute("onclick","usunliczby7_3()");}
+function usunliczby7_3(){
+var dliczby7_3=document.getElementById("r-liczby7_3");
+dliczby7_3.innerHTML=null;
+var uliczby7_3a=document.getElementById("gliczby7_3");
+uliczby7_3a.innerHTML="Rozwiązanie";
+uliczby7_3a.setAttribute("onclick","pokazliczby7_3()");}
+</script>
+<div id="r-liczby7_3"></div>
+</li>
+<li class="numer" id="liczby7_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \((-8)^3\cdot (-4)^3\cdot (-2)^{-8} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\left ((-4)^{-3}\cdot (\frac{27}{8})^{-2}\right ):(-3)^{-4} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \(24^2(3^{-2}-4^{-3}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(45^2(0,2\cdot 3^{-4}-3^4\cdot 15^{-2}) \)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">e) \(9^{10}(10^{12}\cdot 2^{-4}-20^{12}\cdot 4^{-8}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \((6^4\cdot 8^2-44\cdot 12^4):5^{-7} \)</div></div><button class="butt" id="gliczby7_4" onclick="pokazliczby7_4()">Rozwiązanie</button>
+<script>
+function pokazliczby7_4(){
+var dliczby7_4=document.getElementById("r-liczby7_4");
+var rliczby7_4=document.createElement("img");
+rliczby7_4.setAttribute('src','roz/liczby7_4.png');
+rliczby7_4.setAttribute("width","95%");
+rliczby7_4.setAttribute("height","auto");
+dliczby7_4.appendChild(rliczby7_4);
+var uliczby7_4=document.getElementById("gliczby7_4");
+uliczby7_4.innerHTML="Ukryj rozwiązanie";
+uliczby7_4.setAttribute("onclick","usunliczby7_4()");}
+function usunliczby7_4(){
+var dliczby7_4=document.getElementById("r-liczby7_4");
+dliczby7_4.innerHTML=null;
+var uliczby7_4a=document.getElementById("gliczby7_4");
+uliczby7_4a.innerHTML="Rozwiązanie";
+uliczby7_4a.setAttribute("onclick","pokazliczby7_4()");}
+</script>
+<div id="r-liczby7_4"></div>
+</li>
+<li class="numer" id="liczby7_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę w postaci potęgi o podstawie \(10 \).</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(10000 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(100000 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(1 \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(0,001 \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(0,00001 \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(0,000000001 \)</div></div><button class="butt" id="gliczby7_5" onclick="pokazliczby7_5()">Rozwiązanie</button>
+<script>
+function pokazliczby7_5(){
+var dliczby7_5=document.getElementById("r-liczby7_5");
+var rliczby7_5=document.createElement("img");
+rliczby7_5.setAttribute('src','roz/liczby7_5.png');
+rliczby7_5.setAttribute("width","95%");
+rliczby7_5.setAttribute("height","auto");
+dliczby7_5.appendChild(rliczby7_5);
+var uliczby7_5=document.getElementById("gliczby7_5");
+uliczby7_5.innerHTML="Ukryj rozwiązanie";
+uliczby7_5.setAttribute("onclick","usunliczby7_5()");}
+function usunliczby7_5(){
+var dliczby7_5=document.getElementById("r-liczby7_5");
+dliczby7_5.innerHTML=null;
+var uliczby7_5a=document.getElementById("gliczby7_5");
+uliczby7_5a.innerHTML="Rozwiązanie";
+uliczby7_5a.setAttribute("onclick","pokazliczby7_5()");}
+</script>
+<div id="r-liczby7_5"></div>
+</li>
+<li class="numer" id="liczby7_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz wartość podanego wyrażenia dla \( t=2\) i \( x=-1\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \( t^{-6}+x^{-2}\)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \( t^{-2} \cdot x^{-6}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \( t^{-3}+t^{-2}+t^{-1}+1\)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \( x^{-3}+x^3+x^{-2}+x^2\)</div></div><button class="butt" id="gliczby7_6" onclick="pokazliczby7_6()">Rozwiązanie</button>
+<script>
+function pokazliczby7_6(){
+var dliczby7_6=document.getElementById("r-liczby7_6");
+var rliczby7_6=document.createElement("img");
+rliczby7_6.setAttribute('src','roz/liczby7_6.png');
+rliczby7_6.setAttribute("width","95%");
+rliczby7_6.setAttribute("height","auto");
+dliczby7_6.appendChild(rliczby7_6);
+var uliczby7_6=document.getElementById("gliczby7_6");
+uliczby7_6.innerHTML="Ukryj rozwiązanie";
+uliczby7_6.setAttribute("onclick","usunliczby7_6()");}
+function usunliczby7_6(){
+var dliczby7_6=document.getElementById("r-liczby7_6");
+dliczby7_6.innerHTML=null;
+var uliczby7_6a=document.getElementById("gliczby7_6");
+uliczby7_6a.innerHTML="Rozwiązanie";
+uliczby7_6a.setAttribute("onclick","pokazliczby7_6()");}
+</script>
+<div id="r-liczby7_6"></div>
+</li>
+<li class="numer" id="liczby7_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj konieczne założenia i uprość wyrażenia.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \( \frac{1}{x^4\cdot x^{-5}}\cdot x^6\cdot x^{-3}\)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \( \frac{(x^{-2}\cdot x^3):(x^5:x^{-6})}{x^4:x^6}\)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \( \frac{\left ((x^{-3})^4:(x^5)^{-2} \right )^{-1}}{(x^7)^{-3} \cdot (x^{-3})^{-2}}\)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \( \frac{(x^4\cdot x^{-3})^3\cdot (x^{-2}\cdot x)^{-4}}{(x^6\cdot x):(x\cdot x^{-5})^{-2}}\)</div></div><button class="butt" id="gliczby7_7" onclick="pokazliczby7_7()">Rozwiązanie</button>
+<script>
+function pokazliczby7_7(){
+var dliczby7_7=document.getElementById("r-liczby7_7");
+var rliczby7_7=document.createElement("img");
+rliczby7_7.setAttribute('src','roz/liczby7_7.png');
+rliczby7_7.setAttribute("width","95%");
+rliczby7_7.setAttribute("height","auto");
+dliczby7_7.appendChild(rliczby7_7);
+var uliczby7_7=document.getElementById("gliczby7_7");
+uliczby7_7.innerHTML="Ukryj rozwiązanie";
+uliczby7_7.setAttribute("onclick","usunliczby7_7()");}
+function usunliczby7_7(){
+var dliczby7_7=document.getElementById("r-liczby7_7");
+dliczby7_7.innerHTML=null;
+var uliczby7_7a=document.getEmenentById("gliczby7_7");
+uliczby7_7a.innerHTML="Rozwiązanie";
+uliczby7_7a.setAttribute("onclick","pokazliczby7_7()");}
+</script>
+<div id="r-liczby7_7"></div>
+</li>
+<li class="numer" id="liczby7_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \( 8^4\cdot 27^3\cdot 6^{-11}\)</div><div class="col-xs-12 col-md-6 col-lg-5">b) \( \frac{12^6\cdot 4^{-4}}{18^{-1}\cdot 6^7}\)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \( 0,5^{-5}\cdot 10^6:20^5\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">d) \( \frac{400\cdot 16^{-3}-80\cdot 0,25^6}{10\cdot 2^9}\)</div><div class="col-xs-12 col-md-6 col-lg-5">e) \( (0,64^{-6}:2,5^{10})\cdot 0,25^{-8}\)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \( 15^{-2} \cdot (\frac{19}{20})^{-3}\cdot (\frac{4}{57})^{-3}\)</div></div><button class="butt" id="gliczby7_8" onclick="pokazliczby7_8()">Rozwiązanie</button>
+<script>
+function pokazliczby7_8(){
+var dliczby7_8=document.getElementById("r-liczby7_8");
+var rliczby7_8=document.createElement("img");
+rliczby7_8.setAttribute('src','roz/liczby7_8.png');
+rliczby7_8.setAttribute("width","95%");
+rliczby7_8.setAttribute("height","auto");
+dliczby7_8.appendChild(rliczby7_8);
+var uliczby7_8=document.getElementById("gliczby7_8");
+uliczby7_8.innerHTML="Ukryj rozwiązanie";
+uliczby7_8.setAttribute("onclick","usunliczby7_8()");}
+function usunliczby7_8(){
+var dliczby7_8=document.getElementById("r-liczby7_8");
+dliczby7_8.innerHTML=null;
+var uliczby7_8a=document.getEmenentById("gliczby7_8");
+uliczby7_8a.innerHTML="Rozwiązanie";
+uliczby7_8a.setAttribute("onclick","pokazliczby7_8()");}
+</script>
+<div id="r-liczby7_8"></div>
+</li>
+<li class="numer" id="liczby7_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sprawdź, czy równość jest prawdziwa.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5">a) \( 10^{-3}+10^3=10^0\)</div><div class="col-xs-12 col-md-12 col-lg-7">b) \( (\frac{1}{2})^{-5}+(-2)^5=0\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5">c) \( (-4)^{-5}-(-5)^{-4}=0\)</div><div class="col-xs-12 col-md-12 col-lg-7">d) \( (-1)^{13}+(-1)^{14}+(-1)^{15}+(-1)^{16}=0\)</div></div><button class="butt" id="gliczby7_9" onclick="pokazliczby7_9()">Rozwiązanie</button>
+<script>
+function pokazliczby7_9(){
+var dliczby7_9=document.getElementById("r-liczby7_9");
+var rliczby7_9=document.createElement("img");
+rliczby7_9.setAttribute('src','roz/liczby7_9.png');
+rliczby7_9.setAttribute("width","95%");
+rliczby7_9.setAttribute("height","auto");
+dliczby7_9.appendChild(rliczby7_9);
+var uliczby7_9=document.getElementById("gliczby7_9");
+uliczby7_9.innerHTML="Ukryj rozwiązanie";
+uliczby7_9.setAttribute("onclick","usunliczby7_9()");}
+function usunliczby7_9(){
+var dliczby7_9=document.getElementById("r-liczby7_9");
+dliczby7_9.innerHTML=null;
+var uliczby7_9a=document.getEmenentById("gliczby7_9");
+uliczby7_9a.innerHTML="Rozwiązanie";
+uliczby7_9a.setAttribute("onclick","pokazliczby7_9()");}
+</script>
+<div id="r-liczby7_9"></div>
+</li>
+<li class="numer" id="liczby7_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sprawdź, czy podane wyrażenia mają tę samą wartość.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \( (0,6^{-3})^{-8}\) i \( (0,6^{-2})^{-12}\)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \( \left ((-\frac{1}{2})^{-5}\right )^{-3}\) i \( \left ((\frac{1}{2})^5\right )^3\)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \( (2,5^2)^3\) i \( \left((\frac{2}{5})^3 \right)^{-2}\)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \( \left ((\frac{2}{3})^{-4}\right )^5\) i \( (1,5^{-4})^{-5}\)</div></div><button class="butt" id="gliczby7_10" onclick="pokazliczby7_10()">Rozwiązanie</button>
+<script>
+function pokazliczby7_10(){
+var dliczby7_10=document.getElementById("r-liczby7_10");
+var rliczby7_10=document.createElement("img");
+rliczby7_10.setAttribute('src','roz/liczby7_10.png');
+rliczby7_10.setAttribute("width","95%");
+rliczby7_10.setAttribute("height","auto");
+dliczby7_10.appendChild(rliczby7_10);
+var uliczby7_10=document.getElementById("gliczby7_10");
+uliczby7_10.innerHTML="Ukryj rozwiązanie";
+uliczby7_10.setAttribute("onclick","usunliczby7_10()");}
+function usunliczby7_10(){
+var dliczby7_10=document.getElementById("r-liczby7_10");
+dliczby7_10.innerHTML=null;
+var uliczby7_10a=document.getEmenentById("gliczby7_10");
+uliczby7_10a.innerHTML="Rozwiązanie";
+uliczby7_10a.setAttribute("onclick","pokazliczby7_10()");}
+</script>
+<div id="r-liczby7_10"></div>
+</li>
+<li class="numer" id="liczby7_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj wartości potęg.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \( 10^{100}\) i \( 100^{10}\)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \( 100^{100}\) i \( 10^{1000}\)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \( 100^{-10}\) i \( 10^{-100}\)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \( 10000^{100}\) i \( 1000^{1000}\)</div></div><button class="butt" id="gliczby7_11" onclick="pokazliczby7_11()">Rozwiązanie</button>
+<script>
+function pokazliczby7_11(){
+var dliczby7_11=document.getElementById("r-liczby7_11");
+var rliczby7_11=document.createElement("img");
+rliczby7_11.setAttribute('src','roz/liczby7_11.png');
+rliczby7_11.setAttribute("width","95%");
+rliczby7_11.setAttribute("height","auto");
+dliczby7_11.appendChild(rliczby7_11);
+var uliczby7_11=document.getElementById("gliczby7_11");
+uliczby7_11.innerHTML="Ukryj rozwiązanie";
+uliczby7_11.setAttribute("onclick","usunliczby7_11()");}
+function usunliczby7_11(){
+var dliczby7_11=document.getElementById("r-liczby7_11");
+dliczby7_11.innerHTML=null;
+var uliczby7_11a=document.getEmenentById("gliczby7_11");
+uliczby7_11a.innerHTML="Rozwiązanie";
+uliczby7_11a.setAttribute("onclick","pokazliczby7_11()");}
+</script>
+<div id="r-liczby7_11"></div>
+</li>
+<li class="numer" id="liczby7_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz wyrażenie w postaci potęgi o podstawie \( 3\) lub \( 5\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) \( \frac{3\cdot 9\cdot 27\cdot 3^{-3}}{3^{-4}\cdot 3^5}\)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \( \frac{3^4\cdot 3^{-2}\cdot 3^6}{9\cdot 81}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">c) \( 3\cdot 5^6\cdot 8\frac{1}{3}\cdot 5^{-4}\)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \( 3^2\cdot 5^{-6}+4^2\cdot 5^{-6}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-7">e) \( 5^1\cdot 5^6+5^2\cdot 5^5+5^3\cdot 5^4+5^4\cdot 5^3+5^5\cdot 5^2\)</div><div class="col-xs-12 col-md-12 col-lg-5">f) \( \frac{5^2\cdot 125}{5^0+24}\)</div></div><button class="butt" id="gliczby7_12" onclick="pokazliczby7_12()">Rozwiązanie</button>
+<script>
+function pokazliczby7_12(){
+var dliczby7_12=document.getElementById("r-liczby7_12");
+var rliczby7_12=document.createElement("img");
+rliczby7_12.setAttribute('src','roz/liczby7_12.png');
+rliczby7_12.setAttribute("width","95%");
+rliczby7_12.setAttribute("height","auto");
+dliczby7_12.appendChild(rliczby7_12);
+var uliczby7_12=document.getElementById("gliczby7_12");
+uliczby7_12.innerHTML="Ukryj rozwiązanie";
+uliczby7_12.setAttribute("onclick","usunliczby7_12()");}
+function usunliczby7_12(){
+var dliczby7_12=document.getElementById("r-liczby7_12");
+dliczby7_12.innerHTML=null;
+var uliczby7_12a=document.getEmenentById("gliczby7_12");
+uliczby7_12a.innerHTML="Rozwiązanie";
+uliczby7_12a.setAttribute("onclick","pokazliczby7_12()");}
+</script>
+<div id="r-liczby7_12"></div>
+</li>
+<li class="numer" id="liczby7_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Jaką liczbę należy podnieść do potęgi o wykładniku \( -3\), aby otrzymać podaną liczbę?</p>
+<div class="row odp"><div class="col-xs-6 col-md-6 col-lg-2">a) \( \frac{1}{8}\)</div><div class="col-xs-6 col-md-6 col-lg-2">b) \( -\frac{8}{27}\)</div><div class="col-xs-6 col-md-6 col-lg-2">c) \( 0,001\)</div><div class="col-xs-6 col-md-6 col-lg-2">d) \( 64\)</div><div class="col-xs-6 col-md-6 col-lg-2">e) \( -1\)</div><div class="col-xs-6 col-md-6 col-lg-2">f) \( -216\)</div></div><button class="butt" id="gliczby7_13" onclick="pokazliczby7_13()">Rozwiązanie</button>
+<script>
+function pokazliczby7_13(){
+var dliczby7_13=document.getElementById("r-liczby7_13");
+var rliczby7_13=document.createElement("img");
+rliczby7_13.setAttribute('src','roz/liczby7_13.png');
+rliczby7_13.setAttribute("width","95%");
+rliczby7_13.setAttribute("height","auto");
+dliczby7_13.appendChild(rliczby7_13);
+var uliczby7_13=document.getElementById("gliczby7_13");
+uliczby7_13.innerHTML="Ukryj rozwiązanie";
+uliczby7_13.setAttribute("onclick","usunliczby7_13()");}
+function usunliczby7_13(){
+var dliczby7_13=document.getElementById("r-liczby7_13");
+dliczby7_13.innerHTML=null;
+var uliczby7_13a=document.getEmenentById("gliczby7_13");
+uliczby7_13a.innerHTML="Rozwiązanie";
+uliczby7_13a.setAttribute("onclick","pokazliczby7_13()");}
+</script>
+<div id="r-liczby7_13"></div>
+</li>
+<li class="numer" id="liczby7_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj konieczne założenia i sprowadź wyrażenie do najprostszej postaci.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6 col-lg-offset-3">\( \frac{-a^6\cdot x^{-3}\cdot (-a)^5\cdot (-x)^6}{(-a)^6\cdot (-x^{-3})\cdot (-a^5)\cdot (-x^6)}\)</div></div><button class="butt" id="gliczby7_14" onclick="pokazliczby7_14()">Rozwiązanie</button>
+<script>
+function pokazliczby7_14(){
+var dliczby7_14=document.getElementById("r-liczby7_14");
+var rliczby7_14=document.createElement("img");
+rliczby7_14.setAttribute('src','roz/liczby7_14.png');
+rliczby7_14.setAttribute("width","95%");
+rliczby7_14.setAttribute("height","auto");
+dliczby7_14.appendChild(rliczby7_14);
+var uliczby7_14=document.getElementById("gliczby7_14");
+uliczby7_14.innerHTML="Ukryj rozwiązanie";
+uliczby7_14.setAttribute("onclick","usunliczby7_14()");}
+function usunliczby7_14(){
+var dliczby7_14=document.getElementById("r-liczby7_14");
+dliczby7_14.innerHTML=null;
+var uliczby7_14a=document.getEmenentById("gliczby7_14");
+uliczby7_14a.innerHTML="Rozwiązanie";
+uliczby7_14a.setAttribute("onclick","pokazliczby7_14()");}
+</script>
+<div id="r-liczby7_14"></div>
+</li>
+<li class="numer" id="liczby7_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Sprawdź, czy prawdziwa jest równość.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6 col-lg-offset-3">\( \frac{4^5+4^5+4^5+4^5}{3^{-13}+3^{-13}+3^{-13}}=6^{12}\)</div></div><button class="butt" id="gliczby7_15" onclick="pokazliczby7_15()">Rozwiązanie</button>
+<script>
+function pokazliczby7_15(){
+var dliczby7_15=document.getElementById("r-liczby7_15");
+var rliczby7_15=document.createElement("img");
+rliczby7_15.setAttribute('src','roz/liczby7_15.png');
+rliczby7_15.setAttribute("width","95%");
+rliczby7_15.setAttribute("height","auto");
+dliczby7_15.appendChild(rliczby7_15);
+var uliczby7_15=document.getElementById("gliczby7_15");
+uliczby7_15.innerHTML="Ukryj rozwiązanie";
+uliczby7_15.setAttribute("onclick","usunliczby7_15()");}
+function usunliczby7_15(){
+var dliczby7_15=document.getElementById("r-liczby7_15");
+dliczby7_15.innerHTML=null;
+var uliczby7_15a=document.getEmenentById("gliczby7_15");
+uliczby7_15a.innerHTML="Rozwiązanie";
+uliczby7_15a.setAttribute("onclick","pokazliczby7_15()");}
+</script>
+<div id="r-liczby7_15"></div>
+</li>
+<li class="numer" id="liczby7_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wartość \( m\), jeżeli:</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \( 2^m=0,25\)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \( 3^m=\frac{1}{27}\)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \( 0,2^m=125\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \( 0,04^m=625\)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \( (\frac{2}{3})^m=\frac{243}{32}\)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \( 2,5^m=0,16\)</div></div><button class="butt" id="gliczby7_16" onclick="pokazliczby7_16()">Rozwiązanie</button>
+<script>
+function pokazliczby7_16(){
+var dliczby7_16=document.getElementById("r-liczby7_16");
+var rliczby7_16=document.createElement("img");
+rliczby7_16.setAttribute('src','roz/liczby7_16.png');
+rliczby7_16.setAttribute("width","95%");
+rliczby7_16.setAttribute("height","auto");
+dliczby7_16.appendChild(rliczby7_16);
+var uliczby7_16=document.getElementById("gliczby7_16");
+uliczby7_16.innerHTML="Ukryj rozwiązanie";
+uliczby7_16.setAttribute("onclick","usunliczby7_16()");}
+function usunliczby7_16(){
+var dliczby7_16=document.getElementById("r-liczby7_16");
+dliczby7_16.innerHTML=null;
+var uliczby7_16a=document.getEmenentById("gliczby7_16");
+uliczby7_16a.innerHTML="Rozwiązanie";
+uliczby7_16a.setAttribute("onclick","pokazliczby7_16()");}
+</script>
+<div id="r-liczby7_16"></div>
+</li>
+<li class="numer" id="liczby7_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz wyrażenie w postaci potęgi o wyładniku \(x\), gdzie \(x\) jest liczbą całkowitą.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-3">a) \(8^x\cdot (\frac{1}{4})^x\)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(14^{-x}\cdot 0,1^{-x}\)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(16^x:(\frac{1}{2})^x\)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \((\frac{3}{4})^{-x}:(\frac{5}{4})^{-x}\)</div></div><button class="butt" id="gliczby7_17" onclick="pokazliczby7_17()">Rozwiązanie</button>
+<script>
+function pokazliczby7_17(){
+var dliczby7_17=document.getElementById("r-liczby7_17");
+var rliczby7_17=document.createElement("img");
+rliczby7_17.setAttribute('src','roz/liczby7_17.png');
+rliczby7_17.setAttribute("width","95%");
+rliczby7_17.setAttribute("height","auto");
+dliczby7_17.appendChild(rliczby7_17);
+var uliczby7_17=document.getElementById("gliczby7_17");
+uliczby7_17.innerHTML="Ukryj rozwiązanie";
+uliczby7_17.setAttribute("onclick","usunliczby7_17()");}
+function usunliczby7_17(){
+var dliczby7_17=document.getElementById("r-liczby7_17");
+dliczby7_17.innerHTML=null;
+var uliczby7_17a=document.getElementById("gliczby7_17");
+uliczby7_17a.innerHTML="Rozwiązanie";
+uliczby7_17a.setAttribute("onclick","pokazliczby7_17()");}
+</script>
+<div id="r-liczby7_17"></div>
+</li>
+<li class="numer" id="liczby7_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę \(x\) w postaci potęgi o podanej podstawie.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(x=(6^9)^2\), \(36\)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(x=(8^6)^{-2}\), \(\frac{1}{64}\)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(x=\left((\frac{2}{5})^5\right )^{-1}\), \(1,5\)</div></div><button class="butt" id="gliczby7_18" onclick="pokazliczby7_18()">Rozwiązanie</button>
+<script>
+function pokazliczby7_18(){
+var dliczby7_18=document.getElementById("r-liczby7_18");
+var rliczby7_18=document.createElement("img");
+rliczby7_18.setAttribute('src','roz/liczby7_18.png');
+rliczby7_18.setAttribute("width","95%");
+rliczby7_18.setAttribute("height","auto");
+dliczby7_18.appendChild(rliczby7_18);
+var uliczby7_18=document.getElementById("gliczby7_18");
+uliczby7_18.innerHTML="Ukryj rozwiązanie";
+uliczby7_18.setAttribute("onclick","usunliczby7_18()");}
+function usunliczby7_18(){
+var dliczby7_18=document.getElementById("r-liczby7_18");
+dliczby7_18.innerHTML=null;
+var uliczby7_18a=document.getElementById("gliczby7_18");
+uliczby7_18a.innerHTML="Rozwiązanie";
+uliczby7_18a.setAttribute("onclick","pokazliczby7_18()");}
+</script>
+<div id="r-liczby7_18"></div>
+</li>
+<li class="numer" id="liczby7_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź najmniejszą liczbę całkowitą \(k\) spełniającą podaną nierówność.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-3">\((\frac{1}{2}^{10}\cdot 10^k>1\)</div></div><button class="butt" id="gliczby7_19" onclick="pokazliczby7_19()">Rozwiązanie</button>
+<script>
+function pokazliczby7_19(){
+var dliczby7_19=document.getElementById("r-liczby7_19");
+var rliczby7_19=document.createElement("img");
+rliczby7_19.setAttribute('src','roz/liczby7_19.png');
+rliczby7_19.setAttribute("width","95%");
+rliczby7_19.setAttribute("height","auto");
+dliczby7_19.appendChild(rliczby7_19);
+var uliczby7_19=document.getElementById("gliczby7_19");
+uliczby7_19.innerHTML="Ukryj rozwiązanie";
+uliczby7_19.setAttribute("onclick","usunliczby7_19()");}
+function usunliczby7_19(){
+var dliczby7_19=document.getElementById("r-liczby7_19");
+dliczby7_19.innerHTML=null;
+var uliczby7_19a=document.getElementById("gliczby7_19");
+uliczby7_19a.innerHTML="Rozwiązanie";
+uliczby7_19a.setAttribute("onclick","pokazliczby7_19()");}
+</script>
+<div id="r-liczby7_19"></div>
+</li>
+<li class="numer" id="liczby7_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>\(&#8517;\)Wykaż, że:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) liczba \(2\cdot 5^7+3\cdot 5^6+3\cdot 5^5\) jest parzysta</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) liczba \(3^5-3^4+3^3\) jest podzielna przez \(21\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">c) liczba \(2^{100}+2^{101}+2^{102}\) jest podzielna przez \(14\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">d) liczba \(5^{2019}+5^{2020}+5^{2021}\) jest podzielna przez \(31\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">e) liczba \(3^{12}+9^7+27^5\) jest podzielna przez \(37\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">f) liczba \(4^9+4^8+4^7\) jest podzielna przez \(2^7-2^6-2^4\)</div></div><button class="butt" id="gliczby7_20" onclick="pokazliczby7_20()">Rozwiązanie</button>
+<script>
+function pokazliczby7_20(){
+var dliczby7_20=document.getElementById("r-liczby7_20");
+var rliczby7_20=document.createElement("img");
+rliczby7_20.setAttribute('src','roz/liczby7_20.png');
+rliczby7_20.setAttribute("width","95%");
+rliczby7_20.setAttribute("height","auto");
+dliczby7_20.appendChild(rliczby7_20);
+var uliczby7_20=document.getElementById("gliczby7_20");
+uliczby7_20.innerHTML="Ukryj rozwiązanie";
+uliczby7_20.setAttribute("onclick","usunliczby7_20()");}
+function usunliczby7_20(){
+var dliczby7_20=document.getElementById("r-liczby7_20");
+dliczby7_20.innerHTML=null;
+var uliczby7_20a=document.getElementById("gliczby7_20");
+uliczby7_20a.innerHTML="Rozwiązanie";
+uliczby7_20a.setAttribute("onclick","pokazliczby7_20()");}
+</script>
+<div id="r-liczby7_20"></div>
+</li>
+<li class="numer" id="liczby7_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wiemy, że \(x^{-5}=\frac{1}{243}\) i \(y^{-5}=0,00032\). Która liczba jest większa: \(x\) czy \(y\)?</p>
+<div class="row odp"></div><button class="butt" id="gliczby7_21" onclick="pokazliczby7_21()">Rozwiązanie</button>
+<script>
+function pokazliczby7_21(){
+var dliczby7_21=document.getElementById("r-liczby7_21");
+var rliczby7_21=document.createElement("img");
+rliczby7_21.setAttribute('src','roz/liczby7_21.png');
+rliczby7_21.setAttribute("width","95%");
+rliczby7_21.setAttribute("height","auto");
+dliczby7_21.appendChild(rliczby7_21);
+var uliczby7_21=document.getElementById("gliczby7_21");
+uliczby7_21.innerHTML="Ukryj rozwiązanie";
+uliczby7_21.setAttribute("onclick","usunliczby7_21()");}
+function usunliczby7_21(){
+var dliczby7_21=document.getElementById("r-liczby7_21");
+dliczby7_21.innerHTML=null;
+var uliczby7_21a=document.getElementById("gliczby7_21");
+uliczby7_21a.innerHTML="Rozwiązanie";
+uliczby7_21a.setAttribute("onclick","pokazliczby7_21()");}
+</script>
+<div id="r-liczby7_21"></div>
+</li>
+<li class="numer" id="liczby7_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz wyrażenie w postaci potęgi o podstawie \(2\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(\frac{1}{2\cdot \frac{1}{2\cdot \frac{1}{2\cdot \frac{1}{2\cdot \frac{1}{2^{10}}}}}}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(\frac{1}{2: \frac{1}{2: \frac{1}{2: \frac{1}{2: \frac{1}{2^{10}}}}}}\)</div></div><button class="butt" id="gliczby7_22" onclick="pokazliczby7_22()">Rozwiązanie</button>
+<script>
+function pokazliczby7_22(){
+var dliczby7_22=document.getElementById("r-liczby7_22");
+var rliczby7_22=document.createElement("img");
+rliczby7_22.setAttribute('src','roz/liczby7_22.png');
+rliczby7_22.setAttribute("width","95%");
+rliczby7_22.setAttribute("height","auto");
+dliczby7_22.appendChild(rliczby7_22);
+var uliczby7_22=document.getElementById("gliczby7_22");
+uliczby7_22.innerHTML="Ukryj rozwiązanie";
+uliczby7_22.setAttribute("onclick","usunliczby7_22()");}
+function usunliczby7_22(){
+var dliczby7_22=document.getElementById("r-liczby7_22");
+dliczby7_22.innerHTML=null;
+var uliczby7_22a=document.getElementById("gliczby7_22");
+uliczby7_22a.innerHTML="Rozwiązanie";
+uliczby7_22a.setAttribute("onclick","pokazliczby7_22()");}
+</script>
+<div id="r-liczby7_22"></div>
+</li>
+<li class="numer" id="liczby7_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozwiąż równanie.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(6^{-6}x=12^{-3}\cdot 9^{-2}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(2\cdot 8^2+4^2x=3\cdot 2^6\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(\frac{7}{17^{15}}=17^{-14}+17^{-16}x\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(3\cdot 25^{-5}+10^{-9}x=7\cdot 10^{-10}x\)</div></div><button class="butt" id="gliczby7_23" onclick="pokazliczby7_23()">Rozwiązanie</button>
+<script>
+function pokazliczby7_23(){
+var dliczby7_23=document.getElementById("r-liczby7_23");
+var rliczby7_23=document.createElement("img");
+rliczby7_23.setAttribute('src','roz/liczby7_23.png');
+rliczby7_23.setAttribute("width","95%");
+rliczby7_23.setAttribute("height","auto");
+dliczby7_23.appendChild(rliczby7_23);
+var uliczby7_23=document.getElementById("gliczby7_23");
+uliczby7_23.innerHTML="Ukryj rozwiązanie";
+uliczby7_23.setAttribute("onclick","usunliczby7_23()");}
+function usunliczby7_23(){
+var dliczby7_23=document.getElementById("r-liczby7_23");
+dliczby7_23.innerHTML=null;
+var uliczby7_23a=document.getElementById("gliczby7_23");
+uliczby7_23a.innerHTML="Rozwiązanie";
+uliczby7_23a.setAttribute("onclick","pokazliczby7_23()");}
+</script>
+<div id="r-liczby7_23"></div>
+</li>
+<li class="numer" id="liczby7_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \(8^{10}\) i \(4^{15}\)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(2^{200}\) i \(4^{100}\)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(2^7+2^7\) i \(4^4\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">d) \(4^5\cdot 8^{30}\) i \(16^{25}\)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(2^9\cdot 18^{10}\) i \(6^{19}\)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(9999^{10}\) i \(99^{20}\)</div></div><button class="butt" id="gliczby7_24" onclick="pokazliczby7_24()">Rozwiązanie</button>
+<script>
+function pokazliczby7_24(){
+var dliczby7_24=document.getElementById("r-liczby7_24");
+var rliczby7_24=document.createElement("img");
+rliczby7_24.setAttribute('src','roz/liczby7_24.png');
+rliczby7_24.setAttribute("width","95%");
+rliczby7_24.setAttribute("height","auto");
+dliczby7_24.appendChild(rliczby7_24);
+var uliczby7_24=document.getElementById("gliczby7_24");
+uliczby7_24.innerHTML="Ukryj rozwiązanie";
+uliczby7_24.setAttribute("onclick","usunliczby7_24()");}
+function usunliczby7_24(){
+var dliczby7_24=document.getElementById("r-liczby7_24");
+dliczby7_24.innerHTML=null;
+var uliczby7_24a=document.getElementById("gliczby7_24");
+uliczby7_24a.innerHTML="Rozwiązanie";
+uliczby7_24a.setAttribute("onclick","pokazliczby7_24()");}
+</script>
+<div id="r-liczby7_24"></div>
+</li>
+<li class="numer" id="liczby7_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(2^{26}\) i \(3^{13}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(10^{20}\) i \(20^{10}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \(5^{300}\) i \(3^{500}\)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \(0,3^{20}\) i \(0,1^{10}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">e) \((\frac{1}{7})^{30}\) i \((\frac{2}{7})^{60}\)</div><div class="col-xs-12 col-md-6 col-lg-6">f) \((\frac{1}{9})^{30}\) i \((\frac{2}{7})^{60}\)</div></div><button class="butt" id="gliczby7_25" onclick="pokazliczby7_25()">Rozwiązanie</button>
+<script>
+function pokazliczby7_25(){
+var dliczby7_25=document.getElementById("r-liczby7_25");
+var rliczby7_25=document.createElement("img");
+rliczby7_25.setAttribute('src','roz/liczby7_25.png');
+rliczby7_25.setAttribute("width","95%");
+rliczby7_25.setAttribute("height","auto");
+dliczby7_25.appendChild(rliczby7_25);
+var uliczby7_25=document.getElementById("gliczby7_25");
+uliczby7_25.innerHTML="Ukryj rozwiązanie";
+uliczby7_25.setAttribute("onclick","usunliczby7_25()");}
+function usunliczby7_25(){
+var dliczby7_25=document.getElementById("r-liczby7_25");
+dliczby7_25.innerHTML=null;
+var uliczby7_25a=document.getElementById("gliczby7_25");
+uliczby7_25a.innerHTML="Rozwiązanie";
+uliczby7_25a.setAttribute("onclick","pokazliczby7_25()");}
+</script>
+<div id="r-liczby7_25"></div>
+</li>
+<li class="numer" id="liczby7_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę \(1000^{-3}\) na trzy różne sposoby w postaci:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) iloczynu potęg o wykładniku \(-3\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">b) ilorazu potęg o wykładniku \(-3\)</div></div><button class="butt" id="gliczby7_26" onclick="pokazliczby7_26()">Rozwiązanie</button>
+<script>
+function pokazliczby7_26(){
+var dliczby7_26=document.getElementById("r-liczby7_26");
+var rliczby7_26=document.createElement("img");
+rliczby7_26.setAttribute('src','roz/liczby7_26.png');
+rliczby7_26.setAttribute("width","95%");
+rliczby7_26.setAttribute("height","auto");
+dliczby7_26.appendChild(rliczby7_26);
+var uliczby7_26=document.getElementById("gliczby7_26");
+uliczby7_26.innerHTML="Ukryj rozwiązanie";
+uliczby7_26.setAttribute("onclick","usunliczby7_26()");}
+function usunliczby7_26(){
+var dliczby7_26=document.getElementById("r-liczby7_26");
+dliczby7_26.innerHTML=null;
+var uliczby7_26a=document.getElementById("gliczby7_26");
+uliczby7_26a.innerHTML="Rozwiązanie";
+uliczby7_26a.setAttribute("onclick","pokazliczby7_26()");}
+</script>
+<div id="r-liczby7_26"></div>
+</li>
+<li class="numer" id="liczby7_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz iloczyn liczb \(x\) i \(y\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg5 col-lg-offset-3">\(x=(\frac{1}{10})^{-10}\cdot (\frac{1}{9})^{-9}\cdot (\frac{1}{8})^{-8}\cdot _{\cdots}\cdot (\frac{1}{2})^{-2}\cdot (\frac{1}{1})^{-1}\)</div></div><div class="row odp"><div class="col-xs-12 col-md-12 col-lg5 col-lg-offset-3">\(y=(-1)^{-1}\cdot (-2)^{-2}\cdot (-3)^{-3}\cdot _{\cdots} \cdot (-10)^{-10}\)</div></div><button class="butt" id="gliczby7_27" onclick="pokazliczby7_27()">Rozwiązanie</button>
+<script>
+function pokazliczby7_27(){
+var dliczby7_27=document.getElementById("r-liczby7_27");
+var rliczby7_27=document.createElement("img");
+rliczby7_27.setAttribute('src','roz/liczby7_27.png');
+rliczby7_27.setAttribute("width","95%");
+rliczby7_27.setAttribute("height","auto");
+dliczby7_27.appendChild(rliczby7_27);
+var uliczby7_27=document.getElementById("gliczby7_27");
+uliczby7_27.innerHTML="Ukryj rozwiązanie";
+uliczby7_27.setAttribute("onclick","usunliczby7_27()");}
+function usunliczby7_27(){
+var dliczby7_27=document.getElementById("r-liczby7_27");
+dliczby7_27.innerHTML=null;
+var uliczby7_27a=document.getElementById("gliczby7_27");
+uliczby7_27a.innerHTML="Rozwiązanie";
+uliczby7_27a.setAttribute("onclick","pokazliczby7_27()");}
+</script>
+<div id="r-liczby7_27"></div>
+</li>
+<li class="numer" id="liczby7_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przedstaw liczbę \(a^{60}\) w postaci potęgi o podanym wykładniku \(n\). Podaj konieczne założenia.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-2">a) \(n=-6\)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(n=-12\)</div><div class="col-xs-12 col-md-6 col-lg-2">c) \(n=15\)</div><div class="col-xs-12 col-md-6 col-lg-2">d) \(n=-2\)</div><div class="col-xs-12 col-md-6 col-lg-3">e) \(n=-60\)</div></div><button class="butt" id="gliczby7_28" onclick="pokazliczby7_28()">Rozwiązanie</button>
+<script>
+function pokazliczby7_28(){
+var dliczby7_28=document.getElementById("r-liczby7_28");
+var rliczby7_28=document.createElement("img");
+rliczby7_28.setAttribute('src','roz/liczby7_28.png');
+rliczby7_28.setAttribute("width","95%");
+rliczby7_28.setAttribute("height","auto");
+dliczby7_28.appendChild(rliczby7_28);
+var uliczby7_28=document.getElementById("gliczby7_28");
+uliczby7_28.innerHTML="Ukryj rozwiązanie";
+uliczby7_28.setAttribute("onclick","usunliczby7_28()");}
+function usunliczby7_28(){
+var dliczby7_28=document.getElementById("r-liczby7_28");
+dliczby7_28.innerHTML=null;
+var uliczby7_28a=document.getElementById("gliczby7_28");
+uliczby7_28a.innerHTML="Rozwiązanie";
+uliczby7_28a.setAttribute("onclick","pokazliczby7_28()");}
+</script>
+<div id="r-liczby7_28"></div>
+</li>
+<li class="numer" id="liczby7_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz, wiedząc, że \(a^n=\frac{1}{8}\) oraz \(a^k=4\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-2">a) \(a^{n+k}\)</div><div class="col-xs-12 col-md-6 col-lg-2">b) \(a^{k-n}\)</div><div class="col-xs-12 col-md-6 col-lg-2">c) \(a^{2k}\)</div><div class="col-xs-12 col-md-6 col-lg-2">d) \(a^{2n+k}\)</div><div class="col-xs-12 col-md-6 col-lg-2">e) \(a^{3k+2n}\)</div></div><button class="butt" id="gliczby7_29" onclick="pokazliczby7_29()">Rozwiązanie</button>
+<script>
+function pokazliczby7_29(){
+var dliczby7_29=document.getElementById("r-liczby7_29");
+var rliczby7_29=document.createElement("img");
+rliczby7_29.setAttribute('src','roz/liczby7_29.png');
+rliczby7_29.setAttribute("width","95%");
+rliczby7_29.setAttribute("height","auto");
+dliczby7_29.appendChild(rliczby7_29);
+var uliczby7_29=document.getElementById("gliczby7_29");
+uliczby7_29.innerHTML="Ukryj rozwiązanie";
+uliczby7_29.setAttribute("onclick","usunliczby7_29()");}
+function usunliczby7_29(){
+var dliczby7_29=document.getElementById("r-liczby7_29");
+dliczby7_29.innerHTML=null;
+var uliczby7_29a=document.getElementById("gliczby7_29");
+uliczby7_29a.innerHTML="Rozwiązanie";
+uliczby7_29a.setAttribute("onclick","pokazliczby7_29()");}
+</script>
+<div id="r-liczby7_29"></div>
+</li>
+<li class="numer" id="liczby7_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbą w postaci potęgi o podstawie \(3\). Przyjmij, że \(n\) jest liczbą całkowitą.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">a) \(10\cdot 9^n-3^{2n}\)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \(\frac{3^n+3^{-n}}{9^n+1}\)</div></div><button class="butt" id="gliczby7_30" onclick="pokazliczby7_30()">Rozwiązanie</button>
+<script>
+function pokazliczby7_30(){
+var dliczby7_30=document.getElementById("r-liczby7_30");
+var rliczby7_30=document.createElement("img");
+rliczby7_30.setAttribute('src','roz/liczby7_30.png');
+rliczby7_30.setAttribute("width","95%");
+rliczby7_30.setAttribute("height","auto");
+dliczby7_30.appendChild(rliczby7_30);
+var uliczby7_30=document.getElementById("gliczby7_30");
+uliczby7_30.innerHTML="Ukryj rozwiązanie";
+uliczby7_30.setAttribute("onclick","usunliczby7_30()");}
+function usunliczby7_30(){
+var dliczby7_30=document.getElementById("r-liczby7_30");
+dliczby7_30.innerHTML=null;
+var uliczby7_30a=document.getElementById("gliczby7_30");
+uliczby7_30a.innerHTML="Rozwiązanie";
+uliczby7_30a.setAttribute("onclick","pokazliczby7_30()");}
+</script>
+<div id="r-liczby7_30"></div>
+<li class="numer" id="liczby7_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a></p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) W wyrażeniu \((_{\cdots}(((\frac{2}{3}^{-1})^{-1})^{-1}\ _{\cdots})^{-1}\) wykładnik \(-1\) występuje \(100\) razy. Oblicz wartość tego wyrażenia.</div><div class="col-xs-12 col-md-12 col-lg-12">b) W wyrażeniu \((1+(1+(1+(1+2^{-1})^{-1})^{-1})^{-1})^{-1}\) liczbę \(2\) zastąpiono liczbą \(3\). Czy wartość wyrażenia zwiększyła się czy zmniejszyła? Odpowiedź uzasadnij.</div></div><button class="butt" id="gliczby7_31" onclick="pokazliczby7_31()">Rozwiązanie</button>
+<script>
+function pokazliczby7_31(){
+var dliczby7_31=document.getElementById("r-liczby7_31");
+var rliczby7_31=document.createElement("img");
+rliczby7_31.setAttribute('src','roz/liczby7_31.png');
+rliczby7_31.setAttribute("width","95%");
+rliczby7_31.setAttribute("height","auto");
+dliczby7_31.appendChild(rliczby7_31);
+var uliczby7_31=document.getElementById("gliczby7_31");
+uliczby7_31.innerHTML="Ukryj rozwiązanie";
+uliczby7_31.setAttribute("onclick","usunliczby7_31()");}
+function usunliczby7_31(){
+var dliczby7_31=document.getElementById("r-liczby7_31");
+dliczby7_31.innerHTML=null;
+var uliczby7_31a=document.getElementById("gliczby7_31");
+uliczby7_31a.innerHTML="Rozwiązanie";
+uliczby7_31a.setAttribute("onclick","pokazliczby7_31()");}
+</script>
+<div id="r-liczby7_31"></div>
+</li>
+<li class="numer" id="liczby7_32"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a> \(&#8517;\) Wykaż, że równość jest prawdziwa dla dowolnej liczby naturalnej \(n\).</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \((-1)^{2n+1}=-1\)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \((-1)^n+(-1)^{n+1}\)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \((-1)^{n^2+n+1}=-1\)</div></div><button class="butt" id="gliczby7_32" onclick="pokazliczby7_32()">Rozwiązanie</button>
+<script>
+function pokazliczby7_32(){
+var dliczby7_32=document.getElementById("r-liczby7_32");
+var rliczby7_32=document.createElement("img");
+rliczby7_32.setAttribute('src','roz/liczby7_32.png');
+rliczby7_32.setAttribute("width","95%");
+rliczby7_32.setAttribute("height","auto");
+dliczby7_32.appendChild(rliczby7_32);
+var uliczby7_32=document.getElementById("gliczby7_32");
+uliczby7_32.innerHTML="Ukryj rozwiązanie";
+uliczby7_32.setAttribute("onclick","usunliczby7_32()");}
+function usunliczby7_32(){
+var dliczby7_32=document.getElementById("r-liczby7_32");
+dliczby7_32.innerHTML=null;
+var uliczby7_32a=document.getElementById("gliczby7_32");
+uliczby7_32a.innerHTML="Rozwiązanie";
+uliczby7_32a.setAttribute("onclick","pokazliczby7_32()");}
+</script>
+<div id="r-liczby7_32"></div>
+</li>
+<li class="numer" id="liczby7_33"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a> \(&#8517;\) Niech \(h_1\), \(h_2\), \(h_3\) będą wysokościami trójkąta prostokątnego i    \(h_1 &lt; h_2 \leq h_3 \). Udowodnij, że \(h_1^{-2}=h_2^{-2}+h_3^{-2}\).</p>
+<div class="row odp"></div><button class="butt" id="gliczby7_33" onclick="pokazliczby7_33()">Rozwiązanie</button>
+<script>
+function pokazliczby7_33(){
+var dliczby7_33=document.getElementById("r-liczby7_33");
+var rliczby7_33=document.createElement("img");
+rliczby7_33.setAttribute('src','roz/liczby7_33.png');
+rliczby7_33.setAttribute("width","95%");
+rliczby7_33.setAttribute("height","auto");
+dliczby7_33.appendChild(rliczby7_33);
+var uliczby7_33=document.getElementById("gliczby7_33");
+uliczby7_33.innerHTML="Ukryj rozwiązanie";
+uliczby7_33.setAttribute("onclick","usunliczby7_33()");}
+function usunliczby7_33(){
+var dliczby7_33=document.getElementById("r-liczby7_33");
+dliczby7_33.innerHTML=null;
+var uliczby7_33a=document.getElementById("gliczby7_33");
+uliczby7_33a.innerHTML="Rozwiązanie";
+uliczby7_33a.setAttribute("onclick","pokazliczby7_33()");}
+</script>
+<div id="r-liczby7_33"></div>
+</li>
+<li class="numer" id="liczby7_34"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a> \(&#8517;\) Wykaż, że liczba \(\frac{3+3^2+3^3+_{\dots}+3^{100}}{4}\) jest całkowita.</p>
+<div class="row odp"></div><button class="butt" id="gliczby7_34" onclick="pokazliczby7_34()">Rozwiązanie</button>
+<script>
+function pokazliczby7_34(){
+var dliczby7_34=document.getElementById("r-liczby7_34");
+var rliczby7_34=document.createElement("img");
+rliczby7_34.setAttribute('src','roz/liczby7_34.png');
+rliczby7_34.setAttribute("width","95%");
+rliczby7_34.setAttribute("height","auto");
+dliczby7_34.appendChild(rliczby7_34);
+var uliczby7_34=document.getElementById("gliczby7_34");
+uliczby7_34.innerHTML="Ukryj rozwiązanie";
+uliczby7_34.setAttribute("onclick","usunliczby7_34()");}
+function usunliczby7_34(){
+var dliczby7_34=document.getElementById("r-liczby7_34");
+dliczby7_34.innerHTML=null;
+var uliczby7_34a=document.getElementById("gliczby7_34");
+uliczby7_34a.innerHTML="Rozwiązanie";
+uliczby7_34a.setAttribute("onclick","pokazliczby7_34()");}
+</script>
+<div id="r-liczby7_34"></div>
+</li>
+
+
+</ol>
+</div>
+</div>
+</div>
+
+<script src="../../js/jquery.js"></script>
+      <script src="../../js/bootstrap.js"></script>
+</body>
+</html>

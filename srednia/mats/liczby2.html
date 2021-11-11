@@ -1,0 +1,1267 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liczby całkowite. Liczby wymierne</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+<h3>Szkoła średnia</h3>
+			<ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Liczby całkowite. Liczby wymierne</p>
+						  <ol class="list-group powt">
+						  <li class="numer" id="liczby2_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uporządkuj od najmniejszej do największej liczby \(x, y, z \) zaznaczone na osiach liczbowych.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4"><canvas id="r1" width="280" height="100"></canvas>
+<script>
+var c=document.getElementById("r1");
+var ctx=c.getContext("2d");
+var s=r1.getAttribute("width");
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(s-20,10);
+ctx.lineTo(10,10);
+ctx.stroke();
+var k=9;/* ile kresek wpisać o 1 więcej niż ma być*/
+var y=(s-20)/k;
+for (var x = y+0.5; x < s-40; x += y ) {
+  ctx.moveTo(x,5);
+  ctx.lineTo(x,15);
+  ctx.lineTo(x,5);
+}
+ctx.stroke();
+ctx.moveTo(s-20,10);
+ctx.lineTo(s-30,5);
+ctx.lineTo(s-30,15);
+ctx.lineTo(s-20,10);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("5", y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-9,33);
+ctx.lineTo(y+9,33);
+ctx.lineTo(y-9,33);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("12", y-8, 48);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("x", 4*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("5", 7*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.moveTo(7*y-5,33);
+ctx.lineTo(7*y+5,33);
+ctx.lineTo(7*y-5,33);
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("6", 7*y-4, 48);
+ctx.strokeStyle="#000000";
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(4*y,10,3,0,10*Math.PI);
+ctx.strokeStyle="red";
+ctx.fillStyle="red";
+ctx.fill();
+ctx.stroke();
+</script></div>
+<div class="col-xs-12 col-md-6 col-lg-4"><canvas id="r2" width="280" height="100"></canvas>
+<script>
+var c=document.getElementById("r2");
+var ctx=c.getContext("2d");
+var s=r2.getAttribute("width");
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(s-20,10);
+ctx.lineTo(10,10);
+ctx.stroke();
+var k=11;/* ile kresek wpisać o 1 więcej niż ma być*/
+var y=(s-20)/k;
+for (var x = y+0.5; x < s-40; x += y ) {
+  ctx.moveTo(x,5);
+  ctx.lineTo(x,15);
+  ctx.lineTo(x,5);
+}
+ctx.stroke();
+ctx.moveTo(s-20,10);
+ctx.lineTo(s-30,5);
+ctx.lineTo(s-30,15);
+ctx.lineTo(s-20,10);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("2", y-4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-5,33);
+ctx.lineTo(y+5,33);
+ctx.lineTo(y-5,33);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("5", y-4, 48);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("y", 7*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("19", 9*y-8, 30);
+ctx.strokeStyle="#000000";
+ctx.moveTo(9*y-9,33);
+ctx.lineTo(9*y+9,33);
+ctx.lineTo(9*y-9,33);
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("30", 9*y-8, 48);
+ctx.strokeStyle="#000000";
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(7*y,10,3,0,10*Math.PI);
+ctx.strokeStyle="red";
+ctx.fillStyle="red";
+ctx.fill();
+ctx.stroke();
+</script>
+</div><div class="col-xs-12 col-md-6 col-lg-4"><canvas id="r3" width="280" height="100"></canvas>
+<script>
+var c=document.getElementById("r3");
+var ctx=c.getContext("2d");
+var s=r3.getAttribute("width");
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(s-20,10);
+ctx.lineTo(10,10);
+ctx.stroke();
+var k=9;/* ile kresek wpisać o 1 więcej niż ma być*/
+var y=(s-20)/k;
+for (var x = y+0.5; x < s-40; x += y ) {
+  ctx.moveTo(x,5);
+  ctx.lineTo(x,15);
+  ctx.lineTo(x,5);
+}
+ctx.stroke();
+ctx.moveTo(s-20,10);
+ctx.lineTo(s-30,5);
+ctx.lineTo(s-30,15);
+ctx.lineTo(s-20,10);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("9", y-4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-9,33);
+ctx.lineTo(y+9,33);
+ctx.lineTo(y-9,33);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("20", y-8, 48);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("z", 3*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("3", 7*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.moveTo(7*y-5,33);
+ctx.lineTo(7*y+5,33);
+ctx.lineTo(7*y-5,33);
+ctx.font = "15px Tahoma";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("4", 7*y-4, 48);
+ctx.strokeStyle="#000000";
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(3*y,10,3,0,10*Math.PI);
+ctx.strokeStyle="red";
+ctx.fillStyle="red";
+ctx.fill();
+ctx.stroke();
+</script>
+</div></div><button class="butt" id="gliczby2_1" onclick="pokazliczby2_1()">Rozwiązanie</button>
+<script>
+function pokazliczby2_1(){
+var dliczby2_1=document.getElementById("r-liczby2_1");
+var rliczby2_1=document.createElement("img");
+rliczby2_1.setAttribute('src','roz/liczby2_1.png');
+dliczby2_1.appendChild(rliczby2_1);
+var uliczby2_1=document.getElementById("gliczby2_1");
+uliczby2_1.innerHTML="Ukryj rozwiązanie";
+uliczby2_1.setAttribute("onclick","usunliczby2_1()");}
+function usunliczby2_1(){
+var dliczby2_1=document.getElementById("r-liczby2_1");
+dliczby2_1.innerHTML=null;
+var uliczby2_1a=document.getElementById("gliczby2_1");
+uliczby2_1a.innerHTML="Rozwiązanie";
+uliczby2_1a.setAttribute("onclick","pokazliczby2_1()");}
+</script>
+<div id="r-liczby2_1"></div>
+</li>
+<li class="numer" id="liczby2_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(3\frac{2}{5}+2\frac{1}{3}-4\frac{1}{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(5-4\frac{5}{6}+2\frac{1}{8} \)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \(7\frac{3}{4}-2,2-(3\frac{1}{2}-1,8+5\frac{1}{4}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(1\frac{5}{12}-(3\frac{7}{15}-2\frac{3}{10}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">e) \(2\frac{1}{4}-(4\frac{1}{12}+3\frac{2}{9}-3\frac{1}{18}) \)</div><div class="col-xs-12 col-md-12 col-lg-6">f) \(2\frac{3}{20}-(\frac{17}{10}-2\frac{1}{15})-3\frac{5}{6} \)</div></div><button class="butt" id="gliczby2_2" onclick="pokazliczby2_2()">Rozwiązanie</button>
+<script>
+function pokazliczby2_2(){
+var dliczby2_2=document.getElementById("r-liczby2_2");
+var rliczby2_2=document.createElement("img");
+rliczby2_2.setAttribute('src','roz/liczby2_2.png');
+dliczby2_2.appendChild(rliczby2_2);
+var uliczby2_2=document.getElementById("gliczby2_2");
+uliczby2_2.innerHTML="Ukryj rozwiązanie";
+uliczby2_2.setAttribute("onclick","usunliczby2_2()");}
+function usunliczby2_2(){
+var dliczby2_2=document.getElementById("r-liczby2_2");
+dliczby2_2.innerHTML=null;
+var uliczby2_2a=document.getElementById("gliczby2_2");
+uliczby2_2a.innerHTML="Rozwiązanie";
+uliczby2_2a.setAttribute("onclick","pokazliczby2_2()");}
+</script>
+<div id="r-liczby2_2"></div>
+</li>
+<li class="numer" id="liczby2_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porównaj liczby, nie korzystając z kalkulatora.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{32}{451} \ i \ \frac{34}{451} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{13}{121} \ i \ \frac{13}{122}  \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{5}{6} \ i \ \frac{6}{7} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{5}{6} \ i \ \frac{8}{9} \)</div><br><br><br><div class="col-xs-12 col-md-6 col-lg-3">e) \(\frac{5}{7} \ i \ \frac{120}{168} \)</div><div class="col-xs-12 col-md-6 col-lg-3">f) \(0,125 \ i \ \frac{1}{8} \)</div><div class="col-xs-12 col-md-6 col-lg-3">g) \(0,34 \ i \ \frac{34}{99} \)</div><div class="col-xs-12 col-md-6 col-lg-3">h) \(-\frac{5}{6} \ i \ -\frac{6}{7} \)</div></div><button class="butt" id="gliczby2_3" onclick="pokazliczby2_3()">Rozwiązanie</button>
+<script>
+function pokazliczby2_3(){
+var dliczby2_3=document.getElementById("r-liczby2_3");
+var rliczby2_3=document.createElement("img");
+rliczby2_3.setAttribute('src','roz/liczby2_3.png');
+dliczby2_3.appendChild(rliczby2_3);
+var uliczby2_3=document.getElementById("gliczby2_3");
+uliczby2_3.innerHTML="Ukryj rozwiązanie";
+uliczby2_3.setAttribute("onclick","usunliczby2_3()");}
+function usunliczby2_3(){
+var dliczby2_3=document.getElementById("r-liczby2_3");
+dliczby2_3.innerHTML=null;
+var uliczby2_3a=document.getElementById("gliczby2_3");
+uliczby2_3a.innerHTML="Rozwiązanie";
+uliczby2_3a.setAttribute("onclick","pokazliczby2_3()");}
+</script>
+<div id="r-liczby2_3"></div>
+</li>
+<li class="numer" id="liczby2_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{2}{7}+\frac{5}{9} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{1}{5}-1\frac{1}{4} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{3}{7} \cdot 2\frac{9}{20} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(2\frac{3}{4}:\frac{11}{10} \)</div></div><button class="butt" id="gliczby2_4" onclick="pokazliczby2_4()">Rozwiązanie</button>
+<script>
+function pokazliczby2_4(){
+var dliczby2_4=document.getElementById("r-liczby2_4");
+var rliczby2_4=document.createElement("img");
+rliczby2_4.setAttribute('src','roz/liczby2_4.png');
+dliczby2_4.appendChild(rliczby2_4);
+var uliczby2_4=document.getElementById("gliczby2_4");
+uliczby2_4.innerHTML="Ukryj rozwiązanie";
+uliczby2_4.setAttribute("onclick","usunliczby2_4()");}
+function usunliczby2_4(){
+var dliczby2_4=document.getElementById("r-liczby2_4");
+dliczby2_4.innerHTML=null;
+var uliczby2_4a=document.getElementById("gliczby2_4");
+uliczby2_4a.innerHTML="Rozwiązanie";
+uliczby2_4a.setAttribute("onclick","pokazliczby2_4()");}
+</script>
+<div id="r-liczby2_4"></div>
+</li>
+<li class="numer" id="liczby2_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przedstaw podaną liczbę w postaci \(\frac{m}{n} \), gdzie \(m \) i \(n \) są względnie pierwsze.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-4 col-lg-2">a) \(-8 \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(4\frac{1}{7} \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(-15,6 \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(\frac{140}{21} \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(\frac{244}{168} \)</div></div><button class="butt" id="gliczby2_5" onclick="pokazliczby2_5()">Rozwiązanie</button>
+<script>
+function pokazliczby2_5(){
+var dliczby2_5=document.getElementById("r-liczby2_5");
+var rliczby2_5=document.createElement("img");
+rliczby2_5.setAttribute('src','roz/liczby2_5.png');
+dliczby2_5.appendChild(rliczby2_5);
+var uliczby2_5=document.getElementById("gliczby2_5");
+uliczby2_5.innerHTML="Ukryj rozwiązanie";
+uliczby2_5.setAttribute("onclick","usunliczby2_5()");}
+function usunliczby2_5(){
+var dliczby2_5=document.getElementById("r-liczby2_5");
+dliczby2_5.innerHTML=null;
+var uliczby2_5a=document.getElementById("gliczby2_5");
+uliczby2_5a.innerHTML="Rozwiązanie";
+uliczby2_5a.setAttribute("onclick","pokazliczby2_5()");}
+</script>
+<div id="r-liczby2_5"></div>
+</li>
+<li class="numer" id="liczby2_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">\((1-\frac{1}{10})(1-\frac{1}{11})(1-\frac{1}{12})(1-\frac{1}{13})\cdot _{\cdots} \cdot (1-\frac{1}{17})(1-\frac{1}{18}) \)</div></div><button class="butt" id="gliczby2_6" onclick="pokazliczby2_6()">Rozwiązanie</button>
+<script>
+function pokazliczby2_6(){
+var dliczby2_6=document.getElementById("r-liczby2_6");
+var rliczby2_6=document.createElement("img");
+rliczby2_6.setAttribute('src','roz/liczby2_6.png');
+dliczby2_6.appendChild(rliczby2_6);
+var uliczby2_6=document.getElementById("gliczby2_6");
+uliczby2_6.innerHTML="Ukryj rozwiązanie";
+uliczby2_6.setAttribute("onclick","usunliczby2_6()");}
+function usunliczby2_6(){
+var dliczby2_6=document.getElementById("r-liczby2_6");
+dliczby2_6.innerHTML=null;
+var uliczby2_6a=document.getElementById("gliczby2_6");
+uliczby2_6a.innerHTML="Rozwiązanie";
+uliczby2_6a.setAttribute("onclick","pokazliczby2_6()");}
+</script>
+<div id="r-liczby2_6"></div>
+</li>
+<li class="numer" id="liczby2_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wskaż największą liczbę spośród \(x, y, z \). Nie korzystaj z kalkulatora.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">\(x=\frac{48}{151}+\frac{251}{800}+\frac{110}{333} \)</div><div class="col-xs-12 col-md-6 col-lg-4">\(y=\frac{301}{900}+\frac{222}{665}+\frac{134}{400} \)</div><div class="col-xs-12 col-md-6 col-lg-4">\(z=\frac{81}{245}+\frac{317}{960}+\frac{199}{600} \)</div><br><br><div class="col-xs-12 col-md-12 col-lg-12"><b>Wskazówka:</b> \(\frac{48}{151}&lt;\frac{1}{3} \)</div></div><button class="butt" id="gliczby2_7" onclick="pokazliczby2_7()">Rozwiązanie</button>
+<script>
+function pokazliczby2_7(){
+var dliczby2_7=document.getElementById("r-liczby2_7");
+var rliczby2_7=document.createElement("img");
+rliczby2_7.setAttribute('src','roz/liczby2_7.png');
+dliczby2_7.appendChild(rliczby2_7);
+var uliczby2_7=document.getElementById("gliczby2_7");
+uliczby2_7.innerHTML="Ukryj rozwiązanie";
+uliczby2_7.setAttribute("onclick","usunliczby2_7()");}
+function usunliczby2_7(){
+var dliczby2_7=document.getElementById("r-liczby2_7");
+dliczby2_7.innerHTML=null;
+var uliczby2_7a=document.getElementById("gliczby2_7");
+uliczby2_7a.innerHTML="Rozwiązanie";
+uliczby2_7a.setAttribute("onclick","pokazliczby2_7()");}
+</script>
+<div id="r-liczby2_7"></div>
+</li>
+<li class="numer" id="liczby2_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczbę, która na osi liczbowej leży w równej odległości od liczb:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{1}{2}\ i\ \frac{3}{4} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{5}{7}\ i\ \frac{7}{6} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{155}{348}\ i\ \frac{103}{232} \)</div></div><button class="butt" id="gliczby2_8" onclick="pokazliczby2_8()">Rozwiązanie</button>
+<script>
+function pokazliczby2_8(){
+var dliczby2_8=document.getElementById("r-liczby2_8");
+var rliczby2_8=document.createElement("img");
+rliczby2_8.setAttribute('src','roz/liczby2_8.png');
+dliczby2_8.appendChild(rliczby2_8);
+var uliczby2_8=document.getElementById("gliczby2_8");
+uliczby2_8.innerHTML="Ukryj rozwiązanie";
+uliczby2_8.setAttribute("onclick","usunliczby2_8()");}
+function usunliczby2_8(){
+var dliczby2_8=document.getElementById("r-liczby2_8");
+dliczby2_8.innerHTML=null;
+var uliczby2_8a=document.getElementById("gliczby2_8");
+uliczby2_8a.innerHTML="Rozwiązanie";
+uliczby2_8a.setAttribute("onclick","pokazliczby2_8()");}
+</script>
+<div id="r-liczby2_8"></div>
+</li>
+<li class="numer" id="liczby2_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Skróć ułamki. Wśród podanych liczb wskaż największą liczbę całkowitą.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(\frac{780}{39}, -\frac{210}{105}, \frac{669}{63}, \frac{672}{64} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(-\frac{540}{45}, \frac{84}{98}, \frac{528}{24}, -\frac{624}{48}, \frac{588}{126} \)</div></div><button class="butt" id="gliczby2_9" onclick="pokazliczby2_9()">Rozwiązanie</button>
+<script>
+function pokazliczby2_9(){
+var dliczby2_9=document.getElementById("r-liczby2_9");
+var rliczby2_9=document.createElement("img");
+rliczby2_9.setAttribute('src','roz/liczby2_9.png');
+dliczby2_9.appendChild(rliczby2_9);
+var uliczby2_9=document.getElementById("gliczby2_9");
+uliczby2_9.innerHTML="Ukryj rozwiązanie";
+uliczby2_9.setAttribute("onclick","usunliczby2_9()");}
+function usunliczby2_9(){
+var dliczby2_9=document.getElementById("r-liczby2_9");
+dliczby2_9.innerHTML=null;
+var uliczby2_9a=document.getElementById("gliczby2_9");
+uliczby2_9a.innerHTML="Rozwiązanie";
+uliczby2_9a.setAttribute("onclick","pokazliczby2_9()");}
+</script>
+<div id="r-liczby2_9"></div>
+</li>
+<li class="numer" id="liczby2_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj trzy liczby wymierne leżące między liczbami:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{4}{9} \ i \ \frac{5}{9} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(2\frac{1}{7}\ i\ 2\frac{1}{6} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(-3\frac{3}{10}\ i\ -3\frac{3}{11} \)</div></div><button class="butt" id="gliczby2_10" onclick="pokazliczby2_10()">Rozwiązanie</button>
+<script>
+function pokazliczby2_10(){
+var dliczby2_10=document.getElementById("r-liczby2_10");
+var rliczby2_10=document.createElement("img");
+rliczby2_10.setAttribute('src','roz/liczby2_10.png');
+dliczby2_10.appendChild(rliczby2_10);
+var uliczby2_10=document.getElementById("gliczby2_10");
+uliczby2_10.innerHTML="Ukryj rozwiązanie";
+uliczby2_10.setAttribute("onclick","usunliczby2_10()");}
+function usunliczby2_10(){
+var dliczby2_10=document.getElementById("r-liczby2_10");
+dliczby2_10.innerHTML=null;
+var uliczby2_10a=document.getElementById("gliczby2_10");
+uliczby2_10a.innerHTML="Rozwiązanie";
+uliczby2_10a.setAttribute("onclick","pokazliczby2_10()");}
+</script>
+<div id="r-liczby2_10"></div>
+</li>
+<li class="numer" id="liczby2_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Odczytaj wartości liczb \(a, b, c \) zaznaczonych na osi liczbowej i znajdź taką liczbę \(x \), żeby spełniona była proporcja \(a:c=b:x \).</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12"><canvas id="r4" width="800" height="100"></canvas>
+<script>
+var c=document.getElementById("r4");
+var ctx=c.getContext("2d");
+var s=r4.getAttribute("width");
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(s-20,10);
+ctx.lineTo(10,10);
+ctx.stroke();
+var k=18;/* ile kresek wpisać o 1 więcej niż ma być*/
+var y=(s-20)/k;
+for (var x = y+0.5; x < s-40; x += y ) {
+  ctx.moveTo(x,5);
+  ctx.lineTo(x,15);
+  ctx.lineTo(x,5);
+}
+ctx.stroke();
+ctx.moveTo(s-20,10);
+ctx.lineTo(s-30,5);
+ctx.lineTo(s-30,15);
+ctx.lineTo(s-20,10);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+var lg1=1;
+if (lg1=1){
+ctx.fillText("1", y-4, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-5,33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
+ctx.lineTo(y+5,33);
+ctx.lineTo(y-5,33);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();}
+else if (lg1=2){
+ctx.fillText("1", y-8, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-9,33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
+ctx.lineTo(y+9,33);
+ctx.lineTo(y-9,33);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();}
+else {
+ctx.fillText("1", y-12, 30);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo(y-13,33);/*  -5 dla jednocyfrowych, a -9 dla dwucyfrowych */
+ctx.lineTo(y+13,33);
+ctx.lineTo(y-13,33);
+ctx.fillStyle="#000000";
+ctx.fill();
+ctx.stroke();}
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+var ld1=1;
+if (ld1=1){
+ctx.fillText("2", y-4, 48);}
+else if (ld1=2){
+ctx.fillText("2", y-8, 48);}
+else {
+ctx.fillText("2", y-12, 48);}
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("a", 2*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("b", 10*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("c", 11*y-4, 30);
+ctx.strokeStyle="#000000";
+ctx.font = "20px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("1", 16*y-4, 35);
+ctx.strokeStyle="#000000";
+
+
+
+ctx.beginPath();
+ctx.arc(2*y,10,3,0,10*Math.PI);
+ctx.moveTo(10*y,10);
+ctx.arc(10*y,10,3,0,10*Math.PI);
+ctx.moveTo(11*y,10);
+ctx.arc(11*y,10,3,0,10*Math.PI);
+ctx.strokeStyle="red";
+ctx.fillStyle="red";
+ctx.fill();
+ctx.stroke();
+</script></div></div><button class="butt" id="gliczby2_11" onclick="pokazliczby2_11()">Rozwiązanie</button>
+<script>
+function pokazliczby2_11(){
+var dliczby2_11=document.getElementById("r-liczby2_11");
+var rliczby2_11=document.createElement("img");
+rliczby2_11.setAttribute('src','roz/liczby2_11.png');
+dliczby2_11.appendChild(rliczby2_11);
+var uliczby2_11=document.getElementById("gliczby2_11");
+uliczby2_11.innerHTML="Ukryj rozwiązanie";
+uliczby2_11.setAttribute("onclick","usunliczby2_11()");}
+function usunliczby2_11(){
+var dliczby2_11=document.getElementById("r-liczby2_11");
+dliczby2_11.innerHTML=null;
+var uliczby2_11a=document.getElementById("gliczby2_11");
+uliczby2_11a.innerHTML="Rozwiązanie";
+uliczby2_11a.setAttribute("onclick","pokazliczby2_11()");}
+</script>
+<div id="r-liczby2_11"></div>
+
+<li class="numer" id="liczby2_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-6">a) \((1\frac{1}{2}+2\frac{1}{5})\cdot 10 \)</div><div class="col-xs-12 col-md-6 col-lg-6">b) \((1\frac{1}{5}+\frac{5}{6})\cdot 1\frac{7}{8} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">c) \((\frac{14}{5}-\frac{21}{20})\cdot \frac{4}{7} \)</div><div class="col-xs-12 col-md-6 col-lg-6">d) \((7\frac{1}{4}-2\frac{1}{6}):2\frac{13}{24} \)</div></div><div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6">e) \((2\frac{4}{15}-1\frac{1}{10})\cdot (\frac{2}{15}+\frac{2}{21}) \)</div><div class="col-xs-12 col-md-6 col-lg-6">f) \((1\frac{1}{16}-\frac{23}{24})\cdot (8+1\frac{3}{5}) \)</div></div><button class="butt" id="gliczby2_12" onclick="pokazliczby2_12()">Rozwiązanie</button>
+<script>
+function pokazliczby2_12(){
+var dliczby2_12=document.getElementById("r-liczby2_12");
+var rliczby2_12=document.createElement("img");
+rliczby2_12.setAttribute('src','roz/liczby2_12.png');
+dliczby2_12.appendChild(rliczby2_12);
+var uliczby2_12=document.getElementById("gliczby2_12");
+uliczby2_12.innerHTML="Ukryj rozwiązanie";
+uliczby2_12.setAttribute("onclick","usunliczby2_12()");}
+function usunliczby2_12(){
+var dliczby2_12=document.getElementById("r-liczby2_12");
+dliczby2_12.innerHTML=null;
+var uliczby2_12a=document.getElementById("gliczby2_12");
+uliczby2_12a.innerHTML="Rozwiązanie";
+uliczby2_12a.setAttribute("onclick","pokazliczby2_12()");}
+</script>
+<div id="r-liczby2_12"></div>
+</li>
+<li class="numer" id="liczby2_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{(3\frac{2}{5}-2\frac{1}{4})\cdot 3\frac{3}{7}}{(2\frac{3}{5}-1):2\frac{1}{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{\frac{3}{4}:1\frac{1}{2}+4}{(6\frac{1}{2}-5\frac{3}{5}):\frac{9}{5}}-2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(1,8\cdot \frac{3,3-4\frac{1}{2}:3\frac{3}{4}}{5,6:2\frac{1}{3}+2,5} \)</div><br><br><br><div class="col-xs-12 col-md-6 col-lg-4">d) \(0,75+\frac{(0,75\cdot \frac{4}{3}):1\frac{1}{4}}{0,72-\frac{1}{5}:1\frac{2}{3}} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\frac{2\frac{1}{12}+1\frac{1}{8}}{(2\frac{1}{3}+1\frac{2}{5})\cdot 1,5-7}:3\frac{3}{4} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(2,125-\frac{\frac{4}{21}:\frac{2}{35}-3\frac{1}{9}\cdot \frac{3}{7}}{\frac{4}{9}\cdot 0,4} \)</div></div><button class="butt" id="gliczby2_13" onclick="pokazliczby2_13()">Rozwiązanie</button>
+<script>
+function pokazliczby2_13(){
+var dliczby2_13=document.getElementById("r-liczby2_13");
+var rliczby2_13=document.createElement("img");
+rliczby2_13.setAttribute('src','roz/liczby2_13.png');
+dliczby2_13.appendChild(rliczby2_13);
+var uliczby2_13=document.getElementById("gliczby2_13");
+uliczby2_13.innerHTML="Ukryj rozwiązanie";
+uliczby2_13.setAttribute("onclick","usunliczby2_13()");}
+function usunliczby2_13(){
+var dliczby2_13=document.getElementById("r-liczby2_13");
+dliczby2_13.innerHTML=null;
+var uliczby2_13a=document.getElementById("gliczby2_13");
+uliczby2_13a.innerHTML="Rozwiązanie";
+uliczby2_13a.setAttribute("onclick","pokazliczby2_13()");}
+</script>
+<div id="r-liczby2_13"></div>
+</li>
+<li class="numer" id="liczby2_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisz liczbę odwrotną do podanej.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{12}{35} \cdot \frac{7}{18} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(-2\frac{3}{4} \cdot \frac{4}{3} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(\frac{7}{15}:\frac{14}{5} \)</div><div class="col-xs-12 col-md-6 col-lg-4">d) \((-\frac{5}{14}:3):\frac{10}{21} \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(\frac{1}{6}-\frac{1}{2} \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(\frac{5}{12}+\frac{5}{18} \)</div></div><button class="butt" id="gliczby2_14" onclick="pokazliczby2_14()">Rozwiązanie</button>
+<script>
+function pokazliczby2_14(){
+var dliczby2_14=document.getElementById("r-liczby2_14");
+var rliczby2_14=document.createElement("img");
+rliczby2_14.setAttribute('src','roz/liczby2_14.png');
+dliczby2_14.appendChild(rliczby2_14);
+var uliczby2_14=document.getElementById("gliczby2_14");
+uliczby2_14.innerHTML="Ukryj rozwiązanie";
+uliczby2_14.setAttribute("onclick","usunliczby2_14()");}
+function usunliczby2_14(){
+var dliczby2_14=document.getElementById("r-liczby2_14");
+dliczby2_14.innerHTML=null;
+var uliczby2_14a=document.getElementById("gliczby2_14");
+uliczby2_14a.innerHTML="Rozwiązanie";
+uliczby2_14a.setAttribute("onclick","pokazliczby2_14()");}
+</script>
+<div id="r-liczby2_14"></div>
+</li>
+<li class="numer" id="liczby2_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj przykład liczby wymiernej \(p \), która spełnia podany warunek.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{4}{7} &lt; p &lt; \frac{5}{7} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(-\frac{1}{3} &lt; p &lt; -\frac{1}{4} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(-\frac{7}{11} &lt; p &lt; -\frac{6}{11} \)</div><br><br><div class="col-xs-12 col-md-6 col-lg-4">d) \(\frac{2}{3} &lt; p &lt; 0,75 \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(2,01 &lt; p &lt; 2,02 \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(-3,1 &lt; p &lt; -2,99 \)</div></div><button class="butt" id="gliczby2_15" onclick="pokazliczby2_15()">Rozwiązanie</button>
+<script>
+function pokazliczby2_15(){
+var dliczby2_15=document.getElementById("r-liczby2_15");
+var rliczby2_15=document.createElement("img");
+rliczby2_15.setAttribute('src','roz/liczby2_15.png');
+dliczby2_15.appendChild(rliczby2_15);
+var uliczby2_15=document.getElementById("gliczby2_15");
+uliczby2_15.innerHTML="Ukryj rozwiązanie";
+uliczby2_15.setAttribute("onclick","usunliczby2_15()");}
+function usunliczby2_15(){
+var dliczby2_15=document.getElementById("r-liczby2_15");
+dliczby2_15.innerHTML=null;
+var uliczby2_15a=document.getElementById("gliczby2_15");
+uliczby2_15a.innerHTML="Rozwiązanie";
+uliczby2_15a.setAttribute("onclick","pokazliczby2_15()");}
+</script>
+<div id="r-liczby2_15"></div>
+</li>
+<li class="numer" id="liczby2_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie ułamki o mianowniku \(13 \) większe od \(\frac{5}{9} \) i mniejsze od \(\frac{7}{9} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_16" onclick="pokazliczby2_16()">Rozwiązanie</button>
+<script>
+function pokazliczby2_16(){
+var dliczby2_16=document.getElementById("r-liczby2_16");
+var rliczby2_16=document.createElement("img");
+rliczby2_16.setAttribute('src','roz/liczby2_16.png');
+dliczby2_16.appendChild(rliczby2_16);
+var uliczby2_16=document.getElementById("gliczby2_16");
+uliczby2_16.innerHTML="Ukryj rozwiązanie";
+uliczby2_16.setAttribute("onclick","usunliczby2_16()");}
+function usunliczby2_16(){
+var dliczby2_16=document.getElementById("r-liczby2_16");
+dliczby2_16.innerHTML=null;
+var uliczby2_16a=document.getElementById("gliczby2_16");
+uliczby2_16a.innerHTML="Rozwiązanie";
+uliczby2_16a.setAttribute("onclick","pokazliczby2_16()");}
+</script>
+<div id="r-liczby2_16"></div>
+</li>
+<li class="numer" id="liczby2_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ile liczb całkowitych znajduje się na osi liczbowej między liczbami</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\frac{22222}{411} \ i \ \frac{2222}{41} \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(\frac{1432}{65} \ i \ \frac{82912}{773} \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(-\frac{1353}{7} \ i \ \frac{9256}{13} \)</div></div><button class="butt" id="gliczby2_17" onclick="pokazliczby2_17()">Rozwiązanie</button>
+<script>
+function pokazliczby2_17(){
+var dliczby2_17=document.getElementById("r-liczby2_17");
+var rliczby2_17=document.createElement("img");
+rliczby2_17.setAttribute('src','roz/liczby2_17.png');
+dliczby2_17.appendChild(rliczby2_17);
+var uliczby2_17=document.getElementById("gliczby2_17");
+uliczby2_17.innerHTML="Ukryj rozwiązanie";
+uliczby2_17.setAttribute("onclick","usunliczby2_17()");}
+function usunliczby2_17(){
+var dliczby2_17=document.getElementById("r-liczby2_17");
+dliczby2_17.innerHTML=null;
+var uliczby2_17a=document.getElementById("gliczby2_17");
+uliczby2_17a.innerHTML="Rozwiązanie";
+uliczby2_17a.setAttribute("onclick","pokazliczby2_17()");}
+</script>
+<div id="r-liczby2_17"></div>
+</li>
+<li class="numer" id="liczby2_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Znajdź liczbę przeciwną i liczbę odwrotną do liczby \(a=\frac{-\frac{2}{3}(5-6\cdot 2\frac{1}{3})}{3\frac{2}{5}-2,2:\frac{2}{5}} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_18" onclick="pokazliczby2_18()">Rozwiązanie</button>
+<script>
+function pokazliczby2_18(){
+var dliczby2_18=document.getElementById("r-liczby2_18");
+var rliczby2_18=document.createElement("img");
+rliczby2_18.setAttribute('src','roz/liczby2_18.png');
+dliczby2_18.appendChild(rliczby2_18);
+var uliczby2_18=document.getElementById("gliczby2_18");
+uliczby2_18.innerHTML="Ukryj rozwiązanie";
+uliczby2_18.setAttribute("onclick","usunliczby2_18()");}
+function usunliczby2_18(){
+var dliczby2_18=document.getElementById("r-liczby2_18");
+dliczby2_18.innerHTML=null;
+var uliczby2_18a=document.getElementById("gliczby2_18");
+uliczby2_18a.innerHTML="Rozwiązanie";
+uliczby2_18a.setAttribute("onclick","pokazliczby2_18()");}
+</script>
+<div id="r-liczby2_18"></div>
+
+<li class="numer" id="liczby2_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a></p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) Znajdź dwie liczby, których suma jest równa \(1530 \), wiedząc, że pierwsza liczba stanowi \(\frac{13}{17} \) drugiej liczby.</div><div class="col-xs-12 col-md-12 col-lg-12">b) Znajdź trzy liczby, których suma jest równa \(134 \), wiedząc, że pierwsza liczba stanowi \(\frac{15}{16} \) drugiej, a druga \(\frac{4}{9} \) trzeciej.</div></div><button class="butt" id="gliczby2_19" onclick="pokazliczby2_19()">Rozwiązanie</button>
+<script>
+function pokazliczby2_19(){
+var dliczby2_19=document.getElementById("r-liczby2_19");
+var rliczby2_19=document.createElement("img");
+rliczby2_19.setAttribute('src','roz/liczby2_19.png');
+dliczby2_19.appendChild(rliczby2_19);
+var uliczby2_19=document.getElementById("gliczby2_19");
+uliczby2_19.innerHTML="Ukryj rozwiązanie";
+uliczby2_19.setAttribute("onclick","usunliczby2_19()");}
+function usunliczby2_19(){
+var dliczby2_19=document.getElementById("r-liczby2_19");
+dliczby2_19.innerHTML=null;
+var uliczby2_19a=document.getElementById("gliczby2_19");
+uliczby2_19a.innerHTML="Rozwiązanie";
+uliczby2_19a.setAttribute("onclick","pokazliczby2_19()");}
+</script>
+<div id="r-liczby2_19"></div>
+</li>
+<li class="numer" id="liczby2_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>W ciągu 5 dni 40 pracowników, pracując 8 godzin dziennie, wykonało połowę pewnej pracy. Ile godzin dziennie musieliby pracować, aby dokończyć pracę w ciągu 4 dni?</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_20" onclick="pokazliczby2_20()">Rozwiązanie</button>
+<script>
+function pokazliczby2_20(){
+var dliczby2_20=document.getElementById("r-liczby2_20");
+var rliczby2_20=document.createElement("img");
+rliczby2_20.setAttribute('src','roz/liczby2_20.png');
+dliczby2_20.appendChild(rliczby2_20);
+var uliczby2_20=document.getElementById("gliczby2_20");
+uliczby2_20.innerHTML="Ukryj rozwiązanie";
+uliczby2_20.setAttribute("onclick","usunliczby2_20()");}
+function usunliczby2_20(){
+var dliczby2_20=document.getElementById("r-liczby2_20");
+dliczby2_20.innerHTML=null;
+var uliczby2_20a=document.getElementById("gliczby2_20");
+uliczby2_20a.innerHTML="Rozwiązanie";
+uliczby2_20a.setAttribute("onclick","pokazliczby2_20()");}
+</script>
+<div id="r-liczby2_20"></div>
+
+<li class="numer" id="liczby2_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Drut o długości \(63 \ cm \) pocięto na cztery części, których stosunek długości jest równy \(1:3:5:9 \). Ile jest równa suma długości dwóch najkrótszych kawałków tego drutu?</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_21" onclick="pokazliczby2_21()">Rozwiązanie</button>
+<script>
+function pokazliczby2_21(){
+var dliczby2_21=document.getElementById("r-liczby2_21");
+var rliczby2_21=document.createElement("img");
+rliczby2_21.setAttribute('src','roz/liczby2_21.png');
+dliczby2_21.appendChild(rliczby2_21);
+var uliczby2_21=document.getElementById("gliczby2_21");
+uliczby2_21.innerHTML="Ukryj rozwiązanie";
+uliczby2_21.setAttribute("onclick","usunliczby2_21()");}
+function usunliczby2_21(){
+var dliczby2_21=document.getElementById("r-liczby2_21");
+dliczby2_21.innerHTML=null;
+var uliczby2_21a=document.getElementById("gliczby2_21");
+uliczby2_21a.innerHTML="Rozwiązanie";
+uliczby2_21a.setAttribute("onclick","pokazliczby2_21()");}
+</script>
+<div id="r-liczby2_21"></div>
+
+<li class="numer" id="liczby2_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) suma dwóch liczb wymiernych jest liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">b) różnica dwóch liczb wymiernych jest liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">c) iloczyn dwóch liczb wymiernych jest liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">d) iloraz liczby wymiernej przez liczbę wymierną różną od zera jest liczbą wymierną</div></div><button class="butt" id="gliczby2_22" onclick="pokazliczby2_22()">Rozwiązanie</button>
+<script>
+function pokazliczby2_22(){
+var dliczby2_22=document.getElementById("r-liczby2_22");
+var rliczby2_22=document.createElement("img");
+rliczby2_22.setAttribute('src','roz/liczby2_22.png');
+dliczby2_22.appendChild(rliczby2_22);
+var uliczby2_22=document.getElementById("gliczby2_22");
+uliczby2_22.innerHTML="Ukryj rozwiązanie";
+uliczby2_22.setAttribute("onclick","usunliczby2_22()");}
+function usunliczby2_22(){
+var dliczby2_22=document.getElementById("r-liczby2_22");
+dliczby2_22.innerHTML=null;
+var uliczby2_22a=document.getElementById("gliczby2_22");
+uliczby2_22a.innerHTML="Rozwiązanie";
+uliczby2_22a.setAttribute("onclick","pokazliczby2_22()");}
+</script>
+<div id="r-liczby2_22"></div>
+</li>
+<li class="numer" id="liczby2_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Kwadrat o boku \(1 \) podzielono na prostokąty o polach równych kolejno \(\frac{1}{2}, \frac{1}{4}, \frac{1}{8} \) idt.</p><div> <canvas id="r5" class="rys" width="300" height="300"></canvas>
+<script>
+var c=document.getElementById("r5");
+var ctx=c.getContext("2d");
+var s=r5.getAttribute("width");
+var h=r5.getAttribute("height");
+ctx.beginPath();
+ctx.moveTo(10,10);
+ctx.lineTo(s-10,10);
+ctx.lineTo(s-10,h-10);
+ctx.lineTo(10,h-10);
+ctx.lineTo(10,10);
+ctx.lineTo((s-10)/2,10);
+ctx.lineTo((s-10)/2,h-10);
+ctx.lineTo((s-10)/2,10);
+ctx.lineTo((s-10)/2,(h-10)/2);
+ctx.lineTo(s-10,(h-10)/2);
+ctx.lineTo((s-10)/2,(h-10)/2);
+ctx.lineTo((3*s-30)/4,(h-10)/2);
+ctx.lineTo((3*s-30)/4,h-10);
+ctx.lineTo((3*s-30)/4,(h-10)/2);
+ctx.lineTo((3*s-30)/4,(3*h-30)/4);
+ctx.lineTo(s-10,(3*h-30)/4);
+ctx.lineTo((3*s-30)/4,(3*h-30)/4);
+ctx.stroke();
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("1", s/4, (h/2)-5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo((s/4)-3,(h/2)-2);
+ctx.lineTo((s/4)+9,(h/2)-2);
+ctx.lineTo((s/4)-3,(h/2)-2);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("2", s/4, (h/2)+12);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("1", 3*s/4, (h/4)-5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo((3*s/4)-3,(h/4)-2);
+ctx.lineTo((3*s/4)+9,(h/4)-2);
+ctx.lineTo((3*s/4)-3,(h/4)-2);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("4", 3*s/4, (h/4)+12);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("1", 5*s/8, (3*h/4)-5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo((5*s/8)-3,(3*h/4)-2);
+ctx.lineTo((5*s/8)+9,(3*h/4)-2);
+ctx.lineTo((5*s/8)-3,(3*h/4)-2);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("8", 5*s/8, (3*h/4)+12);
+ctx.strokeStyle="#000000";
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("1", 7*s/8, (5*h/8)-5);/* jeśli jednocyfrowa to -4, dla dwucyfrowej -8*/
+ctx.strokeStyle="#000000";
+ctx.moveTo((7*s/8)-3,(5*h/8)-2);
+ctx.lineTo((7*s/8)+9,(5*h/8)-2);
+ctx.lineTo((7*s/8)-3,(5*h/8)-2);
+ctx.font = "15px Tahoma";
+textAlign = "center";
+ctx.shadowColor = "#888";
+ctx.shadowBlur = "15";
+ctx.fillText("16", (7*s/8)-5, (5*h/8)+12);
+ctx.strokeStyle="#000000";
+ctx.stroke();
+</script></div>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-12">a) O ile suma pól czterech pierwszych prostokątów otrzymanych w ten sposób różni się od pola kwadratu o boku \(1 \)?</div><div class="col-xs-12 col-md-12 col-lg-12">b) O ile liczba \(\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+\frac{1}{64}+\frac{1}{128}+\frac{1}{256}+\frac{1}{215} \) różni się od \(1 \)?</div></div><button class="butt" id="gliczby2_23" onclick="pokazliczby2_23()">Rozwiązanie</button>
+<script>
+function pokazliczby2_23(){
+var dliczby2_23=document.getElementById("r-liczby2_23");
+var rliczby2_23=document.createElement("img");
+rliczby2_23.setAttribute('src','roz/liczby2_23.png');
+dliczby2_23.appendChild(rliczby2_23);
+var uliczby2_23=document.getElementById("gliczby2_23");
+uliczby2_23.innerHTML="Ukryj rozwiązanie";
+uliczby2_23.setAttribute("onclick","usunliczby2_23()");}
+function usunliczby2_23(){
+var dliczby2_23=document.getElementById("r-liczby2_23");
+dliczby2_23.innerHTML=null;
+var uliczby2_23a=document.getElementById("gliczby2_23");
+uliczby2_23a.innerHTML="Rozwiązanie";
+uliczby2_23a.setAttribute("onclick","pokazliczby2_23()");}
+</script>
+<div id="r-liczby2_23"></div>
+</li>
+<li class="numer" id="liczby2_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uporządkuj rosnąco liczby:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(\frac{a}{b}, \frac{b}{a} \) i \(1 \), jeśli \(0 &lt; a &lt; b \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\frac{a+b}{2} \) i \(b \), jeśli \(a > b \)</div><div class="col-xs-12 col-md-12 col-lg-6">c) \(a, b \) i \(c \), jeśli \(a, b, c > 0, \frac{c}{a+b}=2, \frac{c}{b-a}=3 \)</div><div class="col-xs-12 col-md-12 col-lg-6">d) \(a \) i \(b \), jeśli \((a+2)(b-2)> ab \)</div></div><button class="butt" id="gliczby2_24" onclick="pokazliczby2_24()">Rozwiązanie</button>
+<script>
+function pokazliczby2_24(){
+var dliczby2_24=document.getElementById("r-liczby2_24");
+var rliczby2_24=document.createElement("img");
+rliczby2_24.setAttribute('src','roz/liczby2_24.png');
+dliczby2_24.appendChild(rliczby2_24);
+var uliczby2_24=document.getElementById("gliczby2_24");
+uliczby2_24.innerHTML="Ukryj rozwiązanie";
+uliczby2_24.setAttribute("onclick","usunliczby2_24()");}
+function usunliczby2_24(){
+var dliczby2_24=document.getElementById("r-liczby2_24");
+dliczby2_24.innerHTML=null;
+var uliczby2_24a=document.getElementById("gliczby2_24");
+uliczby2_24a.innerHTML="Rozwiązanie";
+uliczby2_24a.setAttribute("onclick","pokazliczby2_24()");}
+</script>
+<div id="r-liczby2_24"></div>
+</li>
+<li class="numer" id="liczby2_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dla jakich całkowitych wartości \(k \) wartość wyrażenia jest liczbą całkowitą?</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-4 col-lg-2">a) \(\frac{2}{k} \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(\frac{5}{2k} \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(\frac{9}{k-6} \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(\frac{15}{k+2} \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(\frac{10}{7k-3} \)</div></div><button class="butt" id="gliczby2_25" onclick="pokazliczby2_25()">Rozwiązanie</button>
+<script>
+function pokazliczby2_25(){
+var dliczby2_25=document.getElementById("r-liczby2_25");
+var rliczby2_25=document.createElement("img");
+rliczby2_25.setAttribute('src','roz/liczby2_25.png');
+dliczby2_25.appendChild(rliczby2_25);
+var uliczby2_25=document.getElementById("gliczby2_25");
+uliczby2_25.innerHTML="Ukryj rozwiązanie";
+uliczby2_25.setAttribute("onclick","usunliczby2_25()");}
+function usunliczby2_25(){
+var dliczby2_25=document.getElementById("r-liczby2_25");
+dliczby2_25.innerHTML=null;
+var uliczby2_25a=document.getElementById("gliczby2_25");
+uliczby2_25a.innerHTML="Rozwiązanie";
+uliczby2_25a.setAttribute("onclick","pokazliczby2_25()");}
+</script>
+<div id="r-liczby2_25"></div>
+</li>
+<li class="numer" id="liczby2_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz liczby całkowite \(k \) i \(l \), które spełniają podany warunek:</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(k \cdot l=1 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \((k+2)(l-1)=3 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(k=1+\frac{4}{l+2} \)</div><div class="col-xs-12 col-md-6 col-lg-4">d) \(kl-k=l \)</div><div class="col-xs-12 col-md-6 col-lg-4">e) \(k+l=0 \)</div><div class="col-xs-12 col-md-6 col-lg-4">f) \(k \cdot l =0 \)</div></div><button class="butt" id="gliczby2_26" onclick="pokazliczby2_26()">Rozwiązanie</button>
+<script>
+function pokazliczby2_26(){
+var dliczby2_26=document.getElementById("r-liczby2_26");
+var rliczby2_26=document.createElement("img");
+rliczby2_26.setAttribute('src','roz/liczby2_26.png');
+dliczby2_26.appendChild(rliczby2_26);
+var uliczby2_26=document.getElementById("gliczby2_26");
+uliczby2_26.innerHTML="Ukryj rozwiązanie";
+uliczby2_26.setAttribute("onclick","usunliczby2_26()");}
+function usunliczby2_26(){
+var dliczby2_26=document.getElementById("r-liczby2_26");
+dliczby2_26.innerHTML=null;
+var uliczby2_26a=document.getElementById("gliczby2_26");
+uliczby2_26a.innerHTML="Rozwiązanie";
+uliczby2_26a.setAttribute("onclick","pokazliczby2_26()");}
+</script>
+<div id="r-liczby2_26"></div>
+</li>
+<li class="numer" id="liczby2_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Porówna liczby \(\frac{4}{5} \) i \(\frac{4+n}{5+n} \), gdzie \(n \) jest dowolną liczbą naturalną.</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_27" onclick="pokazliczby2_27()">Rozwiązanie</button>
+<script>
+function pokazliczby2_27(){
+var dliczby2_27=document.getElementById("r-liczby2_27");
+var rliczby2_27=document.createElement("img");
+rliczby2_27.setAttribute('src','roz/liczby2_27.png');
+dliczby2_27.appendChild(rliczby2_27);
+var uliczby2_27=document.getElementById("gliczby2_27");
+uliczby2_27.innerHTML="Ukryj rozwiązanie";
+uliczby2_27.setAttribute("onclick","usunliczby2_27()");}
+function usunliczby2_27(){
+var dliczby2_27=document.getElementById("r-liczby2_27");
+dliczby2_27.innerHTML=null;
+var uliczby2_27a=document.getElementById("gliczby2_27");
+uliczby2_27a.innerHTML="Rozwiązanie";
+uliczby2_27a.setAttribute("onclick","pokazliczby2_27()");}
+</script>
+<div id="r-liczby2_27"></div>
+</li>
+<li class="numer" id="liczby2_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie liczby całkowite \(x, y \) spełniające podany warunek.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(4x+12y=7 \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(3x+6y=12 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \((x-3)(y+5)=1 \)</div></div><button class="butt" id="gliczby2_28" onclick="pokazliczby2_28()">Rozwiązanie</button>
+<script>
+function pokazliczby2_28(){
+var dliczby2_28=document.getElementById("r-liczby2_28");
+var rliczby2_28=document.createElement("img");
+rliczby2_28.setAttribute('src','roz/liczby2_28.png');
+dliczby2_28.appendChild(rliczby2_28);
+var uliczby2_28=document.getElementById("gliczby2_28");
+uliczby2_28.innerHTML="Ukryj rozwiązanie";
+uliczby2_28.setAttribute("onclick","usunliczby2_28()");}
+function usunliczby2_28(){
+var dliczby2_28=document.getElementById("r-liczby2_28");
+dliczby2_28.innerHTML=null;
+var uliczby2_28a=document.getElementById("gliczby2_28");
+uliczby2_28a.innerHTML="Rozwiązanie";
+uliczby2_28a.setAttribute("onclick","pokazliczby2_28()");}
+</script>
+<div id="r-liczby2_28"></div>
+</li>
+<li class="numer" id="liczby2_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz wszystkie naturalne wartości \(n \), dla których wartość wyrażenia jest liczbą naturalną.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-4 col-lg-2">a) \(\frac{5}{n}-1 \)</div><div class="col-xs-12 col-md-4 col-lg-2">b) \(\frac{12}{n}-n \)</div><div class="col-xs-12 col-md-4 col-lg-2">c) \(\frac{2n+3}{n} \)</div><div class="col-xs-12 col-md-4 col-lg-2">d) \(\frac{5n-8}{n} \)</div><div class="col-xs-12 col-md-4 col-lg-2">e) \(\frac{n+5}{n+1} \)</div></div><button class="butt" id="gliczby2_29" onclick="pokazliczby2_29()">Rozwiązanie</button>
+<script>
+function pokazliczby2_29(){
+var dliczby2_29=document.getElementById("r-liczby2_29");
+var rliczby2_29=document.createElement("img");
+rliczby2_29.setAttribute('src','roz/liczby2_29.png');
+dliczby2_29.appendChild(rliczby2_29);
+var uliczby2_29=document.getElementById("gliczby2_29");
+uliczby2_29.innerHTML="Ukryj rozwiązanie";
+uliczby2_29.setAttribute("onclick","usunliczby2_29()");}
+function usunliczby2_29(){
+var dliczby2_29=document.getElementById("r-liczby2_29");
+dliczby2_29.innerHTML=null;
+var uliczby2_29a=document.getElementById("gliczby2_29");
+uliczby2_29a.innerHTML="Rozwiązanie";
+uliczby2_29a.setAttribute("onclick","pokazliczby2_29()");}
+</script>
+<div id="r-liczby2_29"></div>
+</li>
+<li class="numer" id="liczby2_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Przeanalizuj przykład podany w ramce i rozwiąż zadanie.</p> <div class="col-xs-12 col-md-12 col-lg-8 col-lg-offset-2 well"> \(\frac{2k+10}{k+2}=\frac{2k+4+6}{k+2}=\frac{2(k+2)+6}{k+2}=2+\frac{6}{k+2} \)</div><br><br><br> <p class="tresc">Dla jakich całkowitych wartości \(k \) wartość wyrażenia jest również liczbą całkowitą?</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \(\frac{k+8}{k+5} \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \(\frac{k+9}{k+5} \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \(\frac{2k+10}{k+2} \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \(\frac{2k+6}{k-1} \)</div></div><button class="butt" id="gliczby2_30" onclick="pokazliczby2_30()">Rozwiązanie</button>
+<script>
+function pokazliczby2_30(){
+var dliczby2_30=document.getElementById("r-liczby2_30");
+var rliczby2_30=document.createElement("img");
+rliczby2_30.setAttribute('src','roz/liczby2_30.png');
+dliczby2_30.appendChild(rliczby2_30);
+var uliczby2_30=document.getElementById("gliczby2_30");
+uliczby2_30.innerHTML="Ukryj rozwiązanie";
+uliczby2_30.setAttribute("onclick","usunliczby2_30()");}
+function usunliczby2_30(){
+var dliczby2_30=document.getElementById("r-liczby2_30");
+dliczby2_30.innerHTML=null;
+var uliczby2_30a=document.getElementById("gliczby2_30");
+uliczby2_30a.innerHTML="Rozwiązanie";
+uliczby2_30a.setAttribute("onclick","pokazliczby2_30()");}
+</script>
+<div id="r-liczby2_30"></div>
+</li>
+<li class="numer" id="liczby2_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Cyfry \(a, b, c \) są różne i żadna nie jest zerem. Jaką największą wartość ma wyrażenie \(\frac{1}{a+\frac{1}{b+\frac{1}{c}}} \)?</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_31" onclick="pokazliczby2_31()">Rozwiązanie</button>
+<script>
+function pokazliczby2_31(){
+var dliczby2_31=document.getElementById("r-liczby2_31");
+var rliczby2_31=document.createElement("img");
+rliczby2_31.setAttribute('src','roz/liczby2_31.png');
+dliczby2_31.appendChild(rliczby2_31);
+var uliczby2_31=document.getElementById("gliczby2_31");
+uliczby2_31.innerHTML="Ukryj rozwiązanie";
+uliczby2_31.setAttribute("onclick","usunliczby2_31()");}
+function usunliczby2_31(){
+var dliczby2_31=document.getElementById("r-liczby2_31");
+dliczby2_31.innerHTML=null;
+var uliczby2_31a=document.getElementById("gliczby2_31");
+uliczby2_31a.innerHTML="Rozwiązanie";
+uliczby2_31a.setAttribute("onclick","pokazliczby2_31()");}
+</script>
+<div id="r-liczby2_31"></div>
+</li>
+<li class="numer" id="liczby2_32"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, nie korzystając z kalkulatora, że \(\frac{777772}{777773}> \frac{999993}{999995} \)</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_32" onclick="pokazliczby2_32()">Rozwiązanie</button>
+<script>
+function pokazliczby2_32(){
+var dliczby2_32=document.getElementById("r-liczby2_32");
+var rliczby2_32=document.createElement("img");
+rliczby2_32.setAttribute('src','roz/liczby2_32.png');
+dliczby2_32.appendChild(rliczby2_32);
+var uliczby2_32=document.getElementById("gliczby2_32");
+uliczby2_32.innerHTML="Ukryj rozwiązanie";
+uliczby2_32.setAttribute("onclick","usunliczby2_32()");}
+function usunliczby2_32(){
+var dliczby2_32=document.getElementById("r-liczby2_32");
+dliczby2_32.innerHTML=null;
+var uliczby2_32a=document.getElementById("gliczby2_32");
+uliczby2_32a.innerHTML="Rozwiązanie";
+uliczby2_32a.setAttribute("onclick","pokazliczby2_32()");}
+</script>
+<div id="r-liczby2_32"></div>
+</li>
+<li class="numer" id="liczby2_33"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-6 col-lg-offset-1"> \(\frac{1}{10^2}+\frac{1}{11^2}+\frac{1}{12^2}+_{\cdots}+\frac{1}{999^2}>\frac{99}{1000} \) </div><div class="col-xs-6 col-md-4 col-lg-3 col-lg-offset-2 well">\(\frac{1}{n(n+1)}=\frac{1}{n}-\frac{1}{n+1} \)</div></div><button class="butt" id="gliczby2_33" onclick="pokazliczby2_33()">Rozwiązanie</button>
+<script>
+function pokazliczby2_33(){
+var dliczby2_33=document.getElementById("r-liczby2_33");
+var rliczby2_33=document.createElement("img");
+rliczby2_33.setAttribute('src','roz/liczby2_33.png');
+dliczby2_33.appendChild(rliczby2_33);
+var uliczby2_33=document.getElementById("gliczby2_33");
+uliczby2_33.innerHTML="Ukryj rozwiązanie";
+uliczby2_33.setAttribute("onclick","usunliczby2_33()");}
+function usunliczby2_33(){
+var dliczby2_33=document.getElementById("r-liczby2_33");
+dliczby2_33.innerHTML=null;
+var uliczby2_33a=document.getElementById("gliczby2_33");
+uliczby2_33a.innerHTML="Rozwiązanie";
+uliczby2_33a.setAttribute("onclick","pokazliczby2_33()");}
+</script>
+<div id="r-liczby2_33"></div>
+
+<li class="numer" id="liczby2_34"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dla jakich całkowitych wartości \(k\neq5 \) ułamek \(\frac{k+5}{3k+4} \) jest skracalny?</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_34" onclick="pokazliczby2_34()">Rozwiązanie</button>
+<script>
+function pokazliczby2_34(){
+var dliczby2_34=document.getElementById("r-liczby2_34");
+var rliczby2_34=document.createElement("img");
+rliczby2_34.setAttribute('src','roz/liczby2_34.png');
+dliczby2_34.appendChild(rliczby2_34);
+var uliczby2_34=document.getElementById("gliczby2_34");
+uliczby2_34.innerHTML="Ukryj rozwiązanie";
+uliczby2_34.setAttribute("onclick","usunliczby2_34()");}
+function usunliczby2_34(){
+var dliczby2_34=document.getElementById("r-liczby2_34");
+dliczby2_34.innerHTML=null;
+var uliczby2_34a=document.getElementById("gliczby2_34");
+uliczby2_34a.innerHTML="Rozwiązanie";
+uliczby2_34a.setAttribute("onclick","pokazliczby2_34()");}
+</script>
+<div id="r-liczby2_34"></div>
+</li>
+<li class="numer" id="liczby2_35"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że jeśli \(a, b, c \) są liczbami całkowitymi, to co najmniej jedna z liczb: \(\frac{a+b}{2}, \frac{b+c}{2}, \frac{a+c}{2} \) jest całkowita.</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_35" onclick="pokazliczby2_35()">Rozwiązanie</button>
+<script>
+function pokazliczby2_35(){
+var dliczby2_35=document.getElementById("r-liczby2_35");
+var rliczby2_35=document.createElement("img");
+rliczby2_35.setAttribute('src','roz/liczby2_35.png');
+dliczby2_35.appendChild(rliczby2_35);
+var uliczby2_35=document.getElementById("gliczby2_35");
+uliczby2_35.innerHTML="Ukryj rozwiązanie";
+uliczby2_35.setAttribute("onclick","usunliczby2_35()");}
+function usunliczby2_35(){
+var dliczby2_35=document.getElementById("r-liczby2_35");
+dliczby2_35.innerHTML=null;
+var uliczby2_35a=document.getElementById("gliczby2_35");
+uliczby2_35a.innerHTML="Rozwiązanie";
+uliczby2_35a.setAttribute("onclick","pokazliczby2_35()");}
+</script>
+<div id="r-liczby2_35"></div>
+</li>
+<li class="numer" id="liczby2_36"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zapisano cztery kolejne liczby naturalne. Różnica między odwrotnościami najmniejszej i największej z nich jest równa \(0,075 \). Ile jest równa różnica między odwrotnościami dwóch pozostałych liczb?</p>
+<div class="row odp"></div><button class="butt" id="gliczby2_36" onclick="pokazliczby2_36()">Rozwiązanie</button>
+<script>
+function pokazliczby2_36(){
+var dliczby2_36=document.getElementById("r-liczby2_36");
+var rliczby2_36=document.createElement("img");
+rliczby2_36.setAttribute('src','roz/liczby2_36.png');
+dliczby2_36.appendChild(rliczby2_36);
+var uliczby2_36=document.getElementById("gliczby2_36");
+uliczby2_36.innerHTML="Ukryj rozwiązanie";
+uliczby2_36.setAttribute("onclick","usunliczby2_36()");}
+function usunliczby2_36(){
+var dliczby2_36=document.getElementById("r-liczby2_36");
+dliczby2_36.innerHTML=null;
+var uliczby2_36a=document.getElementById("gliczby2_36");
+uliczby2_36a.innerHTML="Rozwiązanie";
+uliczby2_36a.setAttribute("onclick","pokazliczby2_36()");}
+</script>
+<div id="r-liczby2_36"></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+</body>
+</html>

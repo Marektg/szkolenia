@@ -1,0 +1,873 @@
+<!doctype html>
+<html lang="pl">
+	<head>
+		<link rel="icon" href="logo.png"> <meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liczby niewymierne</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../css/styl.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script src="../../MathJax/MathJax.js?config=default"></script> 
+ <script id="MathJax-script" async src="../../MathJax/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" id="gora">
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../podstawowa/podstawowa.html">Podstawówka</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../index.html">Strona główna</a></h1></div>
+		  		<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../matura/matura.html">Matura</a></h1></div>
+				<div class="col-xs-12 col-md-6 col-lg-3"><h1 class="ag"><a href="../../studia/studia.html">Studia</a></h1></div>
+			</div>
+			<div class="row">
+			<div class="col-xs-12 col-md-5 col-lg-3" id="lewa">
+<h3>Przydatne linki</h3>
+<a class="link" href="https://www.naukowiec.org/mendelejew.html">Układ okresowy pierwiastków</a>
+			
+<h3>Szkoła średnia</h3>
+			<ul class="nav nav-pills nav-stacked">
+
+<li class="fiz"><h4>Fizyka</h4>
+<ul class="list-group fiz">
+<li class="list-group-item">Mechanika</li>
+<li class="list-group-item">Mechanika bryły sztywnej <b>R</b></li>
+<li class="list-group-item">Grawitacja i elementy astronomii</li>
+<li class="list-group-item">Drgania</li>
+<li class="list-group-item">Termodynamika</li>
+<li class="list-group-item">Elektrostatyka</li>
+<li class="list-group-item">Prąd elektryczny</li>
+<li class="list-group-item">Magnetyzm</li>
+<li class="list-group-item">Fale i optyka</li>
+<li class="list-group-item">Fizyka atomowa</li>
+<li class="list-group-item">Elementy fizyki relatywistycznej<b>R</b></li>
+<li class="list-group-item">Fizyka jądrowa</li>
+</ul></li>
+<li><h4><a href="matematyka.html">Matematyka</a></h4>
+<ul class="list-group mat">
+<li class="list-group-item active"><a href="liczby.html">Liczby rzeczywiste</a></li>
+<li class="list-group-item"><a href="jezyk.html">Język matematyki</a></li>
+<li class="list-group-item"><a href="uklady.html">Układy równań</a></li>
+<li class="list-group-item"><a href="funkcje.html">Funkcje</a></li>
+<li class="list-group-item"><a href="fliniowa.html">Funkcja liniowa</a></li>
+<li class="list-group-item"><a href="fkwadratowa.html">Funkcja kwadratowa</a></li>
+<li class="list-group-item"><a href="planimetria.html">Planimetria</a></li>
+<li class="list-group-item"><a href="wieloniany.html">Wielomiany</a></li>
+<li class="list-group-item"><a href="fwymierne.html">Funkcje wymierne</a></li>
+<li class="list-group-item"><a href="trygonometria.html">Trygonometria</a></li><li class="list-group-item"><a href="ftrygonomertyczne.html">\(&#174;\) Funkcje trygonometryczne</a></li>
+<li class="list-group-item"><a href="fwykilog.html">Funkcje wykładnicze i logarytmiczne</a></li>
+<li class="list-group-item"><a href="ciagi.html">Ciągi</a></li>
+<li class="list-group-item"><a href="prawdopodobienstwo.html">Rachunek prawdopodobieństwa</a></li>
+<li class="list-group-item"><a href="statystyka.html">Statystyka</a></li>
+<li class="list-group-item"><a href="stereometria.html">Stereometria</a></li>
+<li class="list-group-item"><a href="ganalityczna.html">Geometria analityczna</a></li>
+<li class="list-group-item"><a href="rachrozniczkowy.html">\(&#174;\) Rachunek różniczkowy</a></li>
+</ul></li>
+<li class="chem"><h4>Chemia</h4>
+<ul class="list-group chem">
+<li class="list-group-item">Atomy, cząsteczki i stechiometria chemiczna</li>
+<li class="list-group-item">Budowa atomu</li>
+<li class="list-group-item">Wiązania chemiczne</li>
+<li class="list-group-item">Oddziaływania międzycząsteczkowe</li>
+<li class="list-group-item">Kinetyka i statyka chemiczna</li>
+<li class="list-group-item">Energetyka reakcji chemicznych<b>R</b></li>
+<li class="list-group-item">Roztwory</li>
+<li class="list-group-item">Reakcje w roztworach wodnych</li>
+<li class="list-group-item">Systematyka związków nieorganicznych</li>
+<li class="list-group-item">Reakcje utleniania i redukcji</li>
+<li class="list-group-item">Elektrochemia. Ogniwa i elektroliza</li>
+<li class="list-group-item">Metale, niemetale i ich związki</li>
+<li class="list-group-item">Zastosowanie niektórych związków nieorganicznych</li>
+<li class="list-group-item">Wstęp do chemii organicznej</li>
+<li class="list-group-item">Węglowodory</li>
+<li class="list-group-item">Hydroksylowe pochodne węglowodorów</li>
+<li class="list-group-item">Związki karbonylowe</li>
+<li class="list-group-item">Kwasy karboksylowe</li>
+<li class="list-group-item">Estry i tłuszcze</li>
+<li class="list-group-item">Związki organiczne zawierające azot</li>
+<li class="list-group-item">Białka</li>
+<li class="list-group-item">Cukry</li>
+</ul></li>
+
+</ul>
+ 
+			</div>
+			<div class="col-xs-12 col-md-8 col-lg-9" id="prawa">
+			<div class="col-xs-12 col-md-6 col-lg-4 znaki">poziom rozszerzony - \(&#174;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie trudniejsze - \(&#9733;\)</div><div class="col-xs-12 col-md-6 col-lg-4 znaki">zadanie na dowodzenie - \(&#8517;\)</div>
+			<a href="liczby.html" class="tytul-link"><p class="tytul"><b>Liczby rzeczywiste</b> </p></a>
+						  <ul class="podmenu1">
+						  <li class="podmenu"><a href="liczby1.html">Liczby naturalne</a></li>
+						  <li class="podmenu"><a href="liczby2.html">Liczby całkowite. Liczby wymierne</a></li>
+						  <li class="podmenu" id="aktualne"><a href="liczby3.html">Liczby niewymierne</a></li>
+						  <li class="podmenu"><a href="liczby4.html">Rozwinięcie dziesiętne liczby rzeczywistej</a></li>
+						  <li class="podmenu"><a href="liczby5.html">Pierwiastek kwadratowy</a></li>
+						  <li class="podmenu"><a href="liczby6.html">Pierwiastek sześcienny</a></li>
+						  <li class="podmenu"><a href="liczby7.html">Potęga o wykładniku całkowitym</a></li>
+						  <li class="podmenu"><a href="liczby8.html">Notacja wykładnicza</a></li>
+						  <li class="podmenu"><a href="liczby9.html">Potęga o wykładniku wymiernym</a></li>
+						  <li class="podmenu"><a href="liczby10.html">Logarytm i jego własności</a></li>
+						  <li class="podmenu"><a href="liczby11.html">Procenty</a></li>
+						  <li class="podmenu"><a href="liczby12.html">Powtórzenie</a></li>
+						  <li class="podmenu"><a href="liczby13.html">Zadania testowe</a></li>
+						  <li class="podmenu"><a href="liczby14.html">To było na maturze</a></li>
+						  </ul>
+						  <p class="rodzajzad">Liczby niewymierne</p>
+						  <ol class="list-group powt">
+							<li class="numer" id="liczby3_1"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wśród poniższych liczb wskaż liczby:</p>
+								<div class="row odp">
+									<div class="col-xs-12 col-md-6 col-lg-4">a) całkowite</div><div class="col-xs-12 col-md-6 col-lg-4">b) wymierne</div><div class="col-xs-12 col-md-6 col-lg-4">c) niewymierne</div>
+									<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\(-\frac{1}{3}; 2,12; \sqrt{3}; 0; \sqrt[3]{2}; -12; \sqrt[3]{1\frac{11}{16}}; \frac{\pi}{2}; \sqrt{6\frac{1}{4}}; \frac{\sqrt{27}}{\sqrt{3}} \)</div></div>
+							<button class="butt" id="gliczby3_1" onclick="pokazliczby3_1()">Rozwiązanie</button>
+<script>
+function pokazliczby3_1(){
+var dliczby3_1=document.getElementById("r-liczby3_1");
+var rliczby3_1=document.createElement("img");
+rliczby3_1.setAttribute('src','roz/liczby3_1.png');
+dliczby3_1.appendChild(rliczby3_1);
+var uliczby3_1=document.getElementById("gliczby3_1");
+uliczby3_1.innerHTML="Ukryj rozwiązanie";
+uliczby3_1.setAttribute("onclick","usunliczby3_1()");}
+function usunliczby3_1(){
+var dliczby3_1=document.getElementById("r-liczby3_1");
+dliczby3_1.innerHTML=null;
+var uliczby3_1a=document.getElementById("gliczby3_1");
+uliczby3_1a.innerHTML="Rozwiązanie";
+uliczby3_1a.setAttribute("onclick","pokazliczby3_1()");}
+</script>
+<div id="r-liczby3_1"></div>
+</li>
+							<li class="numer" id="liczby3_2"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj przykład liczby niewymiernej spełniającej podaną nierówność.</p>
+								<div class="row odp">
+								<div class="col-xs-12 col-md-6 col-lg-3">a) \(2 &lt; x &lt; 5 \)</div>
+									<div class="col-xs-12 col-md-6 col-lg-3">b) \(\sqrt{2} &lt; x &lt; \sqrt{5} \)</div>
+									<div class="col-xs-12 col-md-6 col-lg-3">c) \(\sqrt[3]{2} &lt; x &lt; \sqrt[3]{5} \)</div>
+									<div class="col-xs-6 col-md-6 col-lg-3">d) \(2\pi &lt; x &lt; 5\pi \)</div>
+									</div>
+							<button class="butt" id="gliczby3_2" onclick="pokazliczby3_2()">Rozwiązanie</button>
+<script>
+function pokazliczby3_2(){
+var dliczby3_2=document.getElementById("r-liczby3_2");
+var rliczby3_2=document.createElement("img");
+rliczby3_2.setAttribute('src','roz/liczby3_2.png');
+dliczby3_2.appendChild(rliczby3_2);
+var uliczby3_2=document.getElementById("gliczby3_2");
+uliczby3_2.innerHTML="Ukryj rozwiązanie";
+uliczby3_2.setAttribute("onclick","usunliczby3_2()");}
+function usunliczby3_2(){
+var dliczby3_2=document.getElementById("r-liczby3_2");
+dliczby3_2.innerHTML=null;
+var uliczby3_2a=document.getElementById("gliczby3_2");
+uliczby3_2a.innerHTML="Rozwiązanie";
+uliczby3_2a.setAttribute("onclick","pokazliczby3_2()");}
+</script>
+<div id="r-liczby3_2"></div>
+</li>
+							<li class="numer" id="liczby3_3"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Która z podanych liczb jest wymierna?</p>
+							<div class="row odp">
+								<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\(a=\sqrt{2+\sqrt{2+\sqrt{4}}}, \) \( b=\sqrt{\sqrt[3]{64}}, \) \( c=\sqrt{1+2+3+4+5+6+7+8}, \)</div><div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\( d=\sqrt{3\cdot\sqrt{3\cdot\sqrt{9}}}, \) \( e=\sqrt[3]{\sqrt{1000000}}, \) \( f=\sqrt[3]{3^3+4^3+5} \)</div></div><button class="butt" id="gliczby3_3" onclick="pokazliczby3_3()">Rozwiązanie</button>
+<script>
+function pokazliczby3_3(){
+var dliczby3_3=document.getElementById("r-liczby3_3");
+var rliczby3_3=document.createElement("img");
+rliczby3_3.setAttribute('src','roz/liczby3_3.png');
+dliczby3_3.appendChild(rliczby3_3);
+var uliczby3_3=document.getElementById("gliczby3_3");
+uliczby3_3.innerHTML="Ukryj rozwiązanie";
+uliczby3_3.setAttribute("onclick","usunliczby3_3()");}
+function usunliczby3_3(){
+var dliczby3_3=document.getElementById("r-liczby3_3");
+dliczby3_3.innerHTML=null;
+var uliczby3_3a=document.getElementById("gliczby3_3");
+uliczby3_3a.innerHTML="Rozwiązanie";
+uliczby3_3a.setAttribute("onclick","pokazliczby3_3()");}
+</script>
+<div id="r-liczby3_3"></div></li>
+							<li class="numer" id="liczby3_4"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Liczby \(\sqrt{10}, 3\frac{1}{7}, \frac{4^4}{3^4}, \frac{355}{113}, \sqrt{\frac{40}{3}-2\sqrt{3}} \) są przybliżeniami liczby \(\pi \). Które z tych przybliżeń jest liczbą niewymierną?</p>
+							<button class="butt" id="gliczby3_4" onclick="pokazliczby3_4()">Rozwiązanie</button>
+<script>
+function pokazliczby3_4(){
+var dliczby3_4=document.getElementById("r-liczby3_4");
+var rliczby3_4=document.createElement("img");
+rliczby3_4.setAttribute('src','roz/liczby3_4.png');
+dliczby3_4.appendChild(rliczby3_4);
+var uliczby3_4=document.getElementById("gliczby3_4");
+uliczby3_4.innerHTML="Ukryj rozwiązanie";
+uliczby3_4.setAttribute("onclick","usunliczby3_4()");}
+function usunliczby3_4(){
+var dliczby3_4=document.getElementById("r-liczby3_4");
+dliczby3_4.innerHTML=null;
+var uliczby3_4a=document.getElementById("gliczby3_4");
+uliczby3_4a.innerHTML="Rozwiązanie";
+uliczby3_4a.setAttribute("onclick","pokazliczby3_4()");}
+</script>
+<div id="r-liczby3_4"></div></li>
+<li class="numer" id="liczby3_5"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oszacuj wartość każdego z wyrażeń: \(\frac{2+\sqrt{30}}{8} \) i \(\frac{2-\sqrt{30}}{8} \). Skorzystaj z nierówności \(5 &lt; \sqrt{30} &lt; 6 \).</p>
+<button class="butt" id="gliczby3_5" onclick="pokazliczby3_5()">Rozwiązanie</button>
+<script>
+function pokazliczby3_5(){
+var dliczby3_5=document.getElementById("r-liczby3_5");
+var rliczby3_5=document.createElement("img");
+rliczby3_5.setAttribute('src','roz/liczby3_5.png');
+dliczby3_5.appendChild(rliczby3_5);
+var uliczby3_5=document.getElementById("gliczby3_5");
+uliczby3_5.innerHTML="Ukryj rozwiązanie";
+uliczby3_5.setAttribute("onclick","usunliczby3_5()");}
+function usunliczby3_5(){
+var dliczby3_5=document.getElementById("r-liczby3_5");
+dliczby3_5.innerHTML=null;
+var uliczby3_5a=document.getElementById("gliczby3_5");
+uliczby3_5a.innerHTML="Rozwiązanie";
+uliczby3_5a.setAttribute("onclick","pokazliczby3_5()");}
+</script>
+<div id="r-liczby3_5"></div>
+</li>
+<li class="numer" id="liczby3_6"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, że \(\frac{3-\sqrt{7}}{4} \) jest dodatnią liczbą mniejszą od \(\frac{1}{4} \).</p>
+<button class="butt" id="gliczby3_6" onclick="pokazliczby3_6()">Rozwiązanie</button>
+<script>
+function pokazliczby3_6(){
+var dliczby3_6=document.getElementById("r-liczby3_6");
+var rliczby3_6=document.createElement("img");
+rliczby3_6.setAttribute('src','roz/liczby3_6.png');
+dliczby3_6.appendChild(rliczby3_6);
+var uliczby3_6=document.getElementById("gliczby3_6");
+uliczby3_6.innerHTML="Ukryj rozwiązanie";
+uliczby3_6.setAttribute("onclick","usunliczby3_6()");}
+function usunliczby3_6(){
+var dliczby3_6=document.getElementById("r-liczby3_6");
+dliczby3_6.innerHTML=null;
+var uliczby3_6a=document.getElementById("gliczby3_6");
+uliczby3_6a.innerHTML="Rozwiązanie";
+uliczby3_6a.setAttribute("onclick","pokazliczby3_6()");}
+</script>
+<div id="r-liczby3_6"></div>
+</li>
+<li class="numer" id="liczby3_7"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Wykaż, żę \(\frac{9}{10} &lt; \frac{6+\sqrt{11}}{10} &lt; 1 \).</p>
+<button class="butt" id="gliczby3_7" onclick="pokazliczby3_7()">Rozwiązanie</button>
+<script>
+function pokazliczby3_7(){
+var dliczby3_7=document.getElementById("r-liczby3_7");
+var rliczby3_7=document.createElement("img");
+rliczby3_7.setAttribute('src','roz/liczby3_7.png');
+dliczby3_7.appendChild(rliczby3_7);
+var uliczby3_7=document.getElementById("gliczby3_7");
+uliczby3_7.innerHTML="Ukryj rozwiązanie";
+uliczby3_7.setAttribute("onclick","usunliczby3_7()");}
+function usunliczby3_7(){
+var dliczby3_7=document.getElementById("r-liczby3_7");
+dliczby3_7.innerHTML=null;
+var uliczby3_7a=document.getElementById("gliczby3_7");
+uliczby3_7a.innerHTML="Rozwiązanie";
+uliczby3_7a.setAttribute("onclick","pokazliczby3_7()");}
+</script>
+<div id="r-liczby3_7"></div>
+</li>
+<li class="numer" id="liczby3_8"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Wyznacz bez pomocy kalkulatora dwie kolejne liczby całkowite, między którymi znajduje się podana liczba.</p>
+<div class="row odp">
+<div class="col-xs-6 col-md-4 col-lg-3">a) \(\sqrt{86,7} \)</div><div class="col-xs-6 col-md-4 col-lg-3">b) \(\sqrt{11}+\sqrt{37} \)</div><div class="col-xs-6 col-md-4 col-lg-3">c) \( \sqrt[3]{23}\)</div><div class="col-xs-6 col-md-4 col-lg-3">d) \(\sqrt[3]{-19} \)</div></div><button class="butt" id="gliczby3_8" onclick="pokazliczby3_8()">Rozwiązanie</button>
+<script>
+function pokazliczby3_8(){
+var dliczby3_8=document.getElementById("r-liczby3_8");
+var rliczby3_8=document.createElement("img");
+rliczby3_8.setAttribute('src','roz/liczby3_8.png');
+dliczby3_8.appendChild(rliczby3_8);
+var uliczby3_8=document.getElementById("gliczby3_8");
+uliczby3_8.innerHTML="Ukryj rozwiązanie";
+uliczby3_8.setAttribute("onclick","usunliczby3_8()");}
+function usunliczby3_8(){
+var dliczby3_8=document.getElementById("r-liczby3_8");
+dliczby3_8.innerHTML=null;
+var uliczby3_8a=document.getElementById("gliczby3_8");
+uliczby3_8a.innerHTML="Rozwiązanie";
+uliczby3_8a.setAttribute("onclick","pokazliczby3_8()");}
+</script>
+<div id="r-liczby3_8"></div>
+</li>
+<li class="numer" id="liczby3_9"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj liczbę naturalną \(n \) spełniającą podaną nierówność.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">\(n &lt; \frac{22+\sqrt{222}}{2} &lt; n+1 \)</div><div class="col-xs-12 col-md-12 col-lg-6">\(n &lt; \frac{33+\sqrt{333}}{3} &lt; n+1 \)</div></div><button class="butt" id="gliczby3_9" onclick="pokazliczby3_9()">Rozwiązanie</button>
+<script>
+function pokazliczby3_9(){
+var dliczby3_9=document.getElementById("r-liczby3_9");
+var rliczby3_9=document.createElement("img");
+rliczby3_9.setAttribute('src','roz/liczby3_9.png');
+dliczby3_9.appendChild(rliczby3_9);
+var uliczby3_9=document.getElementById("gliczby3_9");
+uliczby3_9.innerHTML="Ukryj rozwiązanie";
+uliczby3_9.setAttribute("onclick","usunliczby3_9()");}
+function usunliczby3_9(){
+var dliczby3_9=document.getElementById("r-liczby3_9");
+dliczby3_9.innerHTML=null;
+var uliczby3_9a=document.getElementById("gliczby3_9");
+uliczby3_9a.innerHTML="Rozwiązanie";
+uliczby3_9a.setAttribute("onclick","pokazliczby3_9()");}
+</script>
+<div id="r-liczby3_9"></div>
+</li>
+<li class="numer" id="liczby3_10"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dane są dwa prostopadłościany o wymiarach \(P_1: 5, 6, 11 \), \(P_2: 8, 9, 12 \). Czy któryś z nich ma przekątną o długości będącej liczbą niewymierną? Który?</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_10" onclick="pokazliczby3_10()">Rozwiązanie</button>
+<script>
+function pokazliczby3_10(){
+var dliczby3_10=document.getElementById("r-liczby3_10");
+var rliczby3_10=document.createElement("img");
+rliczby3_10.setAttribute('src','roz/liczby3_10.png');
+dliczby3_10.appendChild(rliczby3_10);
+var uliczby3_10=document.getElementById("gliczby3_10");
+uliczby3_10.innerHTML="Ukryj rozwiązanie";
+uliczby3_10.setAttribute("onclick","usunliczby3_10()");}
+function usunliczby3_10(){
+var dliczby3_10=document.getElementById("r-liczby3_10");
+dliczby3_10.innerHTML=null;
+var uliczby3_10a=document.getElementById("gliczby3_10");
+uliczby3_10a.innerHTML="Rozwiązanie";
+uliczby3_10a.setAttribute("onclick","pokazliczby3_10()");}
+</script>
+<div id="r-liczby3_10"></div>
+</li>
+<li class="numer" id="liczby3_11"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zbadaj, czy podana wielkość wyraża się liczbą wymierną.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">obwód koła o promieniu \(\frac{2}{\pi} \)</div><div class="col-xs-12 col-md-12 col-lg-6">pole koła o promieniu \(2 \)</div></div><button class="butt" id="gliczby3_11" onclick="pokazliczby3_11()">Rozwiązanie</button>
+<script>
+function pokazliczby3_11(){
+var dliczby3_11=document.getElementById("r-liczby3_11");
+var rliczby3_11=document.createElement("img");
+rliczby3_11.setAttribute('src','roz/liczby3_11.png');
+dliczby3_11.appendChild(rliczby3_11);
+var uliczby3_11=document.getElementById("gliczby3_11");
+uliczby3_11.innerHTML="Ukryj rozwiązanie";
+uliczby3_11.setAttribute("onclick","usunliczby3_11()");}
+function usunliczby3_11(){
+var dliczby3_11=document.getElementById("r-liczby3_11");
+dliczby3_11.innerHTML=null;
+var uliczby3_11a=document.getElementById("gliczby3_11");
+uliczby3_11a.innerHTML="Rozwiązanie";
+uliczby3_11a.setAttribute("onclick","pokazliczby3_11()");}
+</script>
+<div id="r-liczby3_11"></div>
+</li>
+<li class="numer" id="liczby3_12"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Dane są liczby: wymierna \(p \) oraz niewymierne \(x \) i \(y \). Wpisz znak \(&#10005;\) w odpowiednich wierszach tabeli, wskazując, jaką liczbą może być wynik danego działania.</p>
+<table class="tab1">
+  <tr class="wypel">
+    <th>Wynik działania</th>
+	<th>\(p+x \)</th>
+	<th>\(\begin{matrix}px,\\p\neq 0\end{matrix} \)</th>
+	<th>\(\begin{matrix}\frac{x}{p},\\p\neq 0\end{matrix} \)</th>
+	<th>\(x^2 \)</th>
+	<th>\(x+y \)</th>
+	<th>\(xy \)</th>
+	<th>\(\frac{x}{y} \)</th>
+	<th>\(\begin{matrix} \sqrt{x},\\x> 0\end{matrix} \)</th>
+	<th>\(\begin{matrix}\sqrt{x+p},\\x+p> 0\end{matrix} \)</th>
+  </tr>
+  <tr class="tab1">
+    <th class="wypel">Wymierny</th>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+  </tr>
+  <tr class="tab1">
+    <th class="wypel">Niewymierny</th>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+	<td class="wypel2"> ? </td>
+  </tr>
+</table><br>
+<button class="butt" id="gliczby3_12" onclick="pokazliczby3_12()">Rozwiązanie</button>
+<script>
+function pokazliczby3_12(){
+var dliczby3_12=document.getElementById("r-liczby3_12");
+var rliczby3_12=document.createElement("img");
+rliczby3_12.setAttribute('src','roz/liczby3_12.png');
+dliczby3_12.appendChild(rliczby3_12);
+var uliczby3_12=document.getElementById("gliczby3_12");
+uliczby3_12.innerHTML="Ukryj rozwiązanie";
+uliczby3_12.setAttribute("onclick","usunliczby3_12()");}
+function usunliczby3_12(){
+var dliczby3_12=document.getElementById("r-liczby3_12");
+dliczby3_12.innerHTML=null;
+var uliczby3_12a=document.getElementById("gliczby3_12");
+uliczby3_12a.innerHTML="Rozwiązanie";
+uliczby3_12a.setAttribute("onclick","pokazliczby3_12()");}
+</script>
+<div id="r-liczby3_12"></div>
+</li>
+<li class="numer" id="liczby3_13"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Zbadaj, czy obwód i pole trójkąta równobocznego mogą być jednocześcnie wyrażone liczbami wymiernymi.</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_13" onclick="pokazliczby3_13()">Rozwiązanie</button>
+<script>
+function pokazliczby3_13(){
+var dliczby3_13=document.getElementById("r-liczby3_13");
+var rliczby3_13=document.createElement("img");
+rliczby3_13.setAttribute('src','roz/liczby3_13.png');
+dliczby3_13.appendChild(rliczby3_13);
+var uliczby3_13=document.getElementById("gliczby3_13");
+uliczby3_13.innerHTML="Ukryj rozwiązanie";
+uliczby3_13.setAttribute("onclick","usunliczby3_13()");}
+function usunliczby3_13(){
+var dliczby3_13=document.getElementById("r-liczby3_13");
+dliczby3_13.innerHTML=null;
+var uliczby3_13a=document.getElementById("gliczby3_13");
+uliczby3_13a.innerHTML="Rozwiązanie";
+uliczby3_13a.setAttribute("onclick","pokazliczby3_13()");}
+</script>
+<div id="r-liczby3_13"></div>
+</li>
+<li class="numer" id="liczby3_14"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oceń prawdziwość podanych zdań.<br>
+W kwadracie:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">I. suma długości przekątnych może być liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">II. obwód może być liczbą niewymierną</div><div class="col-xs-12 col-md-12 col-lg-12">III. stosunek obwodu do długości przekątnej jest zawsze liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">IV. obwód może być liczbą wymierną, a pole - liczbą niewymierną</div><div class="col-xs-12 col-md-12 col-lg-12">V. obwód może być liczbą niewymierną, a pole - liczbą całkowitą</div><div class="col-xs-12 col-md-12 col-lg-12">VI. obwód może być liczbą całkowitą, a pole - liczbą niecałkowitą</div></div><button class="butt" id="gliczby3_14" onclick="pokazliczby3_14()">Rozwiązanie</button>
+<script>
+function pokazliczby3_14(){
+var dliczby3_14=document.getElementById("r-liczby3_14");
+var rliczby3_14=document.createElement("img");
+rliczby3_14.setAttribute('src','roz/liczby3_14.png');
+dliczby3_14.appendChild(rliczby3_14);
+var uliczby3_14=document.getElementById("gliczby3_14");
+uliczby3_14.innerHTML="Ukryj rozwiązanie";
+uliczby3_14.setAttribute("onclick","usunliczby3_14()");}
+function usunliczby3_14(){
+var dliczby3_14=document.getElementById("r-liczby3_14");
+dliczby3_14.innerHTML=null;
+var uliczby3_14a=document.getElementById("gliczby3_14");
+uliczby3_14a.innerHTML="Rozwiązanie";
+uliczby3_14a.setAttribute("onclick","pokazliczby3_14()");}
+</script>
+<div id="r-liczby3_14"></div>
+</li>
+<li class="numer" id="liczby3_15"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Uporządkuj malejąco obwody figur: kwadratu o boku \(\sqrt{3} \), trójkąta równobocznego o boku \(\sqrt{5} \), sześciokąta foremnego o boku \(\sqrt{2} \).</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_15" onclick="pokazliczby3_15()">Rozwiązanie</button>
+<script>
+function pokazliczby3_15(){
+var dliczby3_15=document.getElementById("r-liczby3_15");
+var rliczby3_15=document.createElement("img");
+rliczby3_15.setAttribute('src','roz/liczby3_15.png');
+dliczby3_15.appendChild(rliczby3_15);
+var uliczby3_15=document.getElementById("gliczby3_15");
+uliczby3_15.innerHTML="Ukryj rozwiązanie";
+uliczby3_15.setAttribute("onclick","usunliczby3_15()");}
+function usunliczby3_15(){
+var dliczby3_15=document.getElementById("r-liczby3_15");
+dliczby3_15.innerHTML=null;
+var uliczby3_15a=document.getElementById("gliczby3_15");
+uliczby3_15a.innerHTML="Rozwiązanie";
+uliczby3_15a.setAttribute("onclick","pokazliczby3_15()");}
+</script>
+<div id="r-liczby3_15"></div>
+</li>
+<li class="numer" id="liczby3_16"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>W trójkącie równobocznym \(ABC \) poprowadzono wysokości \(AD \), \(BE \) i \(CE \), które przecinają się w punkcie \(G \). Wskaż stosunki długości odcinków, które są liczbami niewymiernymi.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12 col-xs-offset-4 col-md-offset-3 col-lg-offset-2"> \(\frac{|CF|}{|FB|}, \frac{|GD|}{|BE|}, \frac{|AG|}{|EC|}, \frac{|BC|}{|GC|}, \frac{|AD|}{|BG|}, \frac{|CE|}{|AB|} \)</div></div>
+<div class="row odp"><canvas id="l3rys1" class="rys" width="220" height="200"></canvas><script>
+var canvas=document.getElementById("l3rys1");
+var context=canvas.getContext("2d");
+const img1=new Image();
+img1.src = "./l3r1.png";
+img1.onload=()=>{
+context.drawImage(img1, 100, 15, 220, 200, 0, 0, 220, 200);
+};
+</script>
+</div><button class="butt" id="gliczby3_16" onclick="pokazliczby3_16()">Rozwiązanie</button>
+<script>
+function pokazliczby3_16(){
+var dliczby3_16=document.getElementById("r-liczby3_16");
+var rliczby3_16=document.createElement("img");
+rliczby3_16.setAttribute('src','roz/liczby3_16.png');
+dliczby3_16.appendChild(rliczby3_16);
+var uliczby3_16=document.getElementById("gliczby3_16");
+uliczby3_16.innerHTML="Ukryj rozwiązanie";
+uliczby3_16.setAttribute("onclick","usunliczby3_16()");}
+function usunliczby3_16(){
+var dliczby3_16=document.getElementById("r-liczby3_16");
+dliczby3_16.innerHTML=null;
+var uliczby3_16a=document.getElementById("gliczby3_16");
+uliczby3_16a.innerHTML="Rozwiązanie";
+uliczby3_16a.setAttribute("onclick","pokazliczby3_16()");}
+</script>
+<div id="r-liczby3_16"></div>
+</li>
+<li class="numer" id="liczby3_17"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj przykład liczby niewymiernej \(x \), dla której poniższa liczba jest wymierna, i takiej, dla której poniższa liczba jest niewymierna.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-4">a) \(\sqrt{5} \cdot x \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \(x^2 \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \(x+\sqrt{5} \)</div></div><button class="butt" id="gliczby3_17" onclick="pokazliczby3_17()">Rozwiązanie</button>
+<script>
+function pokazliczby3_17(){
+var dliczby3_17=document.getElementById("r-liczby3_17");
+var rliczby3_17=document.createElement("img");
+rliczby3_17.setAttribute('src','roz/liczby3_17.png');
+dliczby3_17.appendChild(rliczby3_17);
+var uliczby3_17=document.getElementById("gliczby3_17");
+uliczby3_17.innerHTML="Ukryj rozwiązanie";
+uliczby3_17.setAttribute("onclick","usunliczby3_17()");}
+function usunliczby3_17(){
+var dliczby3_17=document.getElementById("r-liczby3_17");
+dliczby3_17.innerHTML=null;
+var uliczby3_17a=document.getElementById("gliczby3_17");
+uliczby3_17a.innerHTML="Rozwiązanie";
+uliczby3_17a.setAttribute("onclick","pokazliczby3_17()");}
+</script>
+<div id="r-liczby3_17"></div>
+</li>
+<li class="numer" id="liczby3_18"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że liczba odwrotna do liczby niewymiernej jest niewymierna.</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_18" onclick="pokazliczby3_18()">Rozwiązanie</button>
+<script>
+function pokazliczby3_18(){
+var dliczby3_18=document.getElementById("r-liczby3_18");
+var rliczby3_18=document.createElement("img");
+rliczby3_18.setAttribute('src','roz/liczby3_18.png');
+dliczby3_18.appendChild(rliczby3_18);
+var uliczby3_18=document.getElementById("gliczby3_18");
+uliczby3_18.innerHTML="Ukryj rozwiązanie";
+uliczby3_18.setAttribute("onclick","usunliczby3_18()");}
+function usunliczby3_18(){
+var dliczby3_18=document.getElementById("r-liczby3_18");
+dliczby3_18.innerHTML=null;
+var uliczby3_18a=document.getElementById("gliczby3_18");
+uliczby3_18a.innerHTML="Rozwiązanie";
+uliczby3_18a.setAttribute("onclick","pokazliczby3_18()");}
+</script>
+<div id="r-liczby3_18"></div>
+</li>
+<li class="numer" id="liczby3_19"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz</p>
+<div class="row odp"><div class="col-xs-7 col-md-7 col-lg-7"><div class="col-xs-12 col-md-12 col-lg-12">a) \([253], [-125], [-2\frac{2}{3}], [100\frac{2}{3}] \)</div><div class="col-xs-12 col-md-12 col-lg-12">b) \([\sqrt{123}], [5+\sqrt{355}], [10+\sqrt{5}-\sqrt{7}] \)</div><div class="col-xs-12 col-md-12 col-lg-12">c) \([-\frac{\sqrt{2}}{2}], [-2\pi], [1-\sqrt{3}], [-1-\sqrt{3}] \)</div></div><div class="col-xs-5 col-md-5 col-lg-5"><div class="col-xs-12 col-md-12 col-lg-12 well"> Symbolem \([x] \) oznaczamy cechę liczby \(x \), czyli największą liczbę całkowitą nie większa niż \(x \)</div></div></div><button class="butt" id="gliczby3_19" onclick="pokazliczby3_19()">Rozwiązanie</button>
+<script>
+function pokazliczby3_19(){
+var dliczby3_19=document.getElementById("r-liczby3_19");
+var rliczby3_19=document.createElement("img");
+rliczby3_19.setAttribute('src','roz/liczby3_19.png');
+dliczby3_19.appendChild(rliczby3_19);
+var uliczby3_19=document.getElementById("gliczby3_19");
+uliczby3_19.innerHTML="Ukryj rozwiązanie";
+uliczby3_19.setAttribute("onclick","usunliczby3_19()");}
+function usunliczby3_19(){
+var dliczby3_19=document.getElementById("r-liczby3_19");
+dliczby3_19.innerHTML=null;
+var uliczby3_19a=document.getElementById("gliczby3_19");
+uliczby3_19a.innerHTML="Rozwiązanie";
+uliczby3_19a.setAttribute("onclick","pokazliczby3_19()");}
+</script>
+<div id="r-liczby3_19"></div>
+</li>
+<li class="numer" id="liczby3_20"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Określ, jekie liczby \(x \) spełniają podany warunek.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-6 col-lg-3">a) \([x]=1 \)</div><div class="col-xs-12 col-md-6 col-lg-3">b) \([x]=-1 \)</div><div class="col-xs-12 col-md-6 col-lg-3">c) \([x]=12 \)</div><div class="col-xs-12 col-md-6 col-lg-3">d) \([x]=-15 \)</div></div><button class="butt" id="gliczby3_20" onclick="pokazliczby3_20()">Rozwiązanie</button>
+<script>
+function pokazliczby3_20(){
+var dliczby3_20=document.getElementById("r-liczby3_20");
+var rliczby3_20=document.createElement("img");
+rliczby3_20.setAttribute('src','roz/liczby3_20.png');
+dliczby3_20.appendChild(rliczby3_20);
+var uliczby3_20=document.getElementById("gliczby3_20");
+uliczby3_20.innerHTML="Ukryj rozwiązanie";
+uliczby3_20.setAttribute("onclick","usunliczby3_20()");}
+function usunliczby3_20(){
+var dliczby3_20=document.getElementById("r-liczby3_20");
+dliczby3_20.innerHTML=null;
+var uliczby3_20a=document.getElementById("gliczby3_20");
+uliczby3_20a.innerHTML="Rozwiązanie";
+uliczby3_20a.setAttribute("onclick","pokazliczby3_20()");}
+</script>
+<div id="r-liczby3_20"></div>
+</li>
+<li class="numer" id="liczby3_21"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Określ, jakie liczby \(x \) spełniają podany warunek.</p>
+<div class="row odp"><div class="col-xs-12 col-md-6 col-lg-4">a) \([x]=x \)</div><div class="col-xs-12 col-md-6 col-lg-4">b) \([x+3]=1-x \)</div><div class="col-xs-12 col-md-6 col-lg-4">c) \([x]=\frac{x}{4} \)</div></div><button class="butt" id="gliczby3_21" onclick="pokazliczby3_21()">Rozwiązanie</button>
+<script>
+function pokazliczby3_21(){
+var dliczby3_21=document.getElementById("r-liczby3_21");
+var rliczby3_21=document.createElement("img");
+rliczby3_21.setAttribute('src','roz/liczby3_21.png');
+dliczby3_21.appendChild(rliczby3_21);
+var uliczby3_21=document.getElementById("gliczby3_21");
+uliczby3_21.innerHTML="Ukryj rozwiązanie";
+uliczby3_21.setAttribute("onclick","usunliczby3_21()");}
+function usunliczby3_21(){
+var dliczby3_21=document.getElementById("r-liczby3_21");
+dliczby3_21.innerHTML=null;
+var uliczby3_21a=document.getElementById("gliczby3_21");
+uliczby3_21a.innerHTML="Rozwiązanie";
+uliczby3_21a.setAttribute("onclick","pokazliczby3_21()");}
+</script>
+<div id="r-liczby3_21"></div>
+</li>
+<li class="numer" id="liczby3_22"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Oblicz.</p>
+<div class="row odp"><div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">\([\frac{2+\sqrt{2}}{2}]+[\frac{3+\sqrt{3}}{3}]+[\frac{4+\sqrt{4}}{4}]+\cdots+[\frac{100+\sqrt{100}}{100}] \)</div></div><button class="butt" id="gliczby3_22" onclick="pokazliczby3_22()">Rozwiązanie</button>
+<script>
+function pokazliczby3_22(){
+var dliczby3_22=document.getElementById("r-liczby3_22");
+var rliczby3_22=document.createElement("img");
+rliczby3_22.setAttribute('src','roz/liczby3_22.png');
+dliczby3_22.appendChild(rliczby3_22);
+var uliczby3_22=document.getElementById("gliczby3_22");
+uliczby3_22.innerHTML="Ukryj rozwiązanie";
+uliczby3_22.setAttribute("onclick","usunliczby3_22()");}
+function usunliczby3_22(){
+var dliczby3_22=document.getElementById("r-liczby3_22");
+dliczby3_22.innerHTML=null;
+var uliczby3_22a=document.getElementById("gliczby3_22");
+uliczby3_22a.innerHTML="Rozwiązanie";
+uliczby3_22a.setAttribute("onclick","pokazliczby3_22()");}
+</script>
+<div id="r-liczby3_22"></div>
+</li>
+<li class="numer" id="liczby3_23"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Długość krawędzi sześcianu \(ABCDEFGH \) jest liczbą wymierną. Punkty \(P \) i \(Q \) są środkami odpowiednio krawędzi \(GH \) i \(AD \). Długości których boków trójkąta \(BQP \) są liczbami niewymiernymi?</p>
+<div class="row odp">
+<canvas id="l3rys2" class="rys" width="250" height="270"></canvas><script>
+var c=document.getElementById("l3rys2");
+var ctx=c.getContext("2d");
+const img2=new Image();
+img2.src = "./l3r2.png";
+img2.onload=()=>{
+ctx.drawImage(img2, 25, 20, 770, 880, 0, 0, 241, 264);
+};
+</script></div>
+<div class="row odp"></div><button class="butt" id="gliczby3_23" onclick="pokazliczby3_23()">Rozwiązanie</button>
+<script>
+function pokazliczby3_23(){
+var dliczby3_23=document.getElementById("r-liczby3_23");
+var rliczby3_23=document.createElement("img");
+rliczby3_23.setAttribute('src','roz/liczby3_23.png');
+dliczby3_23.appendChild(rliczby3_23);
+var uliczby3_23=document.getElementById("gliczby3_23");
+uliczby3_23.innerHTML="Ukryj rozwiązanie";
+uliczby3_23.setAttribute("onclick","usunliczby3_23()");}
+function usunliczby3_23(){
+var dliczby3_23=document.getElementById("r-liczby3_23");
+dliczby3_23.innerHTML=null;
+var uliczby3_23a=document.getElementById("gliczby3_23");
+uliczby3_23a.innerHTML="Rozwiązanie";
+uliczby3_23a.setAttribute("onclick","pokazliczby3_23()");}
+</script>
+<div id="r-liczby3_23"></div>
+</li>
+<li class="numer" id="liczby3_24"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj takie trzy liczby niewymierne, dla których liczby \(x+y, y+z, z+x \) są niewymierne, a liczba \(x+y+z \) jest:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-6">a) wymierna</div><div class="col-xs-12 col-md-12 col-lg-6">b) niewymierna</div></div><button class="butt" id="gliczby3_24" onclick="pokazliczby3_24()">Rozwiązanie</button>
+<script>
+function pokazliczby3_24(){
+var dliczby3_24=document.getElementById("r-liczby3_24");
+var rliczby3_24=document.createElement("img");
+rliczby3_24.setAttribute('src','roz/liczby3_24.png');
+dliczby3_24.appendChild(rliczby3_24);
+var uliczby3_24=document.getElementById("gliczby3_24");
+uliczby3_24.innerHTML="Ukryj rozwiązanie";
+uliczby3_24.setAttribute("onclick","usunliczby3_24()");}
+function usunliczby3_24(){
+var dliczby3_24=document.getElementById("r-liczby3_24");
+dliczby3_24.innerHTML=null;
+var uliczby3_24a=document.getElementById("gliczby3_24");
+uliczby3_24a.innerHTML="Rozwiązanie";
+uliczby3_24a.setAttribute("onclick","pokazliczby3_24()");}
+</script>
+<div id="r-liczby3_24"></div>
+</li>
+<li class="numer" id="liczby3_25"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Pole powierzchni kuli o promieniu \(R \) opisane jest wzorem \(s=4\pi R^2 \), a jej objętość - wzorem \(V=\frac{4}{3}\pi R^3 \). Podaj przykład promienia kuli, której:</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) pole powierzchni wyraża się liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">b) objętość wyraża się liczbą wymierną</div></div><button class="butt" id="gliczby3_25" onclick="pokazliczby3_25()">Rozwiązanie</button>
+<script>
+function pokazliczby3_25(){
+var dliczby3_25=document.getElementById("r-liczby3_25");
+var rliczby3_25=document.createElement("img");
+rliczby3_25.setAttribute('src','roz/liczby3_25.png');
+dliczby3_25.appendChild(rliczby3_25);
+var uliczby3_25=document.getElementById("gliczby3_25");
+uliczby3_25.innerHTML="Ukryj rozwiązanie";
+uliczby3_25.setAttribute("onclick","usunliczby3_25()");}
+function usunliczby3_25(){
+var dliczby3_25=document.getElementById("r-liczby3_25");
+dliczby3_25.innerHTML=null;
+var uliczby3_25a=document.getElementById("gliczby3_25");
+uliczby3_25a.innerHTML="Rozwiązanie";
+uliczby3_25a.setAttribute("onclick","pokazliczby3_25()");}
+</script>
+<div id="r-liczby3_25"></div>
+</li>
+<li class="numer" id="liczby3_26"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Ile jest liczb trzycyfrowych, z których pierwiastek sześcienny jest liczbą niewymierną?</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_26" onclick="pokazliczby3_26()">Rozwiązanie</button>
+<script>
+function pokazliczby3_26(){
+var dliczby3_26=document.getElementById("r-liczby3_26");
+var rliczby3_26=document.createElement("img");
+rliczby3_26.setAttribute('src','roz/liczby3_26.png');
+dliczby3_26.appendChild(rliczby3_26);
+var uliczby3_26=document.getElementById("gliczby3_26");
+uliczby3_26.innerHTML="Ukryj rozwiązanie";
+uliczby3_26.setAttribute("onclick","usunliczby3_26()");}
+function usunliczby3_26(){
+var dliczby3_26=document.getElementById("r-liczby3_26");
+dliczby3_26.innerHTML=null;
+var uliczby3_26a=document.getElementById("gliczby3_26");
+uliczby3_26a.innerHTML="Rozwiązanie";
+uliczby3_26a.setAttribute("onclick","pokazliczby3_26()");}
+</script>
+<div id="r-liczby3_26"></div>
+</li>
+<li class="numer" id="liczby3_27"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Czy podana wielkość może być liczbą wymierną? A liczbą niewymierną?</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12">a) długość przekątnej kwadratu, którego pole wyraża się liczbą wymierną</div><div class="col-xs-12 col-md-12 col-lg-12">b) wysokość trójkąta równobocznego, którego obwód wyraża się liczbą niewymierną</div><div class="col-xs-12 col-md-12 col-lg-12">c) długość przekątnej sześcianu, którego objętość wyraża się liczbą wymierną</div></div><button class="butt" id="gliczby3_27" onclick="pokazliczby3_27()">Rozwiązanie</button>
+<script>
+function pokazliczby3_27(){
+var dliczby3_27=document.getElementById("r-liczby3_27");
+var rliczby3_27=document.createElement("img");
+rliczby3_27.setAttribute('src','roz/liczby3_27.png');
+dliczby3_27.appendChild(rliczby3_27);
+var uliczby3_27=document.getElementById("gliczby3_27");
+uliczby3_27.innerHTML="Ukryj rozwiązanie";
+uliczby3_27.setAttribute("onclick","usunliczby3_27()");}
+function usunliczby3_27(){
+var dliczby3_27=document.getElementById("r-liczby3_27");
+dliczby3_27.innerHTML=null;
+var uliczby3_27a=document.getElementById("gliczby3_27");
+uliczby3_27a.innerHTML="Rozwiązanie";
+uliczby3_27a.setAttribute("onclick","pokazliczby3_27()");}
+</script>
+<div id="r-liczby3_27"></div>
+</li>
+<li class="numer" id="liczby3_28"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Posługując się podanym twierdzeniem, wyznacz 6 kolejnych przybliżeń: \(x_1, x_2, _{\cdots}, x_6 \) liczby \(\sqrt{2} \), rozpoczynając od ułamka \(\frac{m}{n}=\frac{3}{2} \).</p>
+<div class="row odp"><div class="col-xs-8 col-md-8 col-lg-8 col-xs-offset-3 col-md-offset-2 col-lg-offset-2 well">Liczba wymierna \(\frac{m+2n}{m+n} \), gdzie \(m, n \)- liczby całkowite, jest lepszym przybliżeniem liczby \(\sqrt{2} \) niż liczba wymierna \(\frac{m}{n} \).</div></div><button class="butt" id="gliczby3_28" onclick="pokazliczby3_28()">Rozwiązanie</button>
+<script>
+function pokazliczby3_28(){
+var dliczby3_28=document.getElementById("r-liczby3_28");
+var rliczby3_28=document.createElement("img");
+rliczby3_28.setAttribute('src','roz/liczby3_28.png');
+dliczby3_28.appendChild(rliczby3_28);
+var uliczby3_28=document.getElementById("gliczby3_28");
+uliczby3_28.innerHTML="Ukryj rozwiązanie";
+uliczby3_28.setAttribute("onclick","usunliczby3_28()");}
+function usunliczby3_28(){
+var dliczby3_28=document.getElementById("r-liczby3_28");
+dliczby3_28.innerHTML=null;
+var uliczby3_28a=document.getElementById("gliczby3_28");
+uliczby3_28a.innerHTML="Rozwiązanie";
+uliczby3_28a.setAttribute("onclick","pokazliczby3_28()");}
+</script>
+<div id="r-liczby3_28"></div>
+</li>
+<li class="numer" id="liczby3_29"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj przykłady liczby niewymiernej \(x \), która spełnia podany warunek.</p>
+<div class="row odp">
+<div class="col-xs-12 col-md-12 col-lg-6">a) \(0,8 &lt; x &lt; 0,9 \)</div>
+<div class="col-xs-12 col-md-12 col-lg-6">b) \(0,95 &lt; x &lt; 0,96 \)</div>
+</div><button class="butt" id="gliczby3_29" onclick="pokazliczby3_29()">Rozwiązanie</button>
+<script>
+function pokazliczby3_29(){
+var dliczby3_29=document.getElementById("r-liczby3_29");
+var rliczby3_29=document.createElement("img");
+rliczby3_29.setAttribute('src','roz/liczby3_29.png');
+dliczby3_29.appendChild(rliczby3_29);
+var uliczby3_29=document.getElementById("gliczby3_29");
+uliczby3_29.innerHTML="Ukryj rozwiązanie";
+uliczby3_29.setAttribute("onclick","usunliczby3_29()");}
+function usunliczby3_29(){
+var dliczby3_29=document.getElementById("r-liczby3_29");
+dliczby3_29.innerHTML=null;
+var uliczby3_29a=document.getElementById("gliczby3_29");
+uliczby3_29a.innerHTML="Rozwiązanie";
+uliczby3_29a.setAttribute("onclick","pokazliczby3_29()");}
+</script>
+<div id="r-liczby3_29"></div>
+</li>
+<li class="numer" id="liczby3_30"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Podaj wszystkie liczby niewmierne spełniające równanie.</p>
+<div class="row odp"><div class="col-xs-12 col-md-12 col-lg-12 col-xs-offset-3 col-md-offset-3 col-lg-offset-2">\((x^2-1)(x^2-2)(x^2-3)(x^2-4)=0 \)</div></div><button class="butt" id="gliczby3_30" onclick="pokazliczby3_30()">Rozwiązanie</button>
+<script>
+function pokazliczby3_30(){
+var dliczby3_30=document.getElementById("r-liczby3_30");
+var rliczby3_30=document.createElement("img");
+rliczby3_30.setAttribute('src','roz/liczby3_30.png');
+dliczby3_30.appendChild(rliczby3_30);
+var uliczby3_30=document.getElementById("gliczby3_30");
+uliczby3_30.innerHTML="Ukryj rozwiązanie";
+uliczby3_30.setAttribute("onclick","usunliczby3_30()");}
+function usunliczby3_30(){
+var dliczby3_30=document.getElementById("r-liczby3_30");
+dliczby3_30.innerHTML=null;
+var uliczby3_30a=document.getElementById("gliczby3_30");
+uliczby3_30a.innerHTML="Rozwiązanie";
+uliczby3_30a.setAttribute("onclick","pokazliczby3_30()");}
+</script>
+<div id="r-liczby3_30"></div>
+</li>
+<li class="numer" id="liczby3_31"><p class="tresc"><a href="#" class="up">\(&#8657;\)</a>Rozważmy sześciokąt foremny o boku długości \(1 \). Jaka część spośród jego przekątnych ma długość wyrażającą się liczbą niewymierną?</p>
+<div class="row odp"></div>"<button class="butt" id="gliczby3_31" onclick="pokazliczby3_31()">Rozwiązanie</button>
+<script>
+function pokazliczby3_31(){
+var dliczby3_31=document.getElementById("r-liczby3_31");
+var rliczby3_31=document.createElement("img");
+rliczby3_31.setAttribute('src','roz/liczby3_31.png');
+dliczby3_31.appendChild(rliczby3_31);
+var uliczby3_31=document.getElementById("gliczby3_31");
+uliczby3_31.innerHTML="Ukryj rozwiązanie";
+uliczby3_31.setAttribute("onclick","usunliczby3_31()");}
+function usunliczby3_31(){
+var dliczby3_31=document.getElementById("r-liczby3_31");
+dliczby3_31.innerHTML=null;
+var uliczby3_31a=document.getElementById("gliczby3_31");
+uliczby3_31a.innerHTML="Rozwiązanie";
+uliczby3_31a.setAttribute("onclick","pokazliczby3_31()");}
+</script>
+<div id="r-liczby3_31"></div></li>
+<li class="numer" id="liczby3_32"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Przeczytaj podany w ramce przykład i rozwiąż zadanie.</p>
+<div class="row odp">
+<div class="col-xs-11 col-md-11 col-lg-11 well1">Liczba \(\sqrt{2}+\sqrt{3} \) jest niewymierna.<br> <b>Dowód</b> <br>Przypuśćmy przeciwnie, liczba \(a=\sqrt{2}+\sqrt{3} \) jest wymierna. Wtedy \(a-\sqrt{3}=\sqrt{2} \), a stąd otrzymujemy kolejno:<br><br><span class="cen"> \((a-\sqrt{3})^2=(\sqrt{2})^2 \)</span><br><span class="cen">\(a^2-2a\sqrt{3}+3=2 \)</span><br><span class="cen">\(2a\sqrt{3}=a^2+1 \)</span><br><span class="cen">\(\sqrt{3}=\frac{a^2+1}{2a} \)</span><br>Przy założeniu, że \(a \) jest liczbą wymierną, prawa strona równości jest także liczbą wymierną, z czego wynika, że \(\sqrt{3} \) jest liczbą wymierną. Otrzymaliśmy sprzeczność, więc \(\sqrt{2}+\sqrt{3} \) jest liczbą niewymierną.</div></div><div class="row"><div class="col-xs-12 col-md-12 col-lg-12"><p class="tresc">Udowodnij, że podana liczba jest niewymierna</p></div><div class="col-xs-12 col-md-12 col-lg-6">a) \(2\sqrt{3}+\sqrt{2} \)</div><div class="col-xs-12 col-md-12 col-lg-6">b) \(\sqrt{3}-\sqrt{2} \)</div></div><button class="butt" id="gliczby3_32" onclick="pokazliczby3_32()">Rozwiązanie</button>
+<script>
+function pokazliczby3_32(){
+var dliczby3_32=document.getElementById("r-liczby3_32");
+var rliczby3_32=document.createElement("img");
+rliczby3_32.setAttribute('src','roz/liczby3_32.png');
+dliczby3_32.appendChild(rliczby3_32);
+var uliczby3_32=document.getElementById("gliczby3_32");
+uliczby3_32.innerHTML="Ukryj rozwiązanie";
+uliczby3_32.setAttribute("onclick","usunliczby3_32()");}
+function usunliczby3_32(){
+var dliczby3_32=document.getElementById("r-liczby3_32");
+dliczby3_32.innerHTML=null;
+var uliczby3_32a=document.getElementById("gliczby3_32");
+uliczby3_32a.innerHTML="Rozwiązanie";
+uliczby3_32a.setAttribute("onclick","pokazliczby3_32()");}
+</script>
+<div id="r-liczby3_32"></div>
+</li>
+<li class="numer" id="liczby3_33"><p class="tresc"><a href="#" class="up">\(&#8657;\)\(&#8517;\)</a>Udowodnij, że pierwiastek kwadratowy z dodatniej liczby niewymiernej jest liczbą niewymierną.</p>
+<div class="row odp"></div><button class="butt" id="gliczby3_33" onclick="pokazliczby3_33()">Rozwiązanie</button>
+<script>
+function pokazliczby3_33(){
+var dliczby3_33=document.getElementById("r-liczby3_33");
+var rliczby3_33=document.createElement("img");
+rliczby3_33.setAttribute('src','roz/liczby3_33.png');
+dliczby3_33.appendChild(rliczby3_33);
+var uliczby3_33=document.getElementById("gliczby3_33");
+uliczby3_33.innerHTML="Ukryj rozwiązanie";
+uliczby3_33.setAttribute("onclick","usunliczby3_33()");}
+function usunliczby3_33(){
+var dliczby3_33=document.getElementById("r-liczby3_33");
+dliczby3_33.innerHTML=null;
+var uliczby3_33a=document.getElementById("gliczby3_33");
+uliczby3_33a.innerHTML="Rozwiązanie";
+uliczby3_33a.setAttribute("onclick","pokazliczby3_33()");}
+</script>
+<div id="r-liczby3_33"></div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+</div>
+</div>
+</div>
+<script src="../js/jquery.js"></script>
+      <script src="../js/bootstrap.js"></script>
+</body>
+</html>
